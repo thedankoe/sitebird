@@ -10,10 +10,10 @@ import { HowList, HowListItem, HowListContainer } from '../single-page'
 import {
   CheckoutWrapper,
   CheckoutLinkContainer,
-} from './single-checkout-flat-cms'
-import CheckoutSku from '../../../components/checkoutSku'
+} from '../single-page/single-checkout-flat-cms'
+import CheckoutPlan from '../../../components/checkoutPlan'
 
-const SingleCheckoutFlatArticlesConfirm = ({ location }) => (
+const MultiCheckoutMonthlyConfirm = ({ location }) => (
   <>
     <Helmet title="Confirmation">
       <html lang="en" />
@@ -25,12 +25,8 @@ const SingleCheckoutFlatArticlesConfirm = ({ location }) => (
         <HowListContainer>
           <HowList>
             <HowListItem>
-              Single page website optimized for on-page SEO, usability, mobile,
+              Multi page website optimized for on-page SEO, usability, mobile,
               accessability, and performance.
-            </HowListItem>
-            <HowListItem>
-              4 content articles to start off-page SEO on the right foot. Rank
-              for more organic keywords, more web traffic.
             </HowListItem>
             <HowListItem>
               Ability to add on pages and functionality at any time. We will
@@ -39,19 +35,18 @@ const SingleCheckoutFlatArticlesConfirm = ({ location }) => (
           </HowList>
         </HowListContainer>
         <CheckoutLinkContainer>
-          <CheckoutSku
-            sku="sku_Eqjq7CsXueB9PM"
+          <CheckoutPlan
+            plan="plan_EhiIx3oN5s4gze"
             buttonText="Continue to Checkout"
           />
           <ParagraphStyleLight>
-            Current total: <span>$699</span>
+            Current total: <span>$199/month</span>
           </ParagraphStyleLight>
           <ul>
             <li>
               <span>Items:</span>
             </li>
-            <li>Single page website</li>
-            <li>Content articles</li>
+            <li>Multi page website (6 month)</li>
           </ul>
         </CheckoutLinkContainer>
       </CheckoutWrapper>
@@ -59,4 +54,4 @@ const SingleCheckoutFlatArticlesConfirm = ({ location }) => (
   </>
 )
 
-export default SingleCheckoutFlatArticlesConfirm
+export default MultiCheckoutMonthlyConfirm

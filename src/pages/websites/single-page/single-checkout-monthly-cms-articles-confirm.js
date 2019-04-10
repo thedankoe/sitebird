@@ -11,9 +11,9 @@ import {
   CheckoutWrapper,
   CheckoutLinkContainer,
 } from './single-checkout-flat-cms'
-import CheckoutSku from '../../../components/checkoutSku'
+import CheckoutPlan from '../../../components/checkoutPlan'
 
-const SingleCheckoutFlatArticlesConfirm = ({ location }) => (
+const SingleCheckoutMonthlyCMSArticlesConfirm = ({ location }) => (
   <>
     <Helmet title="Confirmation">
       <html lang="en" />
@@ -33,25 +33,30 @@ const SingleCheckoutFlatArticlesConfirm = ({ location }) => (
               for more organic keywords, more web traffic.
             </HowListItem>
             <HowListItem>
+              Content management system that gives you the ability to edit
+              content on your own.
+            </HowListItem>
+            <HowListItem>
               Ability to add on pages and functionality at any time. We will
               email you about this.
             </HowListItem>
           </HowList>
         </HowListContainer>
         <CheckoutLinkContainer>
-          <CheckoutSku
-            sku="sku_Eqjq7CsXueB9PM"
+          <CheckoutPlan
+            plan="plan_Eqjx6M3aVgcown"
             buttonText="Continue to Checkout"
           />
           <ParagraphStyleLight>
-            Current total: <span>$699</span>
+            Current total: <span>$199/month</span>
           </ParagraphStyleLight>
           <ul>
             <li>
               <span>Items:</span>
             </li>
-            <li>Single page website</li>
-            <li>Content articles</li>
+            <li>Single page website (6 month)</li>
+            <li>CMS (6 month)</li>
+            <li>Content Articles (6 month)</li>
           </ul>
         </CheckoutLinkContainer>
       </CheckoutWrapper>
@@ -59,4 +64,4 @@ const SingleCheckoutFlatArticlesConfirm = ({ location }) => (
   </>
 )
 
-export default SingleCheckoutFlatArticlesConfirm
+export default SingleCheckoutMonthlyCMSArticlesConfirm

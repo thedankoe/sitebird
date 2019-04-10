@@ -12,7 +12,6 @@ import {
   CheckoutWrapper,
   CheckoutLinkContainer,
 } from './single-checkout-flat-cms'
-import CheckoutSku from '../../../components/checkoutSku'
 
 const SingleCheckoutFlatArticles = ({ location }) => (
   <>

@@ -13,7 +13,7 @@ import {
 } from './single-checkout-flat-cms'
 import CheckoutSku from '../../../components/checkoutSku'
 
-const SingleCheckoutCMSArticlesConfirm = ({ location }) => (
+const SingleCheckoutFlatCMSArticlesConfirm = ({ location }) => (
   <>
     <Helmet title="Confirmation">
       <html lang="en" />
@@ -31,6 +31,10 @@ const SingleCheckoutCMSArticlesConfirm = ({ location }) => (
             <HowListItem>
               4 content articles to start off-page SEO on the right foot. Rank
               for more organic keywords, more web traffic.
+            </HowListItem>
+            <HowListItem>
+              Content management system that gives you the ability to edit
+              content on your own.
             </HowListItem>
             <HowListItem>
               Ability to add on pages and functionality at any time. We will
@@ -60,4 +64,4 @@ const SingleCheckoutCMSArticlesConfirm = ({ location }) => (
   </>
 )
 
-export default SingleCheckoutCMSArticlesConfirm
+export default SingleCheckoutFlatCMSArticlesConfirm

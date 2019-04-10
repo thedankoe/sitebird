@@ -29,10 +29,6 @@ const SingleCheckoutFlatCMSConfirm = ({ location }) => (
               accessability, and performance.
             </HowListItem>
             <HowListItem>
-              4 content articles to start off-page SEO on the right foot. Rank
-              for more organic keywords, more web traffic.
-            </HowListItem>
-            <HowListItem>
               Content management system that gives you the ability to edit
               content on your own.
             </HowListItem>

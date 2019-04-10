@@ -5,13 +5,13 @@ import {
   HeadingStyle,
   SubHeadingStyle,
   ParagraphStyleLight,
+  CheckoutLink,
 } from '../../../components/styles/TextStyles'
 import { HowList, HowListItem, HowListContainer } from '../single-page'
 import {
   CheckoutWrapper,
   CheckoutLinkContainer,
 } from './single-checkout-flat-cms'
-import CheckoutPlan from '../../../components/checkoutPlan'
 
 const SingleCheckoutMonthlyArticles = ({ location }) => (
   <>
@@ -52,14 +52,12 @@ const SingleCheckoutMonthlyArticles = ({ location }) => (
           <ParagraphStyleLight>
             $40/month to add on, <span>$159/month total</span>
           </ParagraphStyleLight>
-          <CheckoutPlan
-            plan="plan_EqjvHJGco4BmjP"
-            buttonText="Checkout With Articles"
-          />
-          <CheckoutPlan
-            plan="plan_EqjokJ6g13pL7b"
-            buttonText="Continue to Checkout"
-          />
+          <CheckoutLink to="/websites/single-page/single-checkout-monthly-articles-confirm">
+            Add on Articles
+          </CheckoutLink>
+          <CheckoutLink to="/websites/single-page/single-checkout-monthly-confirm">
+            Continue with Purchase
+          </CheckoutLink>
           <ParagraphStyleLight>
             Current total: <span>$119/month</span>
           </ParagraphStyleLight>

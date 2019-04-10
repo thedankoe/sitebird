@@ -5,13 +5,13 @@ import {
   HeadingStyle,
   SubHeadingStyle,
   ParagraphStyleLight,
+  CheckoutLink,
 } from '../../../components/styles/TextStyles'
 import { HowList, HowListItem, HowListContainer } from '../single-page'
 import {
   CheckoutWrapper,
   CheckoutLinkContainer,
 } from '../single-page/single-checkout-flat-cms'
-import CheckoutSku from '../../../components/checkoutSku'
 
 const MultiCheckoutFlatArticles = ({ location }) => (
   <>
@@ -52,14 +52,12 @@ const MultiCheckoutFlatArticles = ({ location }) => (
           <ParagraphStyleLight>
             $200 to add on, <span>$1199 total</span>
           </ParagraphStyleLight>
-          <CheckoutSku
-            sku="sku_Emzc8wN1gM9YP2"
-            buttonText="Checkout With Articles"
-          />
-          <CheckoutSku
-            sku="sku_EhiG8skuw19ZoZ"
-            buttonText="Continue to Checkout"
-          />
+          <CheckoutLink to="/websites/multi-page/multi-checkout-flat-articles-confirm">
+            Add on Articles
+          </CheckoutLink>
+          <CheckoutLink to="/websites/multi-page/multi-checkout-flat-confirm">
+            Continue with Purchase
+          </CheckoutLink>
           <ParagraphStyleLight>
             Current total: <span>$999</span>
           </ParagraphStyleLight>

@@ -11,9 +11,9 @@ import {
   CheckoutWrapper,
   CheckoutLinkContainer,
 } from './single-checkout-flat-cms'
-import CheckoutSku from '../../../components/checkoutSku'
+import CheckoutPlan from '../../../components/checkoutPlan'
 
-const SingleCheckoutFlatArticlesConfirm = ({ location }) => (
+const SingleCheckoutMonthlyArticlesConfirm = ({ location }) => (
   <>
     <Helmet title="Confirmation">
       <html lang="en" />
@@ -39,19 +39,19 @@ const SingleCheckoutFlatArticlesConfirm = ({ location }) => (
           </HowList>
         </HowListContainer>
         <CheckoutLinkContainer>
-          <CheckoutSku
-            sku="sku_Eqjq7CsXueB9PM"
+          <CheckoutPlan
+            plan="plan_EqjvHJGco4BmjP"
             buttonText="Continue to Checkout"
           />
           <ParagraphStyleLight>
-            Current total: <span>$699</span>
+            Current total: <span>$159/month</span>
           </ParagraphStyleLight>
           <ul>
             <li>
               <span>Items:</span>
             </li>
-            <li>Single page website</li>
-            <li>Content articles</li>
+            <li>Single page website (6 month)</li>
+            <li>Content articles (6 month)</li>
           </ul>
         </CheckoutLinkContainer>
       </CheckoutWrapper>
@@ -59,4 +59,4 @@ const SingleCheckoutFlatArticlesConfirm = ({ location }) => (
   </>
 )
 
-export default SingleCheckoutFlatArticlesConfirm
+export default SingleCheckoutMonthlyArticlesConfirm

@@ -5,13 +5,13 @@ import {
   HeadingStyle,
   SubHeadingStyle,
   ParagraphStyleLight,
+  CheckoutLink,
 } from '../../../components/styles/TextStyles'
 import { HowList, HowListItem, HowListContainer } from '../single-page'
 import {
   CheckoutWrapper,
   CheckoutLinkContainer,
 } from '../single-page/single-checkout-flat-cms'
-import CheckoutSku from '../../../components/checkoutSku'
 
 const MultiCheckoutFlatCMSArticles = ({ location }) => (
   <>
@@ -52,14 +52,12 @@ const MultiCheckoutFlatCMSArticles = ({ location }) => (
           <ParagraphStyleLight>
             $200 to add on, <span>$1499 total</span>
           </ParagraphStyleLight>
-          <CheckoutSku
-            sku="sku_Emzdo7Do6ayYtl"
-            buttonText="Checkout With Articles"
-          />
-          <CheckoutSku
-            sku="sku_EmzczbqWr9FzFf"
-            buttonText="Continue to Checkout"
-          />
+          <CheckoutLink to="/websites/multi-page/multi-checkout-flat-cms-articles-confirm">
+            Add on Articles
+          </CheckoutLink>
+          <CheckoutLink to="/websites/multi-page/multi-checkout-flat-cms-confirm">
+            Add on Articles
+          </CheckoutLink>
           <ParagraphStyleLight>
             Current total: <span>$1299</span>
           </ParagraphStyleLight>
@@ -68,7 +66,7 @@ const MultiCheckoutFlatCMSArticles = ({ location }) => (
               <span>Items:</span>
             </li>
             <li>Multi page website</li>
-            <li>Contentful CMS</li>
+            <li>CMS</li>
           </ul>
         </CheckoutLinkContainer>
       </CheckoutWrapper>

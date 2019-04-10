@@ -10,10 +10,10 @@ import { HowList, HowListItem, HowListContainer } from '../single-page'
 import {
   CheckoutWrapper,
   CheckoutLinkContainer,
-} from './single-checkout-flat-cms'
+} from '../single-page/single-checkout-flat-cms'
 import CheckoutSku from '../../../components/checkoutSku'
 
-const SingleCheckoutFlatArticlesConfirm = ({ location }) => (
+const MultiCheckoutFlatArticlesConfirm = ({ location }) => (
   <>
     <Helmet title="Confirmation">
       <html lang="en" />
@@ -25,7 +25,7 @@ const SingleCheckoutFlatArticlesConfirm = ({ location }) => (
         <HowListContainer>
           <HowList>
             <HowListItem>
-              Single page website optimized for on-page SEO, usability, mobile,
+              Multi page website optimized for on-page SEO, usability, mobile,
               accessability, and performance.
             </HowListItem>
             <HowListItem>
@@ -40,17 +40,17 @@ const SingleCheckoutFlatArticlesConfirm = ({ location }) => (
         </HowListContainer>
         <CheckoutLinkContainer>
           <CheckoutSku
-            sku="sku_Eqjq7CsXueB9PM"
+            sku="sku_Emzc8wN1gM9YP2"
             buttonText="Continue to Checkout"
           />
           <ParagraphStyleLight>
-            Current total: <span>$699</span>
+            Current total: <span>$1199</span>
           </ParagraphStyleLight>
           <ul>
             <li>
               <span>Items:</span>
             </li>
-            <li>Single page website</li>
+            <li>Multi page website</li>
             <li>Content articles</li>
           </ul>
         </CheckoutLinkContainer>
@@ -59,4 +59,4 @@ const SingleCheckoutFlatArticlesConfirm = ({ location }) => (
   </>
 )
 
-export default SingleCheckoutFlatArticlesConfirm
+export default MultiCheckoutFlatArticlesConfirm
