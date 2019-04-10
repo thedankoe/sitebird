@@ -56,7 +56,7 @@ const MultiCheckoutFlatCMSArticles = ({ location }) => (
             Add on Articles
           </CheckoutLink>
           <CheckoutLink to="/websites/multi-page/multi-checkout-flat-cms-confirm">
-            Add on Articles
+            Continue with Purchase
           </CheckoutLink>
           <ParagraphStyleLight>
             Current total: <span>$1299</span>
