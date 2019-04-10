@@ -1,21 +1,43 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react'
+import Helmet from 'react-helmet'
+import Layout from '../components/layout'
+import CaseStudy from '../components/caseStudy'
+import ProblemSolution from '../components/problemSolution'
+import Process from '../components/process'
+import Buy from '../components/buy'
+import BlogSection from '../components/blogSection'
+import TestimonialSection from '../components/testimonials'
+import CostComparison from '../components/priceComparison'
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
-
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+const IndexPage = ({ location }) => (
+  <>
+    <Helmet
+      title="Fully Optimized Websites for Small Businesses | SiteBird"
+      meta={[
+        {
+          name: 'description',
+          content:
+            'Affordable, tested websites for local and small businesses. Our websites come fully optimized, you will never need to hire anyone to work on your website again.',
+        },
+        { name: 'keywords', content: 'sample, something' },
+      ]}
+    >
+      <html lang="en" />
+    </Helmet>
+    <Layout location={location}>
+      <CaseStudy />
+      <ProblemSolution />
+      <Process />
+      <TestimonialSection />
+      <CostComparison />
+      <Buy
+        buyText="We offer two website packages: a single page website and a multi-page
+        website. Both website styles are beautiful, optimized, and convert."
+        services
+      />
+      <BlogSection />
+    </Layout>
+  </>
 )
 
 export default IndexPage
