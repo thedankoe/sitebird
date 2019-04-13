@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `SiteBird`,
-    description: `Affordable, tested websites for local and small businesses. Our websites come fully optimized, you will never need to hire anyone to work on your website again.`,
+    title: `LeadBird`,
+    description: `Affordable lead generation for entrepreneurs and small businesses through website optimization, social media management, and content marketing.`,
     author: `Dan Koe`,
-    siteUrl: 'https://www.site-bird.com',
+    siteUrl: 'https://www.leadbird.io',
   },
   plugins: [
     {
@@ -50,8 +50,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'site-bird.com',
-        short_name: 'SiteBird',
+        name: 'leadbird.io',
+        short_name: 'LeadBird',
         start_url: '/',
         icon: 'src/images/sitebird-favicon.png',
       },

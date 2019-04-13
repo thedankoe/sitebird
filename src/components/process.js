@@ -82,8 +82,8 @@ const Process = () => (
   <ProcessWrapper>
     <HeadingStyle>Our process</HeadingStyle>
     <ParagraphStyle>
-      We offer different website packages to suit your businesses needs. Once a
-      package is purchased, this is how you can expect the process to go:
+      We offer packages that have shown great results, or offer consultations.
+      Here is the process when our standard package is bought.
     </ParagraphStyle>
     <ProcessList>
       <ProcessListContainer>
@@ -91,11 +91,10 @@ const Process = () => (
           <ProcessListIcon />
         </div>
         <ProcessListItem>
-          We gather necessary information
+          Gather Necessary Information
           <span>
-            A package is purchased, you will be emailed a contract to sign and a
-            form to fill out with information on your buiness. If you pay in
-            full, do not worry about a contract.
+            A purchase is made, you will be emailed a contract to sign and a
+            form to fill out with information on your buiness.
           </span>
         </ProcessListItem>
       </ProcessListContainer>
@@ -104,12 +103,11 @@ const Process = () => (
           <ProcessListIcon />
         </div>
         <ProcessListItem>
-          Strategy and prototyping
+          Strategy and Planning
           <span>
-            The 1-2 weeks is spent researching competitors, keywords, and
-            conversion practices for your industry. We prototype the layout
-            along the way. Any other vital information will be gathered at this
-            time.
+            We spend the first week researching keywords, competitors, and best
+            conversion practices for your industry. We gather account
+            information and access during this time.
           </span>
         </ProcessListItem>
       </ProcessListContainer>
@@ -120,9 +118,8 @@ const Process = () => (
         <ProcessListItem>
           Execution
           <span>
-            We start building, a temporary link will be available 3 weeks after
-            purchase. Questions, concerns, and revisions are taken care of for a
-            1 month period after the website is finished.
+            We get to work and stay out of your hair, we create and post content
+            while optimizing your website.
           </span>
         </ProcessListItem>
       </ProcessListContainer>
@@ -131,35 +128,19 @@ const Process = () => (
           <ProcessListIcon />
         </div>
         <ProcessListItem>
-          Base completion
+          Monthly Review
           <span>
-            After the completion of the site, we implement any custom
-            functionality that you purchased after your original purchase. We
-            offer guidance on this.
-          </span>
-        </ProcessListItem>
-      </ProcessListContainer>
-      <ProcessListContainer>
-        <div>
-          <ProcessListIcon />
-        </div>
-        <ProcessListItem>
-          Retainer updates and revisions
-          <span>
-            If you love your website (we know you will), we offer a retainer
-            service for website revisions and updates. This will be offered
-            after all of the original work is done. This is often times
-            unnecessary, we offer transparent guidance.
+            We care about your money. We track specific KPIs and send a growth
+            report at the end of each month.
           </span>
         </ProcessListItem>
       </ProcessListContainer>
     </ProcessList>
     <HeadingStyle>Money Back Guarentee</HeadingStyle>
     <ParagraphStyle>
-      If you are unhappy with our services within a month of your purcahse (or
-      before the completion of a single page website), we give you your money
-      back. Keep in mind that you have 1 month of revisions for any website
-      package after the website is completed.
+      If you are unhappy with our services within a month of your purchase (or
+      before your second invoice), we give you your money back. Keep in mind
+      that lead generation and organic growth takes time to compound.
     </ParagraphStyle>
   </ProcessWrapper>
 )

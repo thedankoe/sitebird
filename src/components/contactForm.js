@@ -146,11 +146,10 @@ const ContactForm = () => (
       <SelectBox
         labelText="Service Interested In"
         items={[
-          { value: 'Single Page Website', id: 1 },
-          { value: 'Multi Page Website', id: 2 },
-          { value: 'Contract Information', id: 3 },
-          { value: 'Custom Website Package', id: 4 },
-          { value: 'Referrals', id: 5 },
+          { value: 'Consultation', id: 1 },
+          { value: 'Website Creation', id: 2 },
+          { value: 'Social Media Management', id: 3 },
+          { value: 'Lead Generation', id: 4 },
         ]}
       />
       <FormGroup>

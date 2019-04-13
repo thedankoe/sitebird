@@ -89,12 +89,12 @@ const CaseStudy = () => (
     query={CASE_STUDY_QUERY}
     render={data => (
       <CaseWrapper>
-        <HeadingStyle>Website Optimization Case Studies</HeadingStyle>
+        <HeadingStyle>Web Optimization Case Studies</HeadingStyle>
         <CaseContainer>
           <CaseImage fluid={data.file.childImageSharp.fluid} />
           <ParagraphContainer>
             <SubHeadingStyle>
-              Website optimization in all areas increases conversion rates
+              Optimization in all areas increases conversion rates
               exponentially, heres some key points:
             </SubHeadingStyle>
             <CaseList>
@@ -113,8 +113,8 @@ const CaseStudy = () => (
             </CaseList>
             <CaseParagraph>
               Optimization in all areas increases conversion rates across the
-              board. Optimizing your website, or having a website built with
-              optimization in mind, is important now more than ever with the
+              board. Optimizing your website, social media accounts, or web
+              presence in general, is important now more than ever with the
               amount of competition online.
             </CaseParagraph>
           </ParagraphContainer>

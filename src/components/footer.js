@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Link } from 'gatsby'
 import { ParagraphStyle } from './styles/TextStyles'
 import { device } from './styles/MediaQueries'
-import FooterLogo from '../images/sitebird-logo-navigation.png'
+import FooterLogo from '../images/leadbird-logo-navigation.png'
 
 const FooterWrapper = styled.footer`
   width: 100%;
@@ -46,13 +46,9 @@ const FooterLogoStyle = styled.img`
 
 const FooterNavList = styled.ul`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: ${props => props.theme.textSpace};
   list-style: none;
-
-  @media ${device.desktop} {
-    grid-template-columns: 1fr;
-  }
 
   @media ${device.tablet} {
     grid-template-columns: 1fr;
@@ -80,6 +76,9 @@ const Footer = () => (
       </FooterLink>
       <nav>
         <FooterNavList>
+          <FooterNavItem>
+            <Link to="/services">Services</Link>
+          </FooterNavItem>
           <FooterNavItem>
             <Link to="/websites">Websites</Link>
           </FooterNavItem>

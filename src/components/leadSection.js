@@ -52,26 +52,26 @@ const LeadSection = () => (
   <LeadSectionWrapper>
     <LeadBgIcon />
     <LeadSectionContainer>
-      <HeadingStyle>Fully optimized websites guarentee growth</HeadingStyle>
+      <HeadingStyle>Full optimization guarentees growth</HeadingStyle>
       <LeadSectionGrid>
         <div>
           <SubHeadingStyle>
             300% average increase in leads for the first year
           </SubHeadingStyle>
           <ParagraphStyle>
-            The point of websites are to convert, we've been over this, but it's
-            extremely important to understand the difference between 'conversion
-            centered' and 'showcase' websites. One is optimized in all areas,
-            one isn't.
+            The point of websites and social media is to convert, we've been
+            over this, but it's extremely important to understand the difference
+            between the terms 'conversion centered' and 'showcase'. One is
+            optimized in all areas, one isn't.
           </ParagraphStyle>
         </div>
         <div>
-          <SubHeadingStyle>No targeted content, no customers</SubHeadingStyle>
+          <SubHeadingStyle>Targeted content always wins</SubHeadingStyle>
           <ParagraphStyle>
-            Targeted content optimizes your website for search engines. Without
-            this you will not grow organically, period. Your website is meant to
-            be your best salesman, targeted content helps people find you
-            without you specifically directing them to it.
+            Targeted content optimizes your website for search engines and gets
+            customers clicking through your social media campaigns. Without this
+            you will not grow organically, period. Your website and social media
+            are meant to be your best salesman.
           </ParagraphStyle>
         </div>
       </LeadSectionGrid>

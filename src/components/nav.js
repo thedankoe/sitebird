@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import './styles/nav.css'
 import { ToggleIcon } from './styles/IconStyles'
 import Toggle from './toggle'
-import NavLogo from '../images/sitebird-logo-navigation.png'
+import NavLogo from '../images/leadbird-logo-navigation.png'
 
 const fadeUp = keyframes`
   from { opacity: 0; transform: translateY(3rem);}
@@ -22,7 +22,7 @@ const NavWrapper = styled.div`
 `
 
 const NavContainer = styled.nav`
-  width: 40%;
+  width: 50%;
   margin: 0 3rem 0 auto;
 `
 
@@ -168,6 +168,9 @@ class Nav extends Component {
                 <LogoImg src={NavLogo} alt="SiteBird logo" />
               </Logo>
               <NavItem>
+                <Link to="/services">Services</Link>
+              </NavItem>
+              <NavItem>
                 <Link to="/websites">Websites</Link>
               </NavItem>
               <NavItem>
@@ -195,13 +198,10 @@ class Nav extends Component {
                   {on && (
                     <NavToggleList on={on} toggle={toggle}>
                       <NavToggleItem>
+                        <Link to="/services">Services</Link>
+                      </NavToggleItem>
+                      <NavToggleItem>
                         <Link to="/websites">Websites</Link>
-                      </NavToggleItem>
-                      <NavToggleItem>
-                        <Link to="/websites">Landing Pages</Link>
-                      </NavToggleItem>
-                      <NavToggleItem>
-                        <Link to="/websites">Redesigns</Link>
                       </NavToggleItem>
                       <NavToggleItem>
                         <Link to="/faq">FAQ</Link>

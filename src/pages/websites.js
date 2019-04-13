@@ -146,7 +146,7 @@ const OurWebsitesPage = ({ location }) => (
           <ExampleGif src={NatoursExampleTwo} alt="Example of Natours cards" />
         </ExampleContainer>
         <HowListContainer>
-          <HeadingStyle>Hiring someone? Forget about it.</HeadingStyle>
+          <HeadingStyle>Fully optimized out of the box</HeadingStyle>
           <HowList>
             <HowListItem>
               Our websites come completely optimized for everything really.

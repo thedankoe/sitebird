@@ -5,11 +5,12 @@ import {
   ProblemLink,
   HeadingStyleLight,
   SubHeadingStyleLight,
+  ParagraphStyleLight,
 } from './styles/TextStyles'
 import ServicesCard from './servicesCard'
 import { RightIcon } from './styles/IconStyles'
 import PrismTexture from '../images/prism-texture.png'
-import LandingPageCard from './landingPageCard'
+import PackagesCard from './packagesCard'
 
 export const BuyWrapper = styled.div`
   padding: ${props => props.theme.textSpace};
@@ -51,14 +52,19 @@ export const BuySubHeading = styled(SubHeadingStyleLight)`
   margin: 0 auto ${props => props.theme.textSpace} auto;
 `
 
-const Buy = ({ buyText, services }) => (
+const Buy = ({ buyText, home }) => (
   <BuyWrapper id="packages">
     <BuyContainer>
       <HeadingStyleLight>Get started</HeadingStyleLight>
       <BuySubHeading>{buyText}</BuySubHeading>
-      {services ? <ServicesCard /> : <LandingPageCard />}
+      <ParagraphStyleLight>
+        These are affordable packages that have shown results in the past, they
+        are not all that we offer. If you would like specific accomodations,
+        request a consultation below.
+      </ParagraphStyleLight>
+      {home ? <PackagesCard /> : <ServicesCard />}
       <ProblemLink to="/contact">
-        Request more information
+        Request a consultation
         <RightIcon />
       </ProblemLink>
     </BuyContainer>

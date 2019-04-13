@@ -73,9 +73,9 @@ const TestimonialSection = () => (
         <MattressGuruTestimonial />
       </TestimonialImage>
       <TestimonialParagraph>
-        "After reading up on build your own websites, I found SiteBird. I felt
-        involved and confident throughout the process which I did not expect
-        from buying a website."
+        "After reading up on the pitfalls of build your own websites, I found
+        LeadBird. They guided me in the right direction and have shown me how
+        much organic traffic matters."
         <span>Brittany - Mattress Guru</span>
       </TestimonialParagraph>
     </TestimonialContainer>
@@ -84,8 +84,8 @@ const TestimonialSection = () => (
         <CavemanTestimonial />
       </TestimonialImage>
       <TestimonialParagraph>
-        "SiteBird optimized our current website. After only a month, our organic
-        search has doubled! Highly recommended!"
+        "LeadBird optimized our current website and manages our Facebook. After
+        only a month, our organic search has tripled! Highly recommended!"
         <span>Skip &amp; Angee - Caveman Printing and Apparel</span>
       </TestimonialParagraph>
     </TestimonialContainer>

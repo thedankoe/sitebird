@@ -6,6 +6,7 @@ import { device } from './styles/MediaQueries'
 import {
   HeadingStyle,
   ParagraphStyle,
+  ParagraphStyleLight,
   ProblemLink,
   HeadingStyleLight,
 } from './styles/TextStyles'
@@ -66,7 +67,7 @@ const ProblemImg = styled(Img)`
   border-radius: 5px;
 `
 
-const WrapperBlue = styled.div`
+export const WrapperBlue = styled.div`
   width: 100%;
   margin: 0;
   padding: ${props => props.theme.textSpace} 0;
@@ -86,6 +87,7 @@ const WrapperBlue = styled.div`
 const ProbContainerBlue = styled.div`
   width: ${props => props.theme.maxWidth};
   margin: 0 auto;
+  text-align: center;
 
   @media ${device.desktop} {
     width: 80%;
@@ -93,6 +95,10 @@ const ProbContainerBlue = styled.div`
 
   @media ${device.laptop} {
     width: 95%;
+  }
+
+  @media ${device.tabletS} {
+    text-align: left;
   }
 `
 
@@ -114,18 +120,6 @@ const ParagraphBlue = styled(ParagraphStyle)`
 
   @media ${device.tabletS} {
     text-align: left;
-  }
-`
-
-const ParagraphBlueBold = styled(ParagraphStyle)`
-  color: #fff;
-  margin: ${props => props.theme.textSpace} 0;
-  font-weight: 500;
-  text-align: center;
-
-  @media ${device.tabletS} {
-    width: 95%;
-    margin: ${props => props.theme.textSpace} auto;
   }
 `
 
@@ -175,18 +169,19 @@ const ProblemSolution = () => (
     render={data => (
       <>
         <ProblemWrapper>
-          <HeadingStyle>Most websites aren't optimized</HeadingStyle>
+          <HeadingStyle>Most of the web isn't optimized</HeadingStyle>
           <ProblemContainer>
             <div>
               <ParagraphStyle>
-                It's a sad truth, web designers focus on designing. Good design
-                doesn't necessarily convert, nor does good design mean your
-                website is optimized for speed, SEO, and usability.
+                It's a sad truth. Web designers and social media managers focus
+                on making things look good. Good design doesn't necessarily
+                convert, nor does 'looking good' tap into what the customer
+                actually wants.
               </ParagraphStyle>
               <ParagraphSecondary>
-                When you bring this up to a web designer they will inevitably
-                try to upsell you, offering optimization at an additional cost.
-                When this happens, run away, fast.
+                Creating an outstanding online presence doesn't have to look
+                good to convert. Imagine when it does look good, conversion
+                rates soar.
               </ParagraphSecondary>
             </div>
             <ProblemImg fluid={data.file.childImageSharp.fluid} />
@@ -195,37 +190,39 @@ const ProblemSolution = () => (
         <WrapperBlue>
           <ProbContainerBlue>
             <HeadingStyleLight>
-              Prevent hiring someone to fix problems
+              No targeted content, no customers
             </HeadingStyleLight>
             <ParagraphBlue>
-              The web is a touchy place, buying a website that has the main
-              purpose of looking pretty will only get you so far. This includes
-              "build your own" websites, here's what this can lead to:
+              A web presence without targeted content is like a business without
+              customers. Simply throwing some content together will only go so
+              far. Here's the results of not optimizing your online presence:
             </ParagraphBlue>
             <ProblemList>
               <ProblemListItem>
                 <div>
                   <CrossIcon />
                 </div>
-                <span>Hiring someone for SEO optimization</span>
+                <span>
+                  Wasting money on services that aren't bringing in customers
+                </span>
               </ProblemListItem>
               <ProblemListItem>
                 <div>
                   <CrossIcon />
                 </div>
-                <span>Hiring someone for usability/accessability</span>
+                <span>Zero or very little NEW customers</span>
               </ProblemListItem>
               <ProblemListItem>
                 <div>
                   <CrossIcon />
                 </div>
-                <span>Buying an entirely new website for growth</span>
+                <span>Losing money trying to make current customers happy</span>
               </ProblemListItem>
               <ProblemListItem>
                 <div>
                   <CrossIcon />
                 </div>
-                <span>Losing contact with your web designer</span>
+                <span>Closing your business as fast as your started it</span>
               </ProblemListItem>
               <ProblemListItem>
                 <div>
@@ -234,18 +231,18 @@ const ProblemSolution = () => (
                 <span>Inability to grow past a certain point</span>
               </ProblemListItem>
             </ProblemList>
+            <ParagraphStyleLight>
+              Worst case scenario: you don't scale, you lose a lot of money, and
+              you restart.
+            </ParagraphStyleLight>
           </ProbContainerBlue>
         </WrapperBlue>
         <LeadSection />
         <WrapperBlue>
           <HeadingStyleLight>How we can help</HeadingStyleLight>
           <InfoSection />
-          <ParagraphBlueBold>
-            Our websites come completely optimized. You will never have to hire
-            anyone again.
-          </ParagraphBlueBold>
-          <ProblemLink to="/websites">
-            Detail on our websites
+          <ProblemLink to="/services">
+            Detail on our services
             <RightIcon />
           </ProblemLink>
         </WrapperBlue>

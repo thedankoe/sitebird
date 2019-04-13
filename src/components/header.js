@@ -1,6 +1,5 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
-import PropTypes from 'prop-types'
 import { useSpring, animated } from 'react-spring'
 import Nav from './nav'
 import { HeaderLinkStyle } from './styles/TextStyles'
@@ -18,8 +17,8 @@ const HeaderWrapper = styled(animated.header)`
   overflow: hidden;
   background-image: linear-gradient(
       to right bottom,
-      rgba(74, 116, 201, 0.9),
-      rgba(70, 150, 229, 0.9)
+      rgba(74, 116, 201, 0.95),
+      rgba(70, 150, 229, 0.95)
     ),
     url(${HeaderImg});
   background-position: center;
@@ -41,7 +40,7 @@ const HeaderText = styled.div`
 `
 
 const HeaderHeadingHome = styled.h1`
-  width: 70%;
+  width: 65%;
   font-size: 4.8rem;
   font-weight: 500;
   text-align: left;
@@ -132,10 +131,9 @@ const Header = ({ location, headerText, headerSub }) => {
         {location.pathname === '/' ? (
           <HeaderText>
             <HeaderHeadingHome>
-              Fully optimized websites for small businesses and self employed
-              individuals
+              We bring quality leads to small businesses and entrepreneurs
               <HeaderSubHeading>
-                Never hire anyone for website problems and fixes again
+                We do the heavy lifting, you enjoy the results
               </HeaderSubHeading>
             </HeaderHeadingHome>
             <HeaderLink to="/#packages">

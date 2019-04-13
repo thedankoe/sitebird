@@ -7,19 +7,17 @@ import Process from '../components/process'
 import Buy from '../components/buy'
 import BlogSection from '../components/blogSection'
 import TestimonialSection from '../components/testimonials'
-import CostComparison from '../components/priceComparison'
 
 const IndexPage = ({ location }) => (
   <>
     <Helmet
-      title="Fully Optimized Websites for Small Businesses | SiteBird"
+      title="Quality Lead Generation for Small Businesses | SiteBird"
       meta={[
         {
           name: 'description',
           content:
             'Affordable, tested websites for local and small businesses. Our websites come fully optimized, you will never need to hire anyone to work on your website again.',
         },
-        { name: 'keywords', content: 'sample, something' },
       ]}
     >
       <html lang="en" />
@@ -29,11 +27,9 @@ const IndexPage = ({ location }) => (
       <ProblemSolution />
       <Process />
       <TestimonialSection />
-      <CostComparison />
       <Buy
-        buyText="We offer two website packages: a single page website and a multi-page
-        website. Both website styles are beautiful, optimized, and convert."
-        services
+        buyText="We offer two packages: one for those who have a website but need it optimized and one for those who don't yet have a website."
+        home
       />
       <BlogSection />
     </Layout>

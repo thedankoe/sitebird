@@ -43,9 +43,9 @@ const growAnimation = keyframes`
   }
 `
 
-const InfoWrapper = styled.div`
+export const InfoWrapper = styled.div`
   width: ${props => props.theme.maxWidth};
-  margin: 0 auto;
+  margin: 0 auto ${props => props.theme.textSpace} auto;
   padding: ${props => props.theme.textSpace};
   background: rgba(0, 0, 0, 0.35);
   border-radius: 3px;
@@ -56,7 +56,7 @@ const InfoWrapper = styled.div`
   }
 `
 
-const InfoContainer = styled.div`
+export const InfoContainer = styled.div`
   margin-bottom: ${props => props.theme.textSpace};
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -67,7 +67,7 @@ const InfoContainer = styled.div`
   }
 `
 
-const InfoBlock = styled.div`
+export const InfoBlock = styled.div`
   text-align: center;
 `
 
@@ -94,33 +94,33 @@ const InfoSection = () => (
     <InfoContainer>
       <InfoBlock>
         <LayoutIcon />
-        <SubHeadingStyleLight>Layout</SubHeadingStyleLight>
+        <SubHeadingStyleLight>Web Design</SubHeadingStyleLight>
         <ParagraphStyleLight>
-          A custom layout tailored to your business. Guide the users eyes and
-          get them to call, email, or buy.
+          Our conversion centered websites are completely optimized for
+          usability, SEO, mobile, and performance.
         </ParagraphStyleLight>
       </InfoBlock>
       <InfoBlock>
         <OptimizationIcon />
         <SubHeadingStyleLight>Optimization</SubHeadingStyleLight>
         <ParagraphStyleLight>
-          Mobile, accessability, usability, and SEO optimization out of the box.
-          Forget about hiring somebody for these.
+          Website and social media management with the main goal of creating
+          content that converts.
         </ParagraphStyleLight>
       </InfoBlock>
       <InfoBlock>
         <CopywritingIcon />
-        <SubHeadingStyleLight>Copywriting</SubHeadingStyleLight>
+        <SubHeadingStyleLight>Targeted Content</SubHeadingStyleLight>
         <ParagraphStyleLight>
           Targeted content that is designed to persuade. Content strategy is key
           to converting customers.
         </ParagraphStyleLight>
       </InfoBlock>
     </InfoContainer>
-    <SubHeadingStyleLight>Included Services</SubHeadingStyleLight>
+    <SubHeadingStyleLight>Available Services</SubHeadingStyleLight>
     <ParagraphStyleLight>
-      On-Page SEO - Accessability &amp; Usability Testing - Information
-      Architecture - Mobile Responsive
+      Website Creation - Website Optimization - Social Media Management -
+      Content Marketing
     </ParagraphStyleLight>
   </InfoWrapper>
 )
