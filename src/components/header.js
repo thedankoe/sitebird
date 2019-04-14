@@ -17,8 +17,8 @@ const HeaderWrapper = styled(animated.header)`
   overflow: hidden;
   background-image: linear-gradient(
       to right bottom,
-      rgba(74, 116, 201, 0.95),
-      rgba(70, 150, 229, 0.95)
+      rgba(74, 116, 201, 0.8),
+      rgba(70, 150, 229, 0.8)
     ),
     url(${HeaderImg});
   background-position: center;
@@ -131,9 +131,9 @@ const Header = ({ location, headerText, headerSub }) => {
         {location.pathname === '/' ? (
           <HeaderText>
             <HeaderHeadingHome>
-              We bring quality leads to small businesses and entrepreneurs
+              Lead generation for small businesses and entrepreneurs
               <HeaderSubHeading>
-                We do the heavy lifting, you enjoy the results
+                Through proven marketing tactics
               </HeaderSubHeading>
             </HeaderHeadingHome>
             <HeaderLink to="/#packages">

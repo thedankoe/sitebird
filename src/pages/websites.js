@@ -8,7 +8,7 @@ import {
   ProblemLink,
 } from '../components/styles/TextStyles'
 import Layout from '../components/layout'
-import Buy from '../components/buy'
+import BuyWebsite from '../components/buyWebsite'
 import {
   PackageWrapper,
   PackageContainer,
@@ -173,7 +173,7 @@ const OurWebsitesPage = ({ location }) => (
           </HowList>
         </HowListContainer>
       </PackageWrapper>
-      <Buy services />
+      <BuyWebsite />
     </Layout>
   </>
 )

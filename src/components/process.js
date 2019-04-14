@@ -105,9 +105,9 @@ const Process = () => (
         <ProcessListItem>
           Strategy and Planning
           <span>
-            We spend the first week researching keywords, competitors, and best
-            conversion practices for your industry. We gather account
-            information and access during this time.
+            We spend time researching keywords, competitors, and best conversion
+            practices for your industry. We gather account information and
+            access during this time.
           </span>
         </ProcessListItem>
       </ProcessListContainer>
@@ -118,8 +118,8 @@ const Process = () => (
         <ProcessListItem>
           Execution
           <span>
-            We get to work and stay out of your hair, we create and post content
-            while optimizing your website.
+            We get to work and stay out of your hair. Depending on your order,
+            we create and post content while optimizing your website.
           </span>
         </ProcessListItem>
       </ProcessListContainer>

@@ -7,12 +7,11 @@ import {
   SubHeadingStyleLight,
   ParagraphStyleLight,
 } from './styles/TextStyles'
+import ServicesCard from './servicesCard'
 import { RightIcon } from './styles/IconStyles'
 import PrismTexture from '../images/prism-texture.png'
-import PackagesCard from './packagesCard'
-import ServicesCard from './servicesCard'
 
-export const BuyWrapper = styled.div`
+const BuyWrapper = styled.div`
   padding: ${props => props.theme.textSpace};
   background-image: url(${PrismTexture});
   text-align: center;
@@ -24,9 +23,13 @@ export const BuyWrapper = styled.div`
   }
 `
 
-export const BuyContainer = styled.div`
+const BuyContainer = styled.div`
   width: ${props => props.theme.maxWidth};
   margin: 0 auto;
+
+  @media ${device.desktopL} {
+    width: 80%;
+  }
 
   @media ${device.desktop} {
     width: 100%;
@@ -48,7 +51,7 @@ const BuySubHeading = styled(SubHeadingStyleLight)`
   margin: 0 auto ${props => props.theme.textSpace} auto;
 `
 
-const Buy = ({ buyText, home }) => (
+const BuyWebsite = ({ buyText }) => (
   <BuyWrapper id="packages">
     <BuyContainer>
       <HeadingStyleLight>Get started</HeadingStyleLight>
@@ -58,7 +61,7 @@ const Buy = ({ buyText, home }) => (
         are not all that we offer. If you would like specific accomodations,
         request a consultation below.
       </ParagraphStyleLight>
-      {home ? <PackagesCard /> : <ServicesCard />}
+      <ServicesCard />
       <ProblemLink to="/contact">
         Request a consultation
         <RightIcon />
@@ -67,4 +70,4 @@ const Buy = ({ buyText, home }) => (
   </BuyWrapper>
 )
 
-export default Buy
+export default BuyWebsite

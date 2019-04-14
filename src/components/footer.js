@@ -93,7 +93,7 @@ const Footer = () => (
           </FooterNavItem>
         </FooterNavList>
       </nav>
-      <ParagraphStyle>&copy; 2019 SiteBird</ParagraphStyle>
+      <ParagraphStyle>&copy; 2019 LeadBird</ParagraphStyle>
     </FooterContainer>
   </FooterWrapper>
 )

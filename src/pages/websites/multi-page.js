@@ -91,7 +91,7 @@ const MultiPage = ({ location }) => (
         <CardContainer>
           <Card>
             <HeadingStyle>Flat Fee</HeadingStyle>
-            <SubHeadingStyle>1-2s month completion time</SubHeadingStyle>
+            <SubHeadingStyle>1-2 months completion time</SubHeadingStyle>
             <CardParagraph>$999</CardParagraph>
             <ParagraphStyle>1 month of revisions</ParagraphStyle>
             <CardList>

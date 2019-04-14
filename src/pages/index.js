@@ -28,7 +28,7 @@ const IndexPage = ({ location }) => (
       <Process />
       <TestimonialSection />
       <Buy
-        buyText="We offer two packages: one for those who have a website but need it optimized and one for those who don't yet have a website."
+        buyText="We offer two packages: one for those who want control over their blog and social media and one for those that are tight on time and would like them managed."
         home
       />
       <BlogSection />

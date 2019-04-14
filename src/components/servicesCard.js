@@ -15,7 +15,7 @@ export const CardContainer = styled.div`
   display: flex;
   justify-content: center;
 
-  @media ${device.laptop} {
+  @media ${device.laptopL} {
     flex-direction: column;
     align-items: center;
   }
@@ -24,7 +24,7 @@ export const CardContainer = styled.div`
 export const Card = styled.div`
   width: 50%;
   background: #fff;
-  padding: ${props => props.theme.textSpace} 1.5rem;
+  padding: 3rem 1rem;
   border-radius: 3px;
   box-shadow: ${props => props.theme.bs};
   color: #000;
@@ -32,7 +32,7 @@ export const Card = styled.div`
     margin-right: ${props => props.theme.textSpace};
   }
 
-  @media ${device.laptop} {
+  @media ${device.laptopL} {
     width: 70%;
     :not(:last-child) {
       margin-right: 0;
@@ -57,7 +57,7 @@ export const CardParagraph = styled.p`
 
 export const CardList = styled.ul`
   width: 80%;
-  margin: ${props => props.theme.textSpace} auto;
+  margin: ${props => props.theme.textSpace} auto 0 auto;
   border-radius: 3px;
   list-style: none;
   font-size: 2rem;
