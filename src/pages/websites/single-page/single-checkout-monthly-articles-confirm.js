@@ -42,6 +42,7 @@ const SingleCheckoutMonthlyArticlesConfirm = ({ location }) => (
           <CheckoutPlan
             plan="plan_EqjvHJGco4BmjP"
             buttonText="Continue to Checkout"
+            checkoutSlug="website"
           />
           <ParagraphStyleLight>
             Current total: <span>$159/month</span>

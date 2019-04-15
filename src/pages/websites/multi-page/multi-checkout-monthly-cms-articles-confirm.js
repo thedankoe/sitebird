@@ -46,6 +46,7 @@ const MultiCheckoutMonthlyCMSArticlesConfirm = ({ location }) => (
           <CheckoutPlan
             plan="plan_EmzeydLg7twckX"
             buttonText="Continue to Checkout"
+            checkoutSlug="website"
           />
           <ParagraphStyleLight>
             Current total: <span>$299/month</span>

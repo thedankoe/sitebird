@@ -90,6 +90,16 @@ export const HowListItem = styled.li`
   border-left: 2px solid ${props => props.theme.secondaryLight};
 `
 
+export const HowListItemDetail = styled.li`
+  margin-left: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: ${props => props.theme.secondary};
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 1.8;
+  text-align: left;
+`
+
 const SinglePage = ({ location }) => (
   <>
     <Helmet

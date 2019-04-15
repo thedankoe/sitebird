@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { GoCreditCard, GoQuestion, GoPin } from 'react-icons/go'
 import { device } from './styles/MediaQueries'
 import { HeadingStyle, ParagraphStyle } from './styles/TextStyles'
 import { PencilIcon } from './styles/IconStyles'
@@ -22,7 +23,7 @@ const ProcessWrapper = styled.div`
   }
 `
 
-export const ProcessList = styled.ol`
+const ProcessList = styled.ol`
   margin: ${props => props.theme.textSpace} 0
     ${props => props.theme.sectionSpace} 0;
   list-style: none;
@@ -31,7 +32,7 @@ export const ProcessList = styled.ol`
   align-items: center;
 `
 
-export const ProcessListContainer = styled.div`
+const ProcessListContainer = styled.div`
   width: 70%;
   padding: 1.5rem 3rem;
   background: linear-gradient(
@@ -59,7 +60,7 @@ export const ProcessListContainer = styled.div`
   }
 `
 
-export const ProcessListItem = styled.li`
+const ProcessListItem = styled.li`
   text-align: left;
   font-size: 2.5rem;
   font-weight: 600;
@@ -72,7 +73,25 @@ export const ProcessListItem = styled.li`
   }
 `
 
-export const ProcessListIcon = styled(PencilIcon)`
+const ProcessListIcon = styled(PencilIcon)`
+  font-size: 3rem;
+  margin-right: 3rem;
+  fill: #fff;
+`
+
+const ProcessPayIcon = styled(GoCreditCard)`
+  font-size: 3rem;
+  margin-right: 3rem;
+  fill: #fff;
+`
+
+const ProcessQuestionIcon = styled(GoQuestion)`
+  font-size: 3rem;
+  margin-right: 3rem;
+  fill: #fff;
+`
+
+const ProcessTopicIcon = styled(GoPin)`
   font-size: 3rem;
   margin-right: 3rem;
   fill: #fff;
@@ -83,18 +102,45 @@ const Process = () => (
     <HeadingStyle>Our process</HeadingStyle>
     <ParagraphStyle>
       We offer packages that have shown great results, or offer consultations.
-      Here is the process when our standard package is bought.
+      Here is the process when our basic, bulk content articles and social media
+      posts, package is bought.
     </ParagraphStyle>
     <ProcessList>
       <ProcessListContainer>
         <div>
-          <ProcessListIcon />
+          <ProcessPayIcon />
         </div>
         <ProcessListItem>
-          Gather Necessary Information
+          Place your order
           <span>
-            A purchase is made, you will be emailed a contract to sign and a
-            form to fill out with information on your buiness.
+            Choose package and complete your payment. If you ordered our bulk
+            articles and posts, select your quantity before payment.
+          </span>
+        </ProcessListItem>
+      </ProcessListContainer>
+      <ProcessListContainer>
+        <div>
+          <ProcessQuestionIcon />
+        </div>
+        <ProcessListItem>
+          Fill out the brief
+          <span>
+            In order for us to create the right content for your business, we
+            have some questions for you. This is perfect for telling us about
+            your business, audience, and goals.
+          </span>
+        </ProcessListItem>
+      </ProcessListContainer>
+      <ProcessListContainer>
+        <div>
+          <ProcessTopicIcon />
+        </div>
+        <ProcessListItem>
+          Choose Topics
+          <span>
+            In the brief, you may choose specific topics or list other sources
+            that you use as inspiration. We give you the option to have us do
+            this as well.
           </span>
         </ProcessListItem>
       </ProcessListContainer>
@@ -103,23 +149,11 @@ const Process = () => (
           <ProcessListIcon />
         </div>
         <ProcessListItem>
-          Strategy and Planning
+          Finalize Content
           <span>
-            We spend time researching keywords, competitors, and best conversion
-            practices for your industry. We gather account information and
-            access during this time.
-          </span>
-        </ProcessListItem>
-      </ProcessListContainer>
-      <ProcessListContainer>
-        <div>
-          <ProcessListIcon />
-        </div>
-        <ProcessListItem>
-          Execution
-          <span>
-            We get to work and stay out of your hair. Depending on your order,
-            we create and post content while optimizing your website.
+            Once we receive your brief, we create the content you ordered.
+            Within the delivery time you will receive your order and can make
+            revisions until you are happy.
           </span>
         </ProcessListItem>
       </ProcessListContainer>
@@ -130,8 +164,9 @@ const Process = () => (
         <ProcessListItem>
           Monthly Review
           <span>
-            We care about your money. We track specific KPIs and send a growth
-            report at the end of each month.
+            We care about your money. If you order our retainer package, we
+            track specific KPIs and send a growth report at the end of each
+            month.
           </span>
         </ProcessListItem>
       </ProcessListContainer>

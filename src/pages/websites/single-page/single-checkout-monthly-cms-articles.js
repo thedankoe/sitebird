@@ -66,7 +66,7 @@ const SingleCheckoutMonthlyCMSArticles = ({ location }) => (
               <span>Items:</span>
             </li>
             <li>Single page website (6 month)</li>
-            <li>Contentful CMS (6 month)</li>
+            <li>CMS (6 month)</li>
           </ul>
         </CheckoutLinkContainer>
       </CheckoutWrapper>

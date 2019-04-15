@@ -17,7 +17,7 @@ import {
 import CheckoutPlan from '../../../components/checkoutPlan'
 import SEO from '../../../components/seo'
 
-const StandardCheckoutConfirm = ({ location }) => (
+const StandardCheckoutEmailConfirm = ({ location }) => (
   <Layout location={location} headerText="Confirm Your Order">
     <SEO title="Confirmation" />
     <CheckoutWrapper>
@@ -31,6 +31,9 @@ const StandardCheckoutConfirm = ({ location }) => (
           <HowListItem>
             Standard content marketing package including website optimization,
             social media management, content marketing, and more.
+          </HowListItem>
+          <HowListItem>
+            Weekly email marketing with copywriting that converts.
           </HowListItem>
           <HowListItem>
             Invitation to your businesses page on Notion where we track
@@ -52,10 +55,11 @@ const StandardCheckoutConfirm = ({ location }) => (
             <span>Items:</span>
           </li>
           <li>Standard Content Marketing</li>
+          <li>Email Marketing</li>
         </ul>
       </CheckoutLinkContainer>
     </CheckoutWrapper>
   </Layout>
 )
 
-export default StandardCheckoutConfirm
+export default StandardCheckoutEmailConfirm

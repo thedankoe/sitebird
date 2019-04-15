@@ -9,12 +9,12 @@ const CheckoutPlan = class extends React.Component {
   }
 
   async redirectToCheckout(event) {
-    const { plan } = this.props
+    const { plan, checkoutSlug } = this.props
     event.preventDefault()
     const { error } = await this.stripe.redirectToCheckout({
       items: [{ plan, quantity: 1 }],
-      successUrl: `https://www.site-bird.com/checkout-success/`,
-      cancelUrl: `https://www.site-bird.com/`,
+      successUrl: `https://www.leadbird.io/checkout-success-${checkoutSlug}/`,
+      cancelUrl: `https://www.leadbird.io/`,
     })
 
     if (error) {

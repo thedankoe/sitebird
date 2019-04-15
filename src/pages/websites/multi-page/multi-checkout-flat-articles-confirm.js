@@ -42,6 +42,7 @@ const MultiCheckoutFlatArticlesConfirm = ({ location }) => (
           <CheckoutSku
             sku="sku_Emzc8wN1gM9YP2"
             buttonText="Continue to Checkout"
+            checkoutSlug="website"
           />
           <ParagraphStyleLight>
             Current total: <span>$1199</span>

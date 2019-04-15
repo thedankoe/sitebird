@@ -89,13 +89,13 @@ const CaseStudy = () => (
     query={CASE_STUDY_QUERY}
     render={data => (
       <CaseWrapper>
-        <HeadingStyle>Web Optimization Case Studies</HeadingStyle>
+        <HeadingStyle>Optimization Case Studies</HeadingStyle>
         <CaseContainer>
           <CaseImage fluid={data.file.childImageSharp.fluid} />
           <ParagraphContainer>
             <SubHeadingStyle>
-              Optimization in all areas increases conversion rates
-              exponentially, heres some key points:
+              Optimization in content, social media, and website layout
+              increases conversion rates exponentially, heres some key points:
             </SubHeadingStyle>
             <CaseList>
               <li>

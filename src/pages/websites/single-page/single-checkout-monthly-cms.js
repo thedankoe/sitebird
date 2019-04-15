@@ -15,12 +15,12 @@ import {
 
 const SingleCheckoutMonthlyCMS = ({ location }) => (
   <>
-    <Helmet title="Add on Contentful CMS">
+    <Helmet title="Add on Content Management System">
       <html lang="en" />
     </Helmet>
     <Layout location={location} headerText="Content Management System">
       <CheckoutWrapper>
-        <HeadingStyle>Add on contentful CMS</HeadingStyle>
+        <HeadingStyle>Add on Content Management System</HeadingStyle>
         <SubHeadingStyle>
           We give you the ability to edit content that is crucial to your
           business rather than reaching out to us to change it for you. This can

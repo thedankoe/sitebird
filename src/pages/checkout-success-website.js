@@ -1,5 +1,4 @@
 import React from 'react'
-import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import Layout from '../components/layout'
 import SuccessBGDesktop from '../images/checkout-success-bg-desktop.jpg'
@@ -10,6 +9,7 @@ import {
   SubHeadingStyle,
   ParagraphStyle,
 } from '../components/styles/TextStyles'
+import SEO from '../components/seo'
 
 export const ClientFormWrapper = styled.div`
   padding: ${props => props.theme.sectionSpace} 0;
@@ -23,11 +23,21 @@ export const ClientFormWrapper = styled.div`
   background-size: cover;
 
   @media ${device.tabletL} {
-    background-image: url(${SuccessBGTablet});
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.8)
+      ),
+      url(${SuccessBGTablet});
   }
 
   @media ${device.mobileL} {
-    background-image: url(${SuccessBGMobile});
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.8)
+      ),
+      url(${SuccessBGMobile});
   }
 `
 
@@ -67,38 +77,35 @@ export const ClientFormContainer = styled.div`
   }
 `
 
-const CheckoutSucessPage = ({ location }) => (
-  <>
-    <Helmet title="Thank You!">
-      <html lang="en" />
-    </Helmet>
-    <Layout
-      location={location}
-      headerText="Your payment was successful"
-      headerSub="We need a bit more information about your business."
-    >
-      <ClientFormWrapper>
-        <ClientFormContainer>
-          <SubHeadingStyle>
-            Before we get started we need a bit more information from you.
-            Please click the following button and fill out a form regarding
-            information about your business.
-          </SubHeadingStyle>
-          <ParagraphStyle>
-            If you purchased a website with a 6 month contract, you will be
-            emailed the contract within 24 hours of finishing this form.
-          </ParagraphStyle>
-          <a
-            href="https://form.jotform.com/90846814288166"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Go to Form
-          </a>
-        </ClientFormContainer>
-      </ClientFormWrapper>
-    </Layout>
-  </>
+const CheckoutSuccessWebsite = ({ location }) => (
+  <Layout
+    location={location}
+    headerText="Your payment was successful"
+    headerSub="We need a bit more information about your business"
+  >
+    <SEO title="Thank you!" />
+    <ClientFormWrapper>
+      <ClientFormContainer>
+        <SubHeadingStyle>
+          Before we get started we need a bit more information from you. Please
+          click the following button and fill out a form regarding information
+          about your business.
+        </SubHeadingStyle>
+        <ParagraphStyle>
+          You can save the forms URL for later if time does not permit. If we
+          notice that you did not fill out a form within 48 hours, we will
+          contact you.
+        </ParagraphStyle>
+        <a
+          href="https://form.jotform.com/90846814288166"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Go to Form
+        </a>
+      </ClientFormContainer>
+    </ClientFormWrapper>
+  </Layout>
 )
 
-export default CheckoutSucessPage
+export default CheckoutSuccessWebsite

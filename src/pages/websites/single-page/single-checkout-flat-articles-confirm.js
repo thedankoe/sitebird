@@ -42,6 +42,7 @@ const SingleCheckoutFlatArticlesConfirm = ({ location }) => (
           <CheckoutSku
             sku="sku_Eqjq7CsXueB9PM"
             buttonText="Continue to Checkout"
+            checkoutSlug="website"
           />
           <ParagraphStyleLight>
             Current total: <span>$699</span>

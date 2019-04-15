@@ -93,19 +93,19 @@ const InfoSection = () => (
   <InfoWrapper>
     <InfoContainer>
       <InfoBlock>
-        <LayoutIcon />
-        <SubHeadingStyleLight>Web Design</SubHeadingStyleLight>
+        <OptimizationIcon />
+        <SubHeadingStyleLight>Website Optimization</SubHeadingStyleLight>
         <ParagraphStyleLight>
-          Our conversion centered websites are completely optimized for
-          usability, SEO, mobile, and performance.
+          We optimize your website for conversion, usability, SEO,
+          accessability, mobile, and performance.
         </ParagraphStyleLight>
       </InfoBlock>
       <InfoBlock>
-        <OptimizationIcon />
-        <SubHeadingStyleLight>Optimization</SubHeadingStyleLight>
+        <LayoutIcon />
+        <SubHeadingStyleLight>Social Media</SubHeadingStyleLight>
         <ParagraphStyleLight>
-          Website and social media management with the main goal of creating
-          content that converts.
+          Social media posts with professionally designed images, and
+          copywriting that engages the user and converts.
         </ParagraphStyleLight>
       </InfoBlock>
       <InfoBlock>
@@ -119,8 +119,8 @@ const InfoSection = () => (
     </InfoContainer>
     <SubHeadingStyleLight>Available Services</SubHeadingStyleLight>
     <ParagraphStyleLight>
-      Website Creation - Website Optimization - Social Media Management -
-      Content Marketing
+      Website Creation - Website Optimization - Social Media Management - Bulk
+      Social Posts - Content Marketing - Bulk Content Articles
     </ParagraphStyleLight>
   </InfoWrapper>
 )

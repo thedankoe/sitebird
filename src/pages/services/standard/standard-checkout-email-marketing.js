@@ -45,7 +45,9 @@ const StandardCheckoutEmailMarketing = ({ location }) => (
         <ParagraphStyleLight>
           $200/month to add on, <span>$899/month total</span>
         </ParagraphStyleLight>
-        <CheckoutLink to="/">Add on Email Marketing</CheckoutLink>
+        <CheckoutLink to="/services/standard/standard-checkout-email-confirm">
+          Add on Email Marketing
+        </CheckoutLink>
         <CheckoutLink to="/services/standard/standard-checkout-confirm">
           Continue With Purchase
         </CheckoutLink>

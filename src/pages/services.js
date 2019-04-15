@@ -226,7 +226,7 @@ const OurWebsitesPage = ({ location }) => (
         </div>
       </CostContainer>
       <ParagraphStyle>
-        Our standard package starts at <strong>$597</strong>.
+        Our basic package starts at <strong>$497</strong>.
       </ParagraphStyle>
     </PackageWrapper>
     <Buy home />

@@ -66,7 +66,7 @@ const SingleCheckoutFlatCMSArticles = ({ location }) => (
               <span>Items:</span>
             </li>
             <li>Single page website</li>
-            <li>Contentful CMS</li>
+            <li>Content Mangement System</li>
           </ul>
         </CheckoutLinkContainer>
       </CheckoutWrapper>

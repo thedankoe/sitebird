@@ -1,23 +1,22 @@
 import React from 'react'
-import styled from 'styled-components'
 import { CheckMark } from './styles/IconStyles'
-import {
-  SubHeadingStyle,
-  ParagraphStyle,
-  CheckoutLink,
-} from './styles/TextStyles'
+import { ParagraphStyle } from './styles/TextStyles'
 import { CardContainer, Card, CardParagraph, CardList } from './servicesCard'
 import { PreviousPrice } from './packagesCard'
+import CheckoutSku from './checkoutSku'
 
-const StandardCard = () => (
+const BulkCard = () => (
   <CardContainer>
     <Card>
-      <PreviousPrice>$497</PreviousPrice>
-      <CardParagraph>$397</CardParagraph>
+      <PreviousPrice>$597</PreviousPrice>
+      <CardParagraph>$497</CardParagraph>
       <ParagraphStyle>flat fee - 14 to 18 day delivery</ParagraphStyle>
-      <CheckoutLink blue to="/services/basic">
-        Order Now
-      </CheckoutLink>
+      <CheckoutSku
+        blue
+        sku="sku_Et0zXcXVyZE721"
+        buttonText="Order Now"
+        checkoutSlug="bulk-order"
+      />
       <CardList>
         <li>
           <div>
@@ -31,7 +30,7 @@ const StandardCard = () => (
           </div>
           <div>
             10 professionally designed social media posts{' '}
-            <strong>with content and images</strong>.
+            <strong>with copy and images</strong>.
           </div>
         </li>
         <li>
@@ -44,10 +43,14 @@ const StandardCard = () => (
       </CardList>
     </Card>
     <Card>
-      <PreviousPrice>$897</PreviousPrice>
-      <CardParagraph>$697</CardParagraph>
+      <PreviousPrice>$1097</PreviousPrice>
+      <CardParagraph>$897</CardParagraph>
       <ParagraphStyle>flat fee - 21 to 25 day delivery</ParagraphStyle>
-      <CheckoutLink to="/services/basic">Order Now</CheckoutLink>
+      <CheckoutSku
+        sku="sku_Et11m43KgbAfxL"
+        buttonText="Order Now"
+        checkoutSlug="bulk-order"
+      />
       <ParagraphStyle>Best Seller</ParagraphStyle>
       <CardList>
         <li>
@@ -62,7 +65,7 @@ const StandardCard = () => (
           </div>
           <div>
             20 professionally designed social media posts{' '}
-            <strong>with content and images</strong>.
+            <strong>with copy and images</strong>.
           </div>
         </li>
         <li>
@@ -75,12 +78,15 @@ const StandardCard = () => (
       </CardList>
     </Card>
     <Card>
-      <PreviousPrice>$1247</PreviousPrice>
-      <CardParagraph>$947</CardParagraph>
+      <PreviousPrice>$1547</PreviousPrice>
+      <CardParagraph>$1247</CardParagraph>
       <ParagraphStyle>flat fee - 1 month delivery</ParagraphStyle>
-      <CheckoutLink blue to="/services/basic">
-        Order Now
-      </CheckoutLink>
+      <CheckoutSku
+        blue
+        sku="sku_Et12FEXYkOlvlS"
+        buttonText="Order Now"
+        checkoutSlug="bulk-order"
+      />
       <CardList>
         <li>
           <div>
@@ -94,7 +100,7 @@ const StandardCard = () => (
           </div>
           <div>
             30 professionally designed social media posts{' '}
-            <strong>with content and images</strong>.
+            <strong>with copy and images</strong>.
           </div>
         </li>
         <li>
@@ -109,4 +115,4 @@ const StandardCard = () => (
   </CardContainer>
 )
 
-export default StandardCard
+export default BulkCard

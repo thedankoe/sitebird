@@ -180,7 +180,8 @@ const CheckoutButton = styled.button`
   width: 100%;
   margin: 2rem auto 0 auto;
   padding: 4rem;
-  background: ${props => props.theme.tertiary};
+  background: ${props =>
+    props.blue ? props.theme.secondary : props.theme.tertiary};
   color: #fff;
   font-size: 2.2rem;
   font-weight: 500;
@@ -190,7 +191,8 @@ const CheckoutButton = styled.button`
   cursor: pointer;
   transition: all ease 0.3s;
   :hover {
-    background: ${props => props.theme.tertiaryLight};
+    background: ${props =>
+      props.blue ? props.theme.secondaryLight : props.theme.tertiaryLight};
     box-shadow: ${props => props.theme.bsHover};
     transform: translateY(0.3rem);
   }

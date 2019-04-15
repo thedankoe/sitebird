@@ -28,6 +28,7 @@ export const Card = styled.div`
   border-radius: 3px;
   box-shadow: ${props => props.theme.bs};
   color: #000;
+  text-align: center;
   :not(:last-child) {
     margin-right: ${props => props.theme.textSpace};
   }

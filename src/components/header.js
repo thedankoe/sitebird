@@ -40,9 +40,9 @@ const HeaderText = styled.div`
 `
 
 const HeaderHeadingHome = styled.h1`
-  width: 65%;
+  width: 70%;
   font-size: 4.8rem;
-  font-weight: 500;
+  font-weight: 600;
   text-align: left;
   text-transform: capitalize;
   color: #fff;
@@ -69,7 +69,7 @@ const HeaderLink = styled(HeaderLinkStyle)`
 
 const HeaderHeading = styled.h1`
   font-size: 4.8rem;
-  font-weight: 500;
+  font-weight: 600;
   text-align: left;
   text-transform: capitalize;
   color: #fff;
@@ -103,7 +103,7 @@ const HeaderHeading = styled.h1`
 
 const HeaderSubHeading = styled.span`
   font-size: 3rem;
-  font-weight: 300;
+  font-weight: 400;
   text-align: left;
   color: #fff;
   text-transform: none;
@@ -131,9 +131,9 @@ const Header = ({ location, headerText, headerSub }) => {
         {location.pathname === '/' ? (
           <HeaderText>
             <HeaderHeadingHome>
-              Lead generation for small businesses and entrepreneurs
+              Optimized Content Marketing &amp; Website Layouts that convert
               <HeaderSubHeading>
-                Through proven marketing tactics
+                For entrepreneurs and small businesses
               </HeaderSubHeading>
             </HeaderHeadingHome>
             <HeaderLink to="/#packages">

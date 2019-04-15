@@ -5,7 +5,6 @@ import {
   SubHeadingStyle,
   ParagraphStyleLight,
   HeadingStyleLight,
-  CheckoutLink,
 } from '../../components/styles/TextStyles'
 import {
   PackageWrapper,
@@ -15,16 +14,17 @@ import {
 } from '../websites/single-page'
 import { CheckoutLinkContainer } from '../websites/single-page/single-checkout-flat-cms'
 import SEO from '../../components/seo'
+import CheckoutPlan from '../../components/checkoutPlan'
 
 const StandardPage = ({ location }) => (
   <Layout
     location={location}
-    headerText="Standard Lead Generation Package"
-    headerSub="The perfect package for growth at a great price."
+    headerText="Standard Content Marketing Package"
+    headerSub="The perfect package for long term growth"
   >
     <SEO title="Standard Lead Generation Package" />
     <PackageWrapper>
-      <HeadingStyle>Whats included</HeadingStyle>
+      <HeadingStyle>What's included</HeadingStyle>
       <SubHeadingStyle>
         Our standard package contains just the right amount of marketing
         services to secure quality leads.
@@ -63,9 +63,15 @@ const StandardPage = ({ location }) => (
       </HowListContainer>
       <CheckoutLinkContainer>
         <HeadingStyleLight>Standard Package</HeadingStyleLight>
-        <CheckoutLink to="/services/standard/standard-checkout-email-marketing">
-          Continue With Purchase
-        </CheckoutLink>
+        <ParagraphStyleLight>
+          After payment, you will be redirected to a form to fill out regarding
+          your business information.
+        </ParagraphStyleLight>
+        <CheckoutPlan
+          plan="plan_EsKuBkRVniuU66"
+          buttonText="Continue to Checkout"
+          checkoutSlug="standard"
+        />
         <ParagraphStyleLight>
           Current total: <span>$699/month</span>
         </ParagraphStyleLight>
