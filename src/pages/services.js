@@ -105,10 +105,10 @@ const EmailIcon = styled(GoMailRead)`
 const OurWebsitesPage = ({ location }) => (
   <Layout
     location={location}
-    headerText="Lead generation services"
+    headerText="Content Marketing services"
     headerSub="Attract quality leads with zero ad spend"
   >
-    <SEO title="Lead Generation Services for Self Employed and Small Business" />
+    <SEO title="Content Marketing Services for Self Employed and Small Business" />
     <PackageWrapper>
       <HeadingStyle>Quality leads without bankruptcy</HeadingStyle>
       <SubHeadingStyle>
