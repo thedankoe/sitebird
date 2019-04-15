@@ -20,9 +20,9 @@ const StandardPage = ({ location }) => (
   <Layout
     location={location}
     headerText="Standard Content Marketing Package"
-    headerSub="The perfect package for long term growth"
+    headerSub="The perfect solution for long term growth and more free time"
   >
-    <SEO title="Standard Lead Generation Package" />
+    <SEO title="Standard Content Marketing Package" />
     <PackageWrapper>
       <HeadingStyle>What's included</HeadingStyle>
       <SubHeadingStyle>
@@ -40,10 +40,6 @@ const StandardPage = ({ location }) => (
             businesses at a fraction of the cost of larger agencies.
           </HowListItem>
           <HowListItem>
-            Website optimization for mobile, SEO, usability, accessability and
-            conversion centered layout.
-          </HowListItem>
-          <HowListItem>
             Social media management for platforms that are necessary for your
             business to succeed online. Facebook, LinkedIn, and Twitter.
           </HowListItem>
@@ -54,6 +50,10 @@ const StandardPage = ({ location }) => (
           <HowListItem>
             Professionally designed graphics and images for content and social
             media posts.
+          </HowListItem>
+          <HowListItem>
+            Website optimization checklist for mobile, SEO, usability,
+            accessability and conversion centered layout.
           </HowListItem>
         </HowList>
         <SubHeadingStyle>
@@ -68,12 +68,12 @@ const StandardPage = ({ location }) => (
           your business information.
         </ParagraphStyleLight>
         <CheckoutPlan
-          plan="plan_EsKuBkRVniuU66"
-          buttonText="Continue to Checkout"
+          plan="plan_EtM1FzWuH8DUuF"
+          buttonText="Order Now"
           checkoutSlug="standard"
         />
         <ParagraphStyleLight>
-          Current total: <span>$699/month</span>
+          Current total: <span>$797/month</span>
         </ParagraphStyleLight>
       </CheckoutLinkContainer>
     </PackageWrapper>

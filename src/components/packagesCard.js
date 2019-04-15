@@ -25,7 +25,7 @@ const PackagesCard = () => (
       <PreviousPrice>$597</PreviousPrice>
       <CardParagraph>$497</CardParagraph>
       <ParagraphStyle>flat fee - 14 day delivery</ParagraphStyle>
-      <CardLink to="/services/basic">Order Now</CardLink>
+      <CardLink to="/services/basic">Learn More</CardLink>
       <CardList>
         <li>
           <div>
@@ -59,24 +59,18 @@ const PackagesCard = () => (
     </Card>
     <Card>
       <SubHeadingStyle>
-        Website optimization, social media management, and content creation.
+        1 month worth of content articles and social media posts done for you.
       </SubHeadingStyle>
-      <CardParagraph>$699/month</CardParagraph>
+      <CardParagraph>$797/month</CardParagraph>
       <ParagraphStyle>month to month contract</ParagraphStyle>
-      <CardLink to="/services/standard">Order Now</CardLink>
+      <CardLink to="/services/standard">Learn More</CardLink>
       <CardList>
         <li>
           <div>
             <CheckMark />
           </div>
-          Optimize website for SEO, mobile, usability, and accessability.
-        </li>
-        <li>
-          <div>
-            <CheckMark />
-          </div>
           Management of Facebook, LinkedIn, and Twitter pages. Daily (weekday)
-          posts and engagement.
+          posts and engagement. 20 posts per month.
         </li>
         <li>
           <div>
@@ -90,6 +84,13 @@ const PackagesCard = () => (
             <CheckMark />
           </div>
           Professionally designed content and posts that are shown to convert.
+        </li>
+        <li>
+          <div>
+            <CheckMark />
+          </div>
+          *BONUS* Website audit with detailed optimization fixes in the form of
+          a checklist.
         </li>
       </CardList>
     </Card>

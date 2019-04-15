@@ -111,7 +111,7 @@ const Process = () => (
           <ProcessPayIcon />
         </div>
         <ProcessListItem>
-          Place your order
+          Place Your Order
           <span>
             Choose package and complete your payment. If you ordered our bulk
             articles and posts, select your quantity before payment.
@@ -123,7 +123,7 @@ const Process = () => (
           <ProcessQuestionIcon />
         </div>
         <ProcessListItem>
-          Fill out the brief
+          Fill Out The Form
           <span>
             In order for us to create the right content for your business, we
             have some questions for you. This is perfect for telling us about
@@ -138,7 +138,7 @@ const Process = () => (
         <ProcessListItem>
           Choose Topics
           <span>
-            In the brief, you may choose specific topics or list other sources
+            In the form, you may choose specific topics or list other sources
             that you use as inspiration. We give you the option to have us do
             this as well.
           </span>
@@ -149,24 +149,11 @@ const Process = () => (
           <ProcessListIcon />
         </div>
         <ProcessListItem>
-          Finalize Content
+          Review Content
           <span>
             Once we receive your brief, we create the content you ordered.
             Within the delivery time you will receive your order and can make
             revisions until you are happy.
-          </span>
-        </ProcessListItem>
-      </ProcessListContainer>
-      <ProcessListContainer>
-        <div>
-          <ProcessListIcon />
-        </div>
-        <ProcessListItem>
-          Monthly Review
-          <span>
-            We care about your money. If you order our retainer package, we
-            track specific KPIs and send a growth report at the end of each
-            month.
           </span>
         </ProcessListItem>
       </ProcessListContainer>

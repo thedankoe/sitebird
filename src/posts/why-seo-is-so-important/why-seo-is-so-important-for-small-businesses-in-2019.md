@@ -2,11 +2,11 @@
 slug: "/why-seo-is-so-important-for-small-businesses-in-2019"
 date: "2019-03-02"
 author: "Dan Koe"
-authorDesc: "Local SEO & Web Developer"
+authorDesc: "Content Marketing & Web Design"
 title: "Why SEO is so Important for Small Businesses in 2019"
 featuredImage: "./why-seo-is-so-important-for-small-businesses-in-2019.jpg"
-metaDescription: "SEO is important for everyone, especially small and local businesses. We break down why local SEO is valuable to your business."
-keywords: "why is SEO important for small business, SEO for small businesses 2019"
+metaDescription: "SEO is important for everyone, especially small businesses and entrepreneurs. We break down why local SEO is valuable to your business."
+keywords: "why is SEO important for small business, SEO for small businesses 2019, seo content marketing"
 ---
 
 ## How SEO gets small businesses in front of customers
@@ -15,15 +15,15 @@ It doesn't matter if you're a local print shop, a construction company, or an in
 
 ![Measuring content growth analytics](why-seo-is-so-important-for-small-businesses-in-2019.jpg 'Measuring content growth analytics')
 
-As a local business owner you understand that you have one huge source of competition, corporate chains. With this, it's extremely important to stand out as a small business, you'll need your business to catch the eye. What better place to do this than on the web? This is where local SEO comes into play.
+As a small business owner you understand that you have one huge source of competition, corporate chains. With this, it's extremely important to stand out, you'll need your business to catch the eye. What better place to do this than on the web? This is where local SEO comes into play.
 
 In the internet driven world we live in today, SEO gives you the perfect way to get your business noticed and more importantly, get more customers. How? According to Bradley Shaw at SEO Expert, [88% of consumer local business searches on mobile either call or visit the business within 24 hours, 46% of all searches on Google are seeking local information, and 97% searched online to find a local business](https://www.seoexpertbrad.com/local-seo-stats/).
 
 That alone is extremely convincing, just imagine the potential for your small business with these statistics alone. The internet is the best place by far for attracting new customers and making them lifelong customers because of your outstanding service or product.
 
-There’s no doubt that an effective internet marketing strategy can help you catch the eye and as far as internet marketing strategies go, there’s probably none more powerful than SEO.
+There’s no doubt that an effective internet marketing strategy can help you get more customers and as far as internet marketing strategies go, there’s probably none more powerful than SEO.
 
-If you want to take your local business to the next level, you need to get yourself some SEO. Lucky for you, we're in the mood to give you the tools to do this. Interested in affordable SEO consulting or having SEO done for you, [we offer streamlined packages that get your business ranking](https://www.seo-bird.com/services). Here's why SEO is a must have for your business.
+If you want to take your local business to the next level, you need to get yourself some SEO. An absolute must have component of SEO are content articles targeted towards a specific keyword (that you actually have the ability to rank for). [We offer fully optimized content articles and social media posts in bulk!](https://www.leadbird.io). Here's why SEO is a must have for your business.
 
 ## What is SEO?
 
@@ -55,9 +55,7 @@ SEO helps you ensure that your webpage is relevant and authoritative as this is 
 - Backlinks from relevant domains to boost authority, this requires quality content in order for a page to link to your content.
 - Finding the right keywords to target your businesses audience, these keywords need to convert, general keywords won't cut it.
 - Creating content according to targeted keywords, this gives a customer a specific page to find the information they were looking for.
-- Optimizing web pages to rank on Google, think copywriting, keywords, and information architecture.
-
-There's a ton of things that can affect SEO, these are just the basics. [Our packages make this process simple for you and can fit any budget](https://www.seo-bird.com/services).
+- Optimizing web pages to rank on Google. Think copywriting, keywords, and information architecture.
 
 ## Why is SEO important for you as a small business owner?
 
@@ -69,11 +67,13 @@ As you move into the coming months there are several reasons why you should cons
 
 Local searches are easily one of the best ways for businesses to connect with potential customers around them. It's evident now that not showing up in local searches could be a catastrophe for your business.
 
-If your page has all the answers to a customers questions though, they’ll beat a path to your door. The fact that you are more than likely close to them. 
+If your page has all the answers to a customers questions though, they’ll beat a path to your door. The fact that you are more than likely close to them makes it that much more likely. 
 
 [According to Google, 50% of mobile phone users will visit you after conducting a local search](https://think.storage.googleapis.com/docs/how-advertisers-can-extend-their-relevance-with-search_research-studies.pdf). When they do come around they're more likely to actually make a purchase. At this point, it's up to you to make the sale and show them why they should continue to come back. 18% of local smartphone searches lead to sales on the same day.
 
 If your page does not rank well on the SERPs, the odds that they will even find your business dwindle rapidly. Whats the solution? SEO of course.
+
+Here's a pro tip, search for a phrase that a potential customer would find you by on google. Are you ranked where you want to be? If not, study your competitors. What are they using as headlines for their pages?
 
 ### Set yourself up as an authority
 
@@ -99,13 +99,9 @@ It takes time and a lot of effort to accomplish. And even then, you don’t ever
 
 More than this, search engines often update the way they rank web pages. This means that SEO strategies often have to change in line with how search engines adapt their ranking algorithms. 
 
-We're sure you have a lot of questions on your mind, one being how you can apply SEO to your current online presence.
+### Content marketing is king
 
-#### Lucky for you, that’s one question we can answer. At SEOBird, we offer two affordable SEO packages:
+If we're getting technical here. SEO can pertain to any search engine, this includes social media platforms. Creating targeted content that pertains to rankable keywords is free to do on your own! It does take a bit of learning to understand how to 'hack' the search engines, but with enough time it could be turned into a very rewarding hobby.
 
-Our [Standard SEO Consulting package](https://www.seo-bird.com/services/standard) is a great way to get your business started with SEO, we do the research and send you a monthly checklist with prioritized actions that will most impact your businesses growth.
-
-Interested in having it done for you? Our [Premium SEO package](https://www.seo-bird.com/services/premium) prioritizes services that will most impact your growth, and it includes weekly email campaigns!
-
-Our custom packages are a great alternative for those who only have specific marketing needs or a higher budget. [Contact us to get started](https://www.seo-bird.com/contact).
+Interested but thinking about outsourcing? We offer bulk content articles and social media posts as well as a retainer package where we post a months worth of content for you!
 

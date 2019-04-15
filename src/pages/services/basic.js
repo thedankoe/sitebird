@@ -74,10 +74,10 @@ export const BasicContainer = styled.div`
 const BasicPage = ({ location }) => (
   <Layout
     location={location}
-    headerText="Bulk Content Package"
+    headerText="Bulk Content Marketing Package"
     headerSub="Optimized content for your blog and social media in bulk"
   >
-    <SEO title="Bulk Content Package" />
+    <SEO title="Bulk Content Marketing Package" />
     <PackageWrapper>
       <HeadingStyle>What's included</HeadingStyle>
       <HowListContainer>

@@ -7,6 +7,7 @@ import Layout from './layout'
 import { device } from './styles/MediaQueries'
 import { ParagraphStyle } from './styles/TextStyles'
 import BlogSection from './blogSection'
+import Buy from './buy'
 
 const PostWrapper = styled.div`
   width: ${props => props.theme.maxWidth};
@@ -168,6 +169,7 @@ export default class PostLayout extends Component {
               }}
             />
           </PostWrapper>
+          <Buy home />
           <BlogSection />
         </Layout>
       </>

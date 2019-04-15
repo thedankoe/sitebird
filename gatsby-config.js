@@ -77,6 +77,13 @@ module.exports = {
         wrapperStyle: `margin-left: 0!important; margin-right: 0!important;`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint:
+          'https://thedankoe.us18.list-manage.com/subscribe/post?u=0a4622b59a0781fb3d5ed4723&amp;id=57b4766d79',
+      },
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-sharp',
     'gatsby-remark-copy-linked-files',
