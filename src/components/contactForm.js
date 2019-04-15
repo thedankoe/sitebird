@@ -90,17 +90,17 @@ const ContactForm = () => (
     <FormStyle
       name="contact"
       method="POST"
-      action="https://mailthis.to/site-bird-email"
+      action="https://mailthis.to/leadbird-email"
     >
       <input
         type="hidden"
         name="_subject"
-        value="SiteBird Contact Form Submission"
+        value="LeadBird Contact Form Submission"
       />
       <input
         type="hidden"
         name="_after"
-        value="https://www.site-bird.com/contact-success"
+        value="https://www.leadbird.io/contact-success"
       />
       <input type="hidden" name="_honeypot" value="" />
       <input type="hidden" name="_confirmation" value="Success!" />
