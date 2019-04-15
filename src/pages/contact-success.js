@@ -2,7 +2,10 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import { HeadingStyle, ColoredLink } from '../components/styles/TextStyles'
-import { ClientFormWrapper, ClientFormContainer } from './checkout-success'
+import {
+  ClientFormWrapper,
+  ClientFormContainer,
+} from './checkout-success-bulk-order'
 import { RightIcon } from '../components/styles/IconStyles'
 
 const CheckoutSucessPage = ({ location }) => (
