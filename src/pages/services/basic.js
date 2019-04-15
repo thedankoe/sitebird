@@ -59,6 +59,7 @@ export const BasicContainer = styled.div`
   width: 80%;
   margin: 0 auto;
   padding: 0 0 ${props => props.theme.sectionSpace} 0;
+  text-align: center;
 
   @media ${device.laptop} {
     width: 90%;
@@ -66,6 +67,7 @@ export const BasicContainer = styled.div`
 
   @media ${device.tabletS} {
     width: 95%;
+    text-align: left;
   }
 `
 
