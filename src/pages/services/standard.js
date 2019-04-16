@@ -68,12 +68,12 @@ const StandardPage = ({ location }) => (
           your business information.
         </ParagraphStyleLight>
         <CheckoutPlan
-          plan="plan_EtM1FzWuH8DUuF"
+          plan="plan_EtTgwQMiZxCxmz"
           buttonText="Order Now"
           checkoutSlug="standard"
         />
         <ParagraphStyleLight>
-          Current total: <span>$797/month</span>
+          Current total: <span>$697/month</span>
         </ParagraphStyleLight>
       </CheckoutLinkContainer>
     </PackageWrapper>

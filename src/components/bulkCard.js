@@ -8,12 +8,12 @@ import CheckoutSku from './checkoutSku'
 const BulkCard = () => (
   <CardContainer>
     <Card>
-      <PreviousPrice>$597</PreviousPrice>
-      <CardParagraph>$497</CardParagraph>
+      <PreviousPrice>$497</PreviousPrice>
+      <CardParagraph>$397</CardParagraph>
       <ParagraphStyle>flat fee - 14 to 18 day delivery</ParagraphStyle>
       <CheckoutSku
         blue
-        sku="sku_Et0zXcXVyZE721"
+        sku="sku_EtTbs0IIP0He7u"
         buttonText="Order Now"
         checkoutSlug="bulk-order"
       />
@@ -43,11 +43,11 @@ const BulkCard = () => (
       </CardList>
     </Card>
     <Card>
-      <PreviousPrice>$1097</PreviousPrice>
-      <CardParagraph>$897</CardParagraph>
+      <PreviousPrice>$847</PreviousPrice>
+      <CardParagraph>$747</CardParagraph>
       <ParagraphStyle>flat fee - 21 to 25 day delivery</ParagraphStyle>
       <CheckoutSku
-        sku="sku_Et11m43KgbAfxL"
+        sku="sku_EtTbKSRUkVs8CZ"
         buttonText="Order Now"
         checkoutSlug="bulk-order"
       />
@@ -78,12 +78,12 @@ const BulkCard = () => (
       </CardList>
     </Card>
     <Card>
-      <PreviousPrice>$1547</PreviousPrice>
-      <CardParagraph>$1247</CardParagraph>
+      <PreviousPrice>$1197</PreviousPrice>
+      <CardParagraph>$1097</CardParagraph>
       <ParagraphStyle>flat fee - 1 month delivery</ParagraphStyle>
       <CheckoutSku
         blue
-        sku="sku_Et12FEXYkOlvlS"
+        sku="sku_EtTclbODT4ckeR"
         buttonText="Order Now"
         checkoutSlug="bulk-order"
       />

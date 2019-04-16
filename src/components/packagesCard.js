@@ -22,8 +22,8 @@ const PackagesCard = () => (
         Conversion centered content articles and social media posts for organic
         growth.
       </SubHeadingStyle>
-      <PreviousPrice>$597</PreviousPrice>
-      <CardParagraph>$497</CardParagraph>
+      <PreviousPrice>$497</PreviousPrice>
+      <CardParagraph>$397</CardParagraph>
       <ParagraphStyle>flat fee - 14 day delivery</ParagraphStyle>
       <CardLink to="/services/basic">Learn More</CardLink>
       <CardList>
@@ -61,7 +61,7 @@ const PackagesCard = () => (
       <SubHeadingStyle>
         1 month worth of content articles and social media posts done for you.
       </SubHeadingStyle>
-      <CardParagraph>$797/month</CardParagraph>
+      <CardParagraph>$697/month</CardParagraph>
       <ParagraphStyle>month to month contract</ParagraphStyle>
       <CardLink to="/services/standard">Learn More</CardLink>
       <CardList>
