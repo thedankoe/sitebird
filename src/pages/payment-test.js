@@ -6,7 +6,7 @@ import PaymentTest from '../components/paymentTest'
 const PaymentTestPage = ({ location }) => (
   <Layout location={location} headerText="Payment Test">
     <SEO title="Payment Test" />
-    <PaymentTest amount={500} description="Awesome thingy" />
+    <PaymentTest />
   </Layout>
 )
 
