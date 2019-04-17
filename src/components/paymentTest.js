@@ -57,7 +57,7 @@ const Checkout = class extends React.Component {
       amount,
       description: 'A product well worth your time',
       token: token => {
-        fetch(`https://www.leadbird.io/.netlify/functions/checkout`, {
+        fetch(`localhost:9000/.netlify/functions/checkout`, {
           method: 'POST',
           mode: 'no-cors',
           body: JSON.stringify({
