@@ -23,7 +23,7 @@ exports.handler = (event, context, callback) => {
     .create({
       // Create Stripe charge with token
       amount,
-      token,
+      source: token,
       currency: "usd",
       description
     })
