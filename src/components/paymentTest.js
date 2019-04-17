@@ -4,7 +4,7 @@ import Icon from '../images/sitebird-favicon.png'
 
 const PaymentTest = ({ amount, description }) => {
   const onToken = token => {
-    fetch(`https://leadbird.io/.netlify/functions/checkout`, {
+    fetch(`https://www.leadbird.io/.netlify/functions/checkout`, {
       method: 'POST',
       mode: 'no-cors',
       body: JSON.stringify({
