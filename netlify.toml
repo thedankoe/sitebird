@@ -1,4 +1,0 @@
-[build]
-    build = "gatsby build"
-    publish = "src"
-    functions = "functions"
