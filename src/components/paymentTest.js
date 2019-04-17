@@ -38,7 +38,7 @@ const Checkout = class extends React.Component {
 
   componentDidMount() {
     this.stripeHandler = window.StripeCheckout.configure({
-      key: 'sk_test_kynT2G36IjKcy98yVyPebn2A',
+      key: 'pk_test_72FFEEfY0jpJ2euL6aEJ5Qrl',
       closed: () => {
         this.resetButton()
       },
