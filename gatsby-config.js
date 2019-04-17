@@ -90,6 +90,7 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-stripe',
+    'gatsby-plugin-stripe-checkout',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-netlify',
   ],
