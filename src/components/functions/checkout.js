@@ -1,8 +1,8 @@
 /* eslint-disable */
 
+const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 exports.handler = (event, context, callback) => {
-  const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
   console.log("creating charge...");
 
   // Pull out the amount and id for the charge from the POST
