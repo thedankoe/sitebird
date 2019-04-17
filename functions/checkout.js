@@ -2,7 +2,7 @@
 
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
-module.exports.handler = (event, context, callback) => {
+exports.handler = (event, context, callback) => {
   console.log("creating charge...");
 
   // Pull out the amount and id for the charge from the POST
