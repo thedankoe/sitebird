@@ -2,7 +2,7 @@
 
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
-exports.handler = (event, context, callback) => {
+module.exports.handler = (event, context, callback) => {
   console.log("creating charge...");
 
   // Pull out the amount and id for the charge from the POST
@@ -10,6 +10,7 @@ exports.handler = (event, context, callback) => {
   const requestData = JSON.parse(event.body);
   console.log(requestData);
   const amount = requestData.amount;
+  const description = requestData.description
   const token = requestData.token.id;
 
   // Headers to prevent CORS issues
