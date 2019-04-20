@@ -1,7 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 import { CheckMark } from './styles/IconStyles'
-import { SubHeadingStyle, ParagraphStyle } from './styles/TextStyles'
+import {
+  SubHeadingStyle,
+  ParagraphStyle,
+  HeadingStyle,
+} from './styles/TextStyles'
 import {
   CardContainer,
   Card,
@@ -18,36 +22,38 @@ export const PreviousPrice = styled(CardParagraph)`
 const PackagesCard = () => (
   <CardContainer>
     <Card>
+      <HeadingStyle>Blog Posts</HeadingStyle>
       <SubHeadingStyle>
-        Conversion centered content articles and social media posts for organic
-        growth.
+        Conversion centered and SEO optimized articles that will increase
+        engagement and organic web traffic.
       </SubHeadingStyle>
-      <PreviousPrice>$497</PreviousPrice>
-      <CardParagraph>$397</CardParagraph>
-      <ParagraphStyle>flat fee - 14 day delivery</ParagraphStyle>
-      <CardLink to="/services/basic">Learn More</CardLink>
+      <PreviousPrice>$107</PreviousPrice>
+      <CardParagraph>$97</CardParagraph>
+      <ParagraphStyle>1 article - 5 day delivery</ParagraphStyle>
+      <CardLink to="/content-checkout">Order Now</CardLink>
       <CardList>
         <li>
           <div>
             <CheckMark />
           </div>
-          2 conversion centered and SEO optimized content articles (blog posts).
+          One 1200 word conversion centered and SEO optimized content article
+          (blog post).
         </li>
         <li>
           <div>
             <CheckMark />
           </div>
           <div>
-            10 professionally designed social media posts{' '}
-            <strong>with copy and images</strong>.
+            2 focused keywords, researched by us to maximize search engine
+            ranking.
           </div>
         </li>
         <li>
           <div>
             <CheckMark />
           </div>
-          Kickstart your online presence with researched keywords that will grow
-          organic traffic and leads.
+          Extensive topic research for us to write an article that engages its
+          reader.
         </li>
         <li>
           <div>
@@ -58,39 +64,39 @@ const PackagesCard = () => (
       </CardList>
     </Card>
     <Card>
+      <HeadingStyle>Social Media Posts</HeadingStyle>
       <SubHeadingStyle>
-        1 month worth of content articles and social media posts done for you.
+        Professionally designed graphics and copywriting for social media posts.
       </SubHeadingStyle>
-      <CardParagraph>$697/month</CardParagraph>
-      <ParagraphStyle>month to month contract</ParagraphStyle>
-      <CardLink to="/services/standard">Learn More</CardLink>
+      <PreviousPrice>$107</PreviousPrice>
+      <CardParagraph>$97</CardParagraph>
+      <ParagraphStyle>5 posts - 5 day delivery</ParagraphStyle>
+      <CardLink to="/content-checkout">Order Now</CardLink>
       <CardList>
         <li>
           <div>
             <CheckMark />
           </div>
-          Management of Facebook, LinkedIn, and Twitter pages. Daily (weekday)
-          posts and engagement. 20 posts per month.
+          5 professionally designed social media graphics, optimized for
+          platform of your choice.
         </li>
         <li>
           <div>
             <CheckMark />
           </div>
-          Weekly content articles or 'newsletters', perfect for organic traffic
-          and social shares.
+          75-100 words of copywriting per post based on your topic of choice.
         </li>
         <li>
           <div>
             <CheckMark />
           </div>
-          Professionally designed content and posts that are shown to convert.
+          Competitor and keyword research to ensure views and engagement.
         </li>
         <li>
           <div>
             <CheckMark />
           </div>
-          *BONUS* Website audit with detailed optimization fixes in the form of
-          a checklist.
+          Bulk orders at a discounted rate.
         </li>
       </CardList>
     </Card>

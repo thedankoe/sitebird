@@ -80,9 +80,6 @@ const Footer = () => (
             <Link to="/services">Services</Link>
           </FooterNavItem>
           <FooterNavItem>
-            <Link to="/websites">Websites</Link>
-          </FooterNavItem>
-          <FooterNavItem>
             <Link to="/faq">FAQ</Link>
           </FooterNavItem>
           <FooterNavItem>

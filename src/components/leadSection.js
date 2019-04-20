@@ -52,26 +52,22 @@ const LeadSection = () => (
   <LeadSectionWrapper>
     <LeadBgIcon />
     <LeadSectionContainer>
-      <HeadingStyle>Full optimization guarentees growth</HeadingStyle>
+      <HeadingStyle>Outsource your content</HeadingStyle>
       <LeadSectionGrid>
         <div>
-          <SubHeadingStyle>
-            300% average increase in leads for the first year
-          </SubHeadingStyle>
+          <SubHeadingStyle>Ensure Content Quality</SubHeadingStyle>
           <ParagraphStyle>
-            The point of websites and social media is to convert, we've been
-            over this, but it's extremely important to understand the difference
-            between the terms 'conversion centered' and 'showcase'. One is
-            optimized in all areas, one isn't.
+            Outsourcing your content does not mean there is a loss in quality.
+            If the topic is thoroughly researched, someone who is proficient in
+            content creation will produce high quality work.
           </ParagraphStyle>
         </div>
         <div>
-          <SubHeadingStyle>Targeted content always wins</SubHeadingStyle>
+          <SubHeadingStyle>Save Precious Time</SubHeadingStyle>
           <ParagraphStyle>
-            Targeted content optimizes your website for search engines and gets
-            customers clicking through your social media campaigns. Without this
-            you will not grow organically, period. Your website and social media
-            are meant to be your best salesman.
+            Spending hours upon hours each week creating content is not
+            feesible. For business owners, putting time into something other
+            than running their business is daunting and demotivating.
           </ParagraphStyle>
         </div>
       </LeadSectionGrid>

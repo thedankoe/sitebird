@@ -20,7 +20,6 @@ import {
 } from '../components/styles/TextStyles'
 import Layout from '../components/layout'
 import Buy from '../components/buy'
-import { PackageWrapper, PackageContainer } from './websites/single-page'
 import { RightIcon, CrossIcon } from '../components/styles/IconStyles'
 import SEO from '../components/seo'
 import { WrapperBlue } from '../components/problemSolution'
@@ -29,6 +28,32 @@ import {
   InfoContainer,
   InfoBlock,
 } from '../components/infoSection'
+
+export const PackageWrapper = styled.div`
+  width: ${props => props.theme.maxWidth};
+  margin: ${props => props.theme.sectionSpace} auto;
+  text-align: center;
+
+  @media ${device.desktop} {
+    width: 80%;
+  }
+
+  @media ${device.laptop} {
+    width: 95%;
+  }
+`
+
+export const PackageContainer = styled.div`
+  margin-top: ${props => props.theme.textSpace};
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: ${props => props.theme.textSpace};
+
+  @media ${device.tablet} {
+    grid-template-columns: 1fr;
+  }
+`
 
 const WebsiteCreationIcon = styled(GoBrowser)`
   fill: #fff;
@@ -200,36 +225,7 @@ const OurWebsitesPage = ({ location }) => (
         <RightIcon />
       </ProblemLink>
     </WrapperBlue>
-    <PackageWrapper>
-      <HeadingStyle>Lead generation with a small price tag</HeadingStyle>
-      <SubHeadingStyle>
-        We've seen "professionals" chargin upwards of $5000/month for ONE lead
-        generation service. To us, this is outrageous, the importance of getting
-        small businesses on the map is our top priority.
-      </SubHeadingStyle>
-      <ParagraphStyle>
-        We wish we could charge $5000/month for ALL of our services, yet we
-        charge:
-      </ParagraphStyle>
-      <CostContainer>
-        <div>
-          <CrossIcon />
-          <li>Not $5,000/month</li>
-        </div>
-        <div>
-          <CrossIcon />
-          <li>Not $2,000/month</li>
-        </div>
-        <div>
-          <CrossIcon />
-          <li>Not even $1,000/month</li>
-        </div>
-      </CostContainer>
-      <ParagraphStyle>
-        Our basic package starts at <strong>$497</strong>.
-      </ParagraphStyle>
-    </PackageWrapper>
-    <Buy home />
+    <Buy />
   </Layout>
 )
 

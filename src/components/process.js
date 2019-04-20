@@ -102,8 +102,8 @@ const Process = () => (
     <HeadingStyle>Our process</HeadingStyle>
     <ParagraphStyle>
       We offer packages that have shown great results, or offer consultations.
-      Here is the process when our basic, bulk content articles and social media
-      posts, package is bought.
+      Here is the process when a blog or social media post package has been
+      purchased.
     </ParagraphStyle>
     <ProcessList>
       <ProcessListContainer>
@@ -112,10 +112,7 @@ const Process = () => (
         </div>
         <ProcessListItem>
           Place Your Order
-          <span>
-            Choose package and complete your payment. If you ordered our bulk
-            articles and posts, select your quantity before payment.
-          </span>
+          <span>Choose package, select quantity, and complete payment.</span>
         </ProcessListItem>
       </ProcessListContainer>
       <ProcessListContainer>
@@ -123,7 +120,7 @@ const Process = () => (
           <ProcessQuestionIcon />
         </div>
         <ProcessListItem>
-          Fill Out The Form
+          Fill Out The Brief
           <span>
             In order for us to create the right content for your business, we
             have some questions for you. This is perfect for telling us about
@@ -138,7 +135,7 @@ const Process = () => (
         <ProcessListItem>
           Choose Topics
           <span>
-            In the form, you may choose specific topics or list other sources
+            In the brief, you may choose specific topics or list other sources
             that you use as inspiration. We give you the option to have us do
             this as well.
           </span>
@@ -158,12 +155,6 @@ const Process = () => (
         </ProcessListItem>
       </ProcessListContainer>
     </ProcessList>
-    <HeadingStyle>Money Back Guarentee</HeadingStyle>
-    <ParagraphStyle>
-      If you are unhappy with our services within a month of your purchase (or
-      before your second invoice), we give you your money back. Keep in mind
-      that lead generation and organic growth takes time to compound.
-    </ParagraphStyle>
   </ProcessWrapper>
 )
 

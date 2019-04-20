@@ -1,15 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
+import { GoStar } from 'react-icons/go'
 import { ParagraphStyle } from './styles/TextStyles'
 import { device } from './styles/MediaQueries'
-import MattressGuruTestimonial from './lazy-images/mattress-guru-testimonial'
-import CavemanTestimonial from './lazy-images/caveman-testimonial'
 
 const TestimonialWrapper = styled.div`
   width: ${props => props.theme.maxWidth};
   margin: 0 auto ${props => props.theme.sectionSpace} auto;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: ${props => props.theme.textSpace};
 
   @media ${device.desktop} {
     width: 80%;
@@ -19,44 +19,28 @@ const TestimonialWrapper = styled.div`
     width: 95%;
   }
 
-  @media ${device.laptop} {
-    flex-direction: column;
-    align-items: center;
+  @media ${device.tablet} {
+    grid-template-columns: 1fr;
   }
 `
 
-const TestimonialContainer = styled.div`
-  width: 45%;
-  text-align: center;
+export const TestimonialContainer = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-
-  @media ${device.laptop} {
-    width: 50%;
-    :not(:last-child) {
-      margin-bottom: ${props => props.theme.textSpace};
-    }
-  }
-
-  @media ${device.tabletS} {
-    width: 80%;
-  }
-
-  @media ${device.mobileL} {
-    width: 90%;
-  }
 `
 
-const TestimonialImage = styled.div`
-  width: 10rem;
+export const RatingContainer = styled.div`
   margin-bottom: 1rem;
-  border-radius: 50%;
-  overflow: hidden;
-  box-shadow: ${props => props.theme.bs};
+  display: flex;
 `
 
-const TestimonialParagraph = styled(ParagraphStyle)`
+export const RatingIcon = styled(GoStar)`
+  font-size: 3rem;
+  fill: ${props => props.theme.tertiary};
+`
+
+export const TestimonialParagraph = styled(ParagraphStyle)`
   font-style: italic;
   span {
     display: block;
@@ -69,23 +53,30 @@ const TestimonialParagraph = styled(ParagraphStyle)`
 const TestimonialSection = () => (
   <TestimonialWrapper>
     <TestimonialContainer>
-      <TestimonialImage>
-        <MattressGuruTestimonial />
-      </TestimonialImage>
+      <RatingContainer>
+        <RatingIcon />
+        <RatingIcon />
+        <RatingIcon />
+        <RatingIcon />
+        <RatingIcon />
+      </RatingContainer>
       <TestimonialParagraph>
-        "After reading up on the pitfalls of build your own websites, I found
-        LeadBird. They guided me in the right direction and have shown me how
-        much organic traffic matters."
+        "They made sure our website was optimized before we purchased blog
+        posts, our website traffic has been steadily going up!"
         <span>Brittany - Mattress Guru</span>
       </TestimonialParagraph>
     </TestimonialContainer>
     <TestimonialContainer>
-      <TestimonialImage>
-        <CavemanTestimonial />
-      </TestimonialImage>
+      <RatingContainer>
+        <RatingIcon />
+        <RatingIcon />
+        <RatingIcon />
+        <RatingIcon />
+        <RatingIcon />
+      </RatingContainer>
       <TestimonialParagraph>
-        "LeadBird optimized our current website and manages our Facebook. After
-        only a month, our organic search has tripled! Highly recommended!"
+        "Great articles and posts, will be buying again. Our organic traffic has
+        been steadily going up!"
         <span>Skip &amp; Angee - Caveman Printing and Apparel</span>
       </TestimonialParagraph>
     </TestimonialContainer>

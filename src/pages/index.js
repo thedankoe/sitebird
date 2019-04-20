@@ -7,6 +7,7 @@ import Buy from '../components/buy'
 import BlogSection from '../components/blogSection'
 import TestimonialSection from '../components/testimonials'
 import SEO from '../components/seo'
+import MoneyBack from '../components/moneyBack'
 
 const IndexPage = ({ location }) => (
   <Layout location={location}>
@@ -18,10 +19,8 @@ const IndexPage = ({ location }) => (
     <ProblemSolution />
     <Process />
     <TestimonialSection />
-    <Buy
-      buyText="We offer two packages: one for those who want control over their blog and social media and one for those that are tight on time and would like them managed."
-      home
-    />
+    <MoneyBack />
+    <Buy />
     <BlogSection />
   </Layout>
 )

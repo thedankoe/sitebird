@@ -1,34 +1,32 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { CheckoutButton, ParagraphStyle } from './styles/TextStyles'
 
-const Checkout = class extends React.Component {
-  state = {
-    disabled: false,
-    buttonText: 'BUY NOW',
-    paymentMessage: '',
-    name: 'Change me',
-    amount: null,
-    description: 'Description',
+const Checkout = ({ name, amount, description }) => {
+  const [disabled, setDisabled] = useState(false)
+  const [buttonText, setButtonText] = useState('Place Order!')
+  const [paymentMessage, setPaymentMessage] = useState('')
+  const [stripeHandler, setStripeHandler] = useState({ hits: [] })
+
+  function resetButton() {
+    setDisabled(false)
+    setButtonText('Place Order!')
   }
 
-  componentDidMount() {
-    this.stripeHandler = window.StripeCheckout.configure({
+  useEffect(() => {
+    const handler = window.StripeCheckout.configure({
       key: 'pk_test_72FFEEfY0jpJ2euL6aEJ5Qrl',
       closed: () => {
-        this.resetButton()
+        resetButton()
       },
     })
-  }
+    setStripeHandler(handler)
+  }, [])
 
-  resetButton() {
-    this.setState({ disabled: false, buttonText: 'BUY NOW' })
-  }
-
-  openStripeCheckout(event) {
-    const { name, amount, description } = this.state
+  const openStripeCheckout = event => {
     event.preventDefault()
-    this.setState({ disabled: true, buttonText: 'WAITING...' })
-    this.stripeHandler.open({
+    setDisabled(true)
+    setButtonText('WAITING...')
+    stripeHandler.open({
       name,
       amount,
       description,
@@ -46,34 +44,29 @@ const Checkout = class extends React.Component {
           }),
         })
           .then(res => {
-            console.log('Transaction processed successfully')
-            this.resetButton()
-            this.setState({ paymentMessage: 'Payment Successful!' })
+            resetButton()
+            setPaymentMessage('Payment Successful!')
+            window.location.href = 'https://leadbird.io/contact-success'
             return res
           })
           .catch(error => {
-            console.error('Error:', error)
-            this.setState({ paymentMessage: 'Payment Failed' })
+            setPaymentMessage('Payment Failed')
           })
       },
     })
   }
-
-  render() {
-    const { disabled, paymentMessage, buttonText } = this.state
-    return (
-      <>
-        <CheckoutButton
-          type="button"
-          onClick={event => this.openStripeCheckout(event)}
-          disabled={disabled}
-        >
-          {buttonText}
-        </CheckoutButton>
-        <ParagraphStyle>{paymentMessage}</ParagraphStyle>
-      </>
-    )
-  }
+  return (
+    <>
+      <CheckoutButton
+        type="button"
+        onClick={event => openStripeCheckout(event, stripeHandler)}
+        disabled={disabled}
+      >
+        {buttonText}
+      </CheckoutButton>
+      <ParagraphStyle>{paymentMessage}</ParagraphStyle>
+    </>
+  )
 }
 
 export default Checkout

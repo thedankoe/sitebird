@@ -171,9 +171,6 @@ class Nav extends Component {
                 <Link to="/services">Services</Link>
               </NavItem>
               <NavItem>
-                <Link to="/websites">Websites</Link>
-              </NavItem>
-              <NavItem>
                 <Link to="/faq">FAQ</Link>
               </NavItem>
               <NavItem>
@@ -199,9 +196,6 @@ class Nav extends Component {
                     <NavToggleList on={on} toggle={toggle}>
                       <NavToggleItem>
                         <Link to="/services">Services</Link>
-                      </NavToggleItem>
-                      <NavToggleItem>
-                        <Link to="/websites">Websites</Link>
                       </NavToggleItem>
                       <NavToggleItem>
                         <Link to="/faq">FAQ</Link>

@@ -169,19 +169,19 @@ const ProblemSolution = () => (
     render={data => (
       <>
         <ProblemWrapper>
-          <HeadingStyle>Most of the web isn't optimized</HeadingStyle>
+          <HeadingStyle>Quality content takes time and skill</HeadingStyle>
           <ProblemContainer>
             <div>
               <ParagraphStyle>
-                It's a sad truth. Web designers and social media managers focus
-                on making things look good. Good design doesn't necessarily
-                convert, nor does 'looking good' tap into what the customer
-                actually wants.
+                Creating content is a huge problem for business owners. They
+                know they need to consistently write blog posts, craft social
+                media images, write engaging content for those social media
+                posts, and so on.
               </ParagraphStyle>
               <ParagraphSecondary>
-                Creating an outstanding online presence doesn't have to look
-                good to convert. Imagine when it does look good, conversion
-                rates soar.
+                Creating engaging content is the backbone of a businesses online
+                presence. Having a business to run makes content creation a
+                drag.
               </ParagraphSecondary>
             </div>
             <ProblemImg fluid={data.file.childImageSharp.fluid} />
@@ -210,25 +210,25 @@ const ProblemSolution = () => (
                 <div>
                   <CrossIcon />
                 </div>
-                <span>Zero or very little NEW customers</span>
-              </ProblemListItem>
-              <ProblemListItem>
-                <div>
-                  <CrossIcon />
-                </div>
                 <span>Losing money trying to make current customers happy</span>
               </ProblemListItem>
               <ProblemListItem>
                 <div>
                   <CrossIcon />
                 </div>
-                <span>Closing your business as fast as your started it</span>
+                <span>Closing your business as fast as you started it</span>
               </ProblemListItem>
               <ProblemListItem>
                 <div>
                   <CrossIcon />
                 </div>
                 <span>Inability to grow past a certain point</span>
+              </ProblemListItem>
+              <ProblemListItem>
+                <div>
+                  <CrossIcon />
+                </div>
+                <span>Zero or very little NEW customers</span>
               </ProblemListItem>
             </ProblemList>
             <ParagraphStyleLight>

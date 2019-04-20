@@ -3,11 +3,7 @@ import styled from 'styled-components'
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import { device } from './styles/MediaQueries'
-import {
-  HeadingStyle,
-  ParagraphStyle,
-  SubHeadingStyle,
-} from './styles/TextStyles'
+import { HeadingStyle, SubHeadingStyle } from './styles/TextStyles'
 
 const CASE_STUDY_QUERY = graphql`
   query CaseStudyQuery {
@@ -30,7 +26,7 @@ const CaseWrapper = styled.div`
   }
 
   @media ${device.laptop} {
-    width: 90%;
+    width: 95%;
   }
 `
 
@@ -51,17 +47,7 @@ const CaseImage = styled(Img)`
 `
 
 const ParagraphContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  @media ${device.tablet} {
-    text-align: center;
-  }
-
-  @media ${device.tabletS} {
-    text-align: left;
-  }
+  margin-bottom: 2rem;
 `
 
 const CaseList = styled.ul`
@@ -78,10 +64,15 @@ const CaseList = styled.ul`
   }
 `
 
-const CaseParagraph = styled(ParagraphStyle)`
-  margin-top: ${props => props.theme.textSpace};
-  color: ${props => props.theme.secondary};
-  font-weight: 500;
+const CaseParagraph = styled.p`
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: ${props => props.theme.primary};
+  text-align: center;
+
+  span {
+    color: ${props => props.theme.secondary};
+  }
 `
 
 const CaseStudy = () => (
@@ -89,36 +80,49 @@ const CaseStudy = () => (
     query={CASE_STUDY_QUERY}
     render={data => (
       <CaseWrapper>
-        <HeadingStyle>Optimization Case Studies</HeadingStyle>
+        <HeadingStyle>Content Marketing Case Study</HeadingStyle>
         <CaseContainer>
           <CaseImage fluid={data.file.childImageSharp.fluid} />
           <ParagraphContainer>
             <SubHeadingStyle>
-              Optimization in content, social media, and website layout
-              increases conversion rates exponentially, heres some key points:
+              Business owners understand how necessary it is to produce content,
+              but many found themselves with these problems:
+            </SubHeadingStyle>
+            <CaseList style={{ marginBottom: '2rem' }}>
+              <li>
+                <span>65%</span> find it challenging to produce engaging content
+              </li>
+              <li>
+                <span>62%</span> don't know how to measure the ROI of their
+                campaigns
+              </li>
+              <li>
+                <span>60%</span> say that they can't produce content
+                consistently
+              </li>
+            </CaseList>
+            <SubHeadingStyle>
+              Here's some stats from Twitter themselves on content marketing.
             </SubHeadingStyle>
             <CaseList>
               <li>
-                More prominent call to action - <span>591% increase</span>
+                <span>66%</span> of people have found a new business on Twitter
               </li>
               <li>
-                Updated design - <span>33% increase</span>
+                <span>69%</span> of people bought something because of a tweet
               </li>
               <li>
-                Adding testimonials - <span>34% increase</span>
-              </li>
-              <li>
-                Video for email signups - <span>100% increase</span>
+                <span>94%</span> plan to make a purchase from a business they
+                follow.
               </li>
             </CaseList>
-            <CaseParagraph>
-              Optimization in all areas increases conversion rates across the
-              board. Optimizing your website, social media accounts, or web
-              presence in general, is important now more than ever with the
-              amount of competition online.
-            </CaseParagraph>
           </ParagraphContainer>
         </CaseContainer>
+        <CaseParagraph>
+          These statistics more or less account for all social platforms and
+          blogs. The main point is that{' '}
+          <span>you need to consistently post great content</span>
+        </CaseParagraph>
       </CaseWrapper>
     )}
   />

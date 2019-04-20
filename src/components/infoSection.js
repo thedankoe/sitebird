@@ -94,34 +94,29 @@ const InfoSection = () => (
     <InfoContainer>
       <InfoBlock>
         <OptimizationIcon />
-        <SubHeadingStyleLight>Website Optimization</SubHeadingStyleLight>
+        <SubHeadingStyleLight>Optimized Content</SubHeadingStyleLight>
         <ParagraphStyleLight>
-          We optimize your website for conversion, usability, SEO,
-          accessability, mobile, and performance.
+          We thoroughly research topics and keywords to ensure maximum
+          engagement.
         </ParagraphStyleLight>
       </InfoBlock>
       <InfoBlock>
         <LayoutIcon />
         <SubHeadingStyleLight>Social Media</SubHeadingStyleLight>
         <ParagraphStyleLight>
-          Social media posts with professionally designed images, and
-          copywriting that engages the user and converts.
+          Social media posts with professionally designed images and
+          copywriting.
         </ParagraphStyleLight>
       </InfoBlock>
       <InfoBlock>
         <CopywritingIcon />
-        <SubHeadingStyleLight>Targeted Content</SubHeadingStyleLight>
+        <SubHeadingStyleLight>Blog Posts</SubHeadingStyleLight>
         <ParagraphStyleLight>
-          Targeted content that is designed to persuade. Content strategy is key
-          to converting customers.
+          Targeted blog posts that are designed to persuade and get the reader
+          to buy.
         </ParagraphStyleLight>
       </InfoBlock>
     </InfoContainer>
-    <SubHeadingStyleLight>Available Services</SubHeadingStyleLight>
-    <ParagraphStyleLight>
-      Website Creation - Website Optimization - Social Media Management - Bulk
-      Social Posts - Content Marketing - Bulk Content Articles
-    </ParagraphStyleLight>
   </InfoWrapper>
 )
 

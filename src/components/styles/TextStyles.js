@@ -177,8 +177,8 @@ const HeaderLinkStyle = styled(LinkStyle)`
 `
 
 const CheckoutButton = styled.button`
-  width: 60%;
-  margin: 2rem auto 0 auto;
+  width: 100%;
+  margin-top: 2rem;
   padding: 4rem;
   background: ${props =>
     props.blue ? props.theme.secondary : props.theme.tertiary};
