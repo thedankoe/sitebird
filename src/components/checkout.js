@@ -14,7 +14,7 @@ const Checkout = ({ amount, description }) => {
 
   useEffect(() => {
     const handler = window.StripeCheckout.configure({
-      key: 'pk_test_72FFEEfY0jpJ2euL6aEJ5Qrl',
+      key: 'pk_live_3yKRJ1Fc2DkGl04bIfbQnnXC',
       closed: () => {
         resetButton()
       },
