@@ -1,13 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import {
-  GoBrowser,
-  GoGraph,
-  GoThumbsup,
-  GoBook,
-  GoMailRead,
-  GoDashboard,
-} from 'react-icons/go'
+import { GoThumbsup, GoBook, GoPencil } from 'react-icons/go'
 import { device } from '../components/styles/MediaQueries'
 import {
   HeadingStyle,
@@ -20,7 +13,7 @@ import {
 } from '../components/styles/TextStyles'
 import Layout from '../components/layout'
 import Buy from '../components/buy'
-import { RightIcon, CrossIcon } from '../components/styles/IconStyles'
+import { RightIcon } from '../components/styles/IconStyles'
 import SEO from '../components/seo'
 import { WrapperBlue } from '../components/problemSolution'
 import {
@@ -28,6 +21,7 @@ import {
   InfoContainer,
   InfoBlock,
 } from '../components/infoSection'
+import SocialMediaProof from '../components/lazy-images/social-media-proof'
 
 export const PackageWrapper = styled.div`
   width: ${props => props.theme.maxWidth};
@@ -55,56 +49,8 @@ export const PackageContainer = styled.div`
   }
 `
 
-const WebsiteCreationIcon = styled(GoBrowser)`
-  fill: #fff;
-  font-size: 7rem;
-`
-
-const ServicesSubHeading = styled(SubHeadingStyleLight)`
-  width: ${props => props.theme.maxWidth};
-  margin: 0 auto ${props => props.theme.textSpace} auto;
-  text-align: center;
-
-  @media ${device.desktop} {
-    width: 80%;
-  }
-
-  @media ${device.laptop} {
-    width: 95%;
-  }
-`
-
-const CostContainer = styled.ul`
-  width: 45%;
-  margin: ${props => props.theme.textSpace} auto 0 auto;
-
-  @media ${device.tabletS} {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  div {
-    margin: 0 auto ${props => props.theme.textSpace} auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    @media ${device.tabletS} {
-      justify-content: flex-start;
-    }
-
-    li {
-      list-style: none;
-      font-size: 2.2rem;
-      font-weight: 500;
-    }
-  }
-`
-
-const WebsiteOptimizationIcon = styled(GoGraph)`
-  fill: #fff;
-  font-size: 7rem;
+const PackageText = styled.div`
+  margin-bottom: ${props => props.theme.textSpace};
 `
 
 const SocialMediaIcon = styled(GoThumbsup)`
@@ -117,12 +63,7 @@ const ContentIcon = styled(GoBook)`
   font-size: 7rem;
 `
 
-const AdIcon = styled(GoDashboard)`
-  fill: #fff;
-  font-size: 7rem;
-`
-
-const EmailIcon = styled(GoMailRead)`
+const CopyIcon = styled(GoPencil)`
   fill: #fff;
   font-size: 7rem;
 `
@@ -130,101 +71,107 @@ const EmailIcon = styled(GoMailRead)`
 const OurWebsitesPage = ({ location }) => (
   <Layout
     location={location}
-    headerText="Content Marketing services"
+    headerText="Content marketing services"
     headerSub="Attract quality leads with zero ad spend"
   >
-    <SEO title="Content Marketing Services for Self Employed and Small Business" />
+    <SEO title="Content Marketing Services | Blog and Social Media Posts" />
     <PackageWrapper>
       <HeadingStyle>Quality leads without bankruptcy</HeadingStyle>
       <SubHeadingStyle>
         We've studied the market, agencies are practically robbing their clients
-        with mediocre results. We offer our services to self employed
-        individuals and small businesses only. Our prices reflect that.
+        with mediocre results. We do not offer an outrageous monthly retainer
+        promising results. We offer what has been shown to work time and time
+        again.
       </SubHeadingStyle>
       <PackageContainer>
         <div>
-          <SubHeadingStyle>Conversion centered approach</SubHeadingStyle>
+          <SubHeadingStyle>Optimized Blog Posts</SubHeadingStyle>
           <ParagraphStyle>
-            Oddly enough, our team finds joy from endlessly reading case
-            studies. Not only does it help us do our job better, we get you
-            results. Everything we do is optimized for conversion, while
-            maintaining the integrity of your business.
+            Long enough to rank well in search engines but not so long that it
+            loses the readers interest. Our articles captivate the user with
+            detailed imagery while focusing on SEO keywords and having a strong
+            call to action.
           </ParagraphStyle>
         </div>
         <div>
-          <SubHeadingStyle>Reliable support</SubHeadingStyle>
+          <SubHeadingStyle>Stunning Social Media Posts</SubHeadingStyle>
           <ParagraphStyle>
-            Ever been on hold with a large company for 30 minutes listening to
-            elevator music? Us too. It is one of our highest priorities to give
-            you quality support. Quick, detailed email responses and even our
-            personal phone numbers in case of an emergency.
+            Think of it as having a graphic designer make the images and a
+            persuasive writer craft the content. If you have not put much effort
+            into quality posts, your engagement will skyrocket.
           </ParagraphStyle>
         </div>
       </PackageContainer>
     </PackageWrapper>
     <WrapperBlue>
       <HeadingStyleLight>Services</HeadingStyleLight>
-      <ServicesSubHeading>
-        Aside from our prepackaged services, here is all that we offer. If you
-        request a consultation, we create a custom package for your business.
-      </ServicesSubHeading>
       <InfoWrapper>
         <InfoContainer>
-          <InfoBlock>
-            <WebsiteCreationIcon />
-            <SubHeadingStyleLight>Website Creation</SubHeadingStyleLight>
-            <ParagraphStyleLight>
-              Our conversion centered websites are completely optimized for
-              usability, SEO, mobile, and performance.
-            </ParagraphStyleLight>
-          </InfoBlock>
-          <InfoBlock>
-            <WebsiteOptimizationIcon />
-            <SubHeadingStyleLight>Website Optimization</SubHeadingStyleLight>
-            <ParagraphStyleLight>
-              Keyword research, on-page SEO, usability testing, accessability,
-              and layout + call to action optimization.
-            </ParagraphStyleLight>
-          </InfoBlock>
           <InfoBlock>
             <SocialMediaIcon />
             <SubHeadingStyleLight>Social Media</SubHeadingStyleLight>
             <ParagraphStyleLight>
-              Management of pages and accounts crucial for displaying your
-              business. We offer management of all accounts as well.
+              We research competitors and create social media posts that engage
+              and convert.
             </ParagraphStyleLight>
           </InfoBlock>
           <InfoBlock>
             <ContentIcon />
-            <SubHeadingStyleLight>Content Marketing</SubHeadingStyleLight>
+            <SubHeadingStyleLight>Content Articles</SubHeadingStyleLight>
             <ParagraphStyleLight>
-              The king of organic lead generation. Creating consistent,
-              targeted, content results in steady growth.
+              The king of organic traffic. Creating consistent, targeted,
+              content through blogging results in steady growth.
             </ParagraphStyleLight>
           </InfoBlock>
           <InfoBlock>
-            <EmailIcon />
-            <SubHeadingStyleLight>Email Marketing</SubHeadingStyleLight>
+            <CopyIcon />
+            <SubHeadingStyleLight>Copywriting</SubHeadingStyleLight>
             <ParagraphStyleLight>
-              Take advantage of your email list. Get new leads to buy and turn
-              previous customers into regulars.
-            </ParagraphStyleLight>
-          </InfoBlock>
-          <InfoBlock>
-            <AdIcon />
-            <SubHeadingStyleLight>Online Advertisements</SubHeadingStyleLight>
-            <ParagraphStyleLight>
-              Conversion centered ads that get huge returns. Not recommended
-              until website and social accounts are optimized.
+              Writing that captivates the reader and persuades them to take
+              action on your product.
             </ParagraphStyleLight>
           </InfoBlock>
         </InfoContainer>
       </InfoWrapper>
-      <ProblemLink to="/contact">
-        Request a consultation
-        <RightIcon />
-      </ProblemLink>
     </WrapperBlue>
+    <PackageWrapper>
+      <HeadingStyle>The purpose of content</HeadingStyle>
+      <SubHeadingStyle>
+        Content is meant to be read, shared, and acted upon. Every single blog
+        or social post should provide something of value to its user. You want
+        the user to act by sharing your post or making a purchase.
+      </SubHeadingStyle>
+      <PackageContainer>
+        <SocialMediaProof />
+        <div>
+          <PackageText>
+            <SubHeadingStyle>Two posts, huge increases</SubHeadingStyle>
+            <ParagraphStyle>
+              Our customer emailed us this screenshot after purchasing a blog
+              post and some social posts. At the very bottom you can see where
+              they started in terms of reach and engagement on Facebook. All of
+              their posts before this looked the same.
+            </ParagraphStyle>
+          </PackageText>
+          <div>
+            <SubHeadingStyle>Content is meant to be shared</SubHeadingStyle>
+            <ParagraphStyle>
+              Providing value in your content will cause readers to act. The
+              WORST thing that could happen is that a reader simply likes the
+              post, rather than sharing it and telling all of their friends
+              about your product.
+            </ParagraphStyle>
+          </div>
+        </div>
+      </PackageContainer>
+      <div style={{ marginTop: '4rem' }}>
+        <SubHeadingStyle>Still have questions? We don't bite.</SubHeadingStyle>
+        <ProblemLink to="/contact">
+          Contact us
+          <RightIcon />
+        </ProblemLink>
+      </div>
+    </PackageWrapper>
     <Buy />
   </Layout>
 )

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { CheckoutButton, ParagraphStyle } from './styles/TextStyles'
 
-const Checkout = ({ name, amount, description }) => {
+const Checkout = ({ amount, description }) => {
   const [disabled, setDisabled] = useState(false)
   const [buttonText, setButtonText] = useState('Place Order!')
   const [paymentMessage, setPaymentMessage] = useState('')
@@ -27,7 +27,7 @@ const Checkout = ({ name, amount, description }) => {
     setDisabled(true)
     setButtonText('WAITING...')
     stripeHandler.open({
-      name,
+      name: 'LeadBird Content Marketing',
       amount,
       description,
       token: token => {
@@ -46,7 +46,7 @@ const Checkout = ({ name, amount, description }) => {
           .then(res => {
             resetButton()
             setPaymentMessage('Payment Successful!')
-            window.location.href = 'https://leadbird.io/contact-success'
+            window.location.href = 'https://leadbird.io/checkout-success'
             return res
           })
           .catch(error => {

@@ -2,10 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import { HeadingStyle } from '../components/styles/TextStyles'
-import {
-  ClientFormWrapper,
-  ClientFormContainer,
-} from './checkout-success-bulk-order'
+import { ClientFormWrapper, ClientFormContainer } from './checkout-success'
 import { RightIcon } from '../components/styles/IconStyles'
 import SEO from '../components/seo'
 
@@ -24,9 +21,6 @@ const ContactSuccess = ({ location }) => (
         </Link>
         <Link to="/services">
           More information on our services <RightIcon />
-        </Link>
-        <Link to="/websites">
-          Need a new website? <RightIcon />
         </Link>
         <Link to="/faq">
           Frequently asked questions <RightIcon />

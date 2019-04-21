@@ -11,6 +11,7 @@ import {
   RatingContainer,
   TestimonialParagraph,
 } from '../components/testimonials'
+import ContentDescription from '../components/contentDescriptions'
 
 const TestimonialCheckout = styled.div`
   div {
@@ -28,6 +29,8 @@ const ContentCheckout = ({ location }) => (
   >
     <SEO title="Place Your Order" />
     <PackageWrapper>
+      <HeadingStyle>Whats Included</HeadingStyle>
+      <ContentDescription />
       <HeadingStyle>Place your order</HeadingStyle>
       <PackageContainer>
         <CheckoutCard />

@@ -33,32 +33,32 @@ const PackagesCard = () => (
       <CardLink to="/content-checkout">Order Now</CardLink>
       <CardList>
         <li>
-          <div>
+          <span>
             <CheckMark />
-          </div>
-          One 1200 word conversion centered and SEO optimized content article
+          </span>
+          One 1000 word conversion centered and SEO optimized content article
           (blog post).
         </li>
         <li>
-          <div>
+          <span>
             <CheckMark />
-          </div>
-          <div>
+          </span>
+          <span>
             2 focused keywords, researched by us to maximize search engine
             ranking.
-          </div>
+          </span>
         </li>
         <li>
-          <div>
+          <span>
             <CheckMark />
-          </div>
+          </span>
           Extensive topic research for us to write an article that engages its
           reader.
         </li>
         <li>
-          <div>
+          <span>
             <CheckMark />
-          </div>
+          </span>
           Bulk orders at discounted rate.
         </li>
       </CardList>

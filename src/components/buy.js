@@ -43,10 +43,6 @@ const Buy = () => (
     <BuyContainer>
       <HeadingStyleLight>Get started</HeadingStyleLight>
       <PackagesCard />
-      <ProblemLink to="/contact">
-        Request a consultation
-        <RightIcon />
-      </ProblemLink>
     </BuyContainer>
   </BuyWrapper>
 )

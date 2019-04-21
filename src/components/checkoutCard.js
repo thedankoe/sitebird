@@ -117,6 +117,8 @@ const socialQuantity = [
   { value: 40, price: 69900, discount: 77 },
 ]
 
+let finalDescription = ''
+
 const CheckoutCard = () => {
   const [showBlog, setShowBlog] = useState(false)
   const [showSocial, setShowSocial] = useState(false)
@@ -124,13 +126,29 @@ const CheckoutCard = () => {
   const [selectedSocial, setSelectedSocial] = useState(socialQuantity[0])
   const [discount, setDiscount] = useState(0)
   const [amount, setAmount] = useState(0)
+  const [description, setDescription] = useState(
+    'Select your quantity before purchasing.'
+  )
 
   useEffect(() => {
     const calculatedAmount = () => selectedBlog.price + selectedSocial.price
     const calculatedDiscount = () =>
       selectedBlog.discount + selectedSocial.discount
+    const joinDescription = () => {
+      if (selectedBlog.value === 0) {
+        finalDescription = `${selectedSocial.value} social media posts`
+      } else if (selectedSocial.value === 0) {
+        finalDescription = `${selectedBlog.value} blog posts`
+      } else {
+        finalDescription = `${selectedBlog.value} blog posts and ${
+          selectedSocial.value
+        } social media posts`
+      }
+      return finalDescription
+    }
     setAmount(calculatedAmount())
     setDiscount(calculatedDiscount())
+    setDescription(joinDescription())
   })
 
   const dropDownBlog = () => {
@@ -237,11 +255,7 @@ const CheckoutCard = () => {
         <div />
       )}
       <ButtonWrapper>
-        <Checkout
-          name="I am name"
-          amount={amount}
-          description="I am description"
-        />
+        <Checkout amount={amount} description={description} />
         <CardsImg src={CardTypeImg} alt="Types of cards we accept" />
       </ButtonWrapper>
     </CheckoutCardWrapper>

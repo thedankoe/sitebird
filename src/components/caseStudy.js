@@ -17,7 +17,7 @@ const CASE_STUDY_QUERY = graphql`
   }
 `
 
-const CaseWrapper = styled.div`
+export const CaseWrapper = styled.div`
   width: ${props => props.theme.maxWidth};
   margin: ${props => props.theme.sectionSpace} auto;
 
@@ -30,18 +30,19 @@ const CaseWrapper = styled.div`
   }
 `
 
-const CaseContainer = styled.div`
+export const CaseContainer = styled.div`
   margin-bottom: ${props => props.theme.textSpace};
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: ${props => props.theme.textSpace};
+  text-align: left;
 
-  @media ${device.tablet} {
+  @media ${device.tabletL} {
     grid-template-columns: 1fr;
   }
 `
 
-const CaseImage = styled(Img)`
+const CaseImg = styled(Img)`
   box-shadow: ${props => props.theme.bs};
   border-radius: 5px;
 `
@@ -82,7 +83,7 @@ const CaseStudy = () => (
       <CaseWrapper>
         <HeadingStyle>Content Marketing Case Study</HeadingStyle>
         <CaseContainer>
-          <CaseImage fluid={data.file.childImageSharp.fluid} />
+          <CaseImg fluid={data.file.childImageSharp.fluid} />
           <ParagraphContainer>
             <SubHeadingStyle>
               Business owners understand how necessary it is to produce content,

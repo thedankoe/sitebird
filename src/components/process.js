@@ -2,8 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import { GoCreditCard, GoQuestion, GoPin } from 'react-icons/go'
 import { device } from './styles/MediaQueries'
-import { HeadingStyle, ParagraphStyle } from './styles/TextStyles'
-import { PencilIcon } from './styles/IconStyles'
+import { HeadingStyle, ParagraphStyle, ProblemLink } from './styles/TextStyles'
+import { PencilIcon, RightIcon } from './styles/IconStyles'
 
 const ProcessWrapper = styled.div`
   width: ${props => props.theme.maxWidth};
@@ -24,8 +24,7 @@ const ProcessWrapper = styled.div`
 `
 
 const ProcessList = styled.ol`
-  margin: ${props => props.theme.textSpace} 0
-    ${props => props.theme.sectionSpace} 0;
+  margin: ${props => props.theme.textSpace} 0;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -155,6 +154,10 @@ const Process = () => (
         </ProcessListItem>
       </ProcessListContainer>
     </ProcessList>
+    <ProblemLink to="/services">
+      Detail on our services
+      <RightIcon />
+    </ProblemLink>
   </ProcessWrapper>
 )
 

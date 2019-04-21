@@ -62,7 +62,7 @@ const TestimonialSection = () => (
       </RatingContainer>
       <TestimonialParagraph>
         "They made sure our website was optimized before we purchased blog
-        posts, our website traffic has been steadily going up!"
+        posts, the writing quality is amazing!"
         <span>Brittany - Mattress Guru</span>
       </TestimonialParagraph>
     </TestimonialContainer>
@@ -75,7 +75,7 @@ const TestimonialSection = () => (
         <RatingIcon />
       </RatingContainer>
       <TestimonialParagraph>
-        "Great articles and posts, will be buying again. Our organic traffic has
+        "Great articles and posts, will be buying again. Our website traffic has
         been steadily going up!"
         <span>Skip &amp; Angee - Caveman Printing and Apparel</span>
       </TestimonialParagraph>
