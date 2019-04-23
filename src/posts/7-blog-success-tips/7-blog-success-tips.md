@@ -68,15 +68,15 @@ Understanding the crucial role of search engine optimization, thoroughly researc
 
 ### Target Long Tail Keywords
 
-It’s understood that in order to rank in search engines as a small business or entrepreneur you will need to target long tail keywords. The question still stands, how do you implement them into your blog? Do you just use it at the title and hope for the best? Almost, you need to include them in a few more places.
+It’s understood that in order to rank in search engines as a small business or entrepreneur you will need to target long tail keywords. The question still stands, how do you implement them into your blog? Do you just use it as the title and hope for the best? Almost, you need to include them in a few more places.
 
 You should include as much of the keyword as you can into your sites title tag, meta description, meta keywords, main heading (HTML h1 tag), secondary heading (HTML h2 tag), and scattered throughout other headings and paragraphs. If you do not know where to find these on your websites platform, perform a Google search to find out. If you are using WordPress, the title, meta description, and meta keywords are normally found in your SEO plugin (Yoast, etc.).
 
-If it were easy to show you where to find these, we would, but the web is filled with websites that were created from different platforms that use different terminology regarding these.
+If it were easy to show you where to find these, we would, but the web is filled with websites that were created on different platforms that use different terminology regarding these.
 
 ### Write Longer Articles
 
-Shorter blog posts (75-300 words) get less social shares, comments, and rarely rank in search engines. As you increase word count your social shares, comments, and ranking will improve. There is a golden zone for word count though. You will normally reap the best benefits if your word count falls between 750 and 1250 words <a href="https://thewritepractice.com/blog-post-length/" target="_blank">The Write Practice has some great tips on word count</a>. Anything more tends to not result in more shares and comments yet increases your chances of ranking.
+Shorter blog posts (75-300 words) get less social shares, comments, and rarely rank in search engines. As you increase word count your social shares, comments, and ranking will improve. There is a golden zone for word count though. You will normally reap the most benefits if your word count falls between 750 and 1250 words. <a href="https://thewritepractice.com/blog-post-length/" target="_blank">The Write Practice has some great tips on word count</a>. Anything more tends to not result in more shares and comments yet increases your chances of ranking.
 
 ### Provide Value
 

@@ -33,7 +33,7 @@ const OptimizationCTA = () => (
   <OptimizationCTAWrapper>
     <HeadingStyle>Optimize your blog</HeadingStyle>
     <SubHeadingStyle>
-      If your website isn't optimized, you blog won't convert as much. Fill out
+      If your website isn't optimized, your blog won't convert as much. Fill out
       this form and we will send you a FREE website optimization checklist to
       grow your organic search traffic.
     </SubHeadingStyle>
