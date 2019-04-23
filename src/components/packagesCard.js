@@ -36,7 +36,7 @@ const PackagesCard = () => (
           <span>
             <CheckMark />
           </span>
-          One 1000 word conversion centered and SEO optimized content article
+          One 1000+ word conversion centered and SEO optimized content article
           (blog post).
         </li>
         <li>

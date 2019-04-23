@@ -133,8 +133,7 @@ const Header = ({ location, headerText, headerSub }) => {
             <HeaderHeadingHome>
               Optimized content marketing that gives visitors a reason to buy
               <HeaderSubHeading>
-                Content articles and social media posts from{' '}
-                <strong>$97</strong>
+                Blog and social media posts from <strong>$97</strong>
               </HeaderSubHeading>
             </HeaderHeadingHome>
             <HeaderLink to="/#packages">
