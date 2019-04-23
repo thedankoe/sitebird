@@ -35,6 +35,10 @@ export const PackageWrapper = styled.div`
   @media ${device.laptop} {
     width: 95%;
   }
+
+  @media ${device.tabletS} {
+    text-align: left;
+  }
 `
 
 export const PackageContainer = styled.div`
@@ -164,7 +168,7 @@ const OurWebsitesPage = ({ location }) => (
           </div>
         </div>
       </PackageContainer>
-      <div style={{ marginTop: '4rem' }}>
+      <div style={{ marginTop: '4rem', textAlign: 'center' }}>
         <SubHeadingStyle>Still have questions? We don't bite.</SubHeadingStyle>
         <ProblemLink to="/contact">
           Contact us

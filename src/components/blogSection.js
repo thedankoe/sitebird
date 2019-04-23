@@ -47,8 +47,10 @@ const BlogSectionWrapper = styled.div`
 `
 
 const BlogContainer = styled.div`
-  width: 33%;
-  display: flex;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: ${props => props.theme.textSpace};
 
   @media ${device.tabletL} {
     width: 70%;

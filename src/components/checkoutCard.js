@@ -94,30 +94,31 @@ const CardsImg = styled.img`
 `
 
 const blogQuantity = [
-  { value: 0, price: 0, discount: 0 },
-  { value: 1, price: 9700, discount: 0 },
-  { value: 2, price: 19400, discount: 0 },
-  { value: 3, price: 29100, discount: 0 },
-  { value: 4, price: 34800, discount: 40 },
-  { value: 5, price: 43500, discount: 50 },
-  { value: 6, price: 52200, discount: 60 },
-  { value: 7, price: 60900, discount: 70 },
-  { value: 8, price: 69600, discount: 80 },
-  { value: 9, price: 78300, discount: 90 },
-  { value: 10, price: 87000, discount: 100 },
+  { value: 0, price: 0, discount: 0, delivery: 0 },
+  { value: 1, price: 9700, discount: 0, delivery: 5 },
+  { value: 2, price: 19400, discount: 0, delivery: 7 },
+  { value: 3, price: 29100, discount: 0, delivery: 8 },
+  { value: 4, price: 34800, discount: 40, delivery: 9 },
+  { value: 5, price: 43500, discount: 50, delivery: 10 },
+  { value: 6, price: 52200, discount: 60, delivery: 11 },
+  { value: 7, price: 60900, discount: 70, delivery: 12 },
+  { value: 8, price: 69600, discount: 80, delivery: 13 },
+  { value: 9, price: 78300, discount: 90, delivery: 14 },
+  { value: 10, price: 87000, discount: 100, delivery: 15 },
 ]
 
 const socialQuantity = [
-  { value: 0, price: 0, discount: 0 },
-  { value: 1, price: 2700, discount: 0 },
-  { value: 5, price: 9700, discount: 0 },
-  { value: 10, price: 19400, discount: 0 },
-  { value: 20, price: 38800, discount: 0 },
-  { value: 30, price: 52400, discount: 58 },
-  { value: 40, price: 69900, discount: 77 },
+  { value: 0, price: 0, discount: 0, delivery: 0 },
+  { value: 1, price: 2700, discount: 0, delivery: 2 },
+  { value: 5, price: 9700, discount: 0, delivery: 5 },
+  { value: 10, price: 19400, discount: 0, delivery: 7 },
+  { value: 20, price: 38800, discount: 0, delivery: 10 },
+  { value: 30, price: 52400, discount: 58, delivery: 12 },
+  { value: 40, price: 69900, discount: 77, delivery: 14 },
 ]
 
 let finalDescription = ''
+let finalDelivery = ''
 
 const CheckoutCard = () => {
   const [showBlog, setShowBlog] = useState(false)
@@ -125,6 +126,7 @@ const CheckoutCard = () => {
   const [selectedBlog, setSelectedBlog] = useState(blogQuantity[0])
   const [selectedSocial, setSelectedSocial] = useState(socialQuantity[0])
   const [discount, setDiscount] = useState(0)
+  const [deliveryTime, setDeliveryTime] = useState(0)
   const [amount, setAmount] = useState(0)
   const [description, setDescription] = useState(
     'Select your quantity before purchasing.'
@@ -146,9 +148,18 @@ const CheckoutCard = () => {
       }
       return finalDescription
     }
+    const calcDelivery = () => {
+      if (selectedBlog.delivery >= selectedSocial.delivery) {
+        finalDelivery = selectedBlog.delivery
+      } else {
+        finalDelivery = selectedSocial.delivery
+      }
+      return finalDelivery
+    }
     setAmount(calculatedAmount())
     setDiscount(calculatedDiscount())
     setDescription(joinDescription())
+    setDeliveryTime(calcDelivery())
   })
 
   const dropDownBlog = () => {
@@ -250,6 +261,9 @@ const CheckoutCard = () => {
               TOTAL: ${formatMoney(amount)}
             </QuantityTableHeading>
           </QuantityTotalDiv>
+          <QuantityTableHeading style={{ textAlign: 'right' }}>
+            DELIVERY: {deliveryTime} days
+          </QuantityTableHeading>
         </>
       ) : (
         <div />

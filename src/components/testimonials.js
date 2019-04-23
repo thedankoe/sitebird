@@ -50,6 +50,10 @@ export const TestimonialParagraph = styled(ParagraphStyle)`
   }
 `
 
+export const VerifiedPurchase = styled(ParagraphStyle)`
+  color: ${props => props.theme.warning};
+`
+
 const TestimonialSection = () => (
   <TestimonialWrapper>
     <TestimonialContainer>
@@ -60,10 +64,11 @@ const TestimonialSection = () => (
         <RatingIcon />
         <RatingIcon />
       </RatingContainer>
+      <VerifiedPurchase>Verified Purchase</VerifiedPurchase>
       <TestimonialParagraph>
         "They made sure our website was optimized before we purchased blog
         posts, the writing quality is amazing!"
-        <span>Brittany - Mattress Guru</span>
+        <span>Brittany</span>
       </TestimonialParagraph>
     </TestimonialContainer>
     <TestimonialContainer>
@@ -74,10 +79,11 @@ const TestimonialSection = () => (
         <RatingIcon />
         <RatingIcon />
       </RatingContainer>
+      <VerifiedPurchase>Verified Purchase</VerifiedPurchase>
       <TestimonialParagraph>
         "Great articles and posts, will be buying again. Our website traffic has
         been steadily going up!"
-        <span>Skip &amp; Angee - Caveman Printing and Apparel</span>
+        <span>Skip &amp; Angee</span>
       </TestimonialParagraph>
     </TestimonialContainer>
   </TestimonialWrapper>

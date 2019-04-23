@@ -89,6 +89,15 @@ const ProbContainerBlue = styled.div`
   margin: 0 auto;
   text-align: center;
 
+  h2 {
+    @media ${device.tabletS} {
+      text-align: left;
+      :after {
+        margin: 1.5rem 0 0 0;
+      }
+    }
+  }
+
   @media ${device.desktop} {
     width: 80%;
   }

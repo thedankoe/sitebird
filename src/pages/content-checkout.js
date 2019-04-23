@@ -10,6 +10,7 @@ import {
   RatingIcon,
   RatingContainer,
   TestimonialParagraph,
+  VerifiedPurchase,
 } from '../components/testimonials'
 import ContentDescription from '../components/contentDescriptions'
 
@@ -43,9 +44,10 @@ const ContentCheckout = ({ location }) => (
               <RatingIcon />
               <RatingIcon />
             </RatingContainer>
+            <VerifiedPurchase>Verified Purchase</VerifiedPurchase>
             <TestimonialParagraph>
               "They made sure our website was optimized before we purchased blog
-              posts, our website traffic has been steadily going up!"
+              posts, the writing quality is amazing!"
               <span>Brittany - Mattress Guru</span>
             </TestimonialParagraph>
           </TestimonialContainer>
@@ -57,6 +59,7 @@ const ContentCheckout = ({ location }) => (
               <RatingIcon />
               <RatingIcon />
             </RatingContainer>
+            <VerifiedPurchase>Verified Purchase</VerifiedPurchase>
             <TestimonialParagraph>
               "Great articles and posts, will be buying again. Our organic
               traffic has been steadily going up!"

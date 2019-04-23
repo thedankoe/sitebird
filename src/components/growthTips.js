@@ -20,7 +20,7 @@ const GROWTH_POST_QUERY = graphql`
             slug
             featuredImage {
               childImageSharp {
-                sizes(maxWidth: 400) {
+                sizes(maxWidth: 700) {
                   ...GatsbyImageSharpSizes
                 }
               }

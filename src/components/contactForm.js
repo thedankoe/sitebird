@@ -178,9 +178,11 @@ const ContactForm = () => {
           labelText="Service Interested In"
           items={[
             { value: 'Content Marketing', id: 1 },
-            { value: 'Social Media Management', id: 2 },
-            { value: 'Website Optimization', id: 3 },
-            { value: 'More Information', id: 4 },
+            { value: 'Blog Posts', id: 2 },
+            { value: 'Social Media Posts', id: 3 },
+            { value: 'Social Media Management', id: 4 },
+            { value: 'Website Optimization', id: 5 },
+            { value: 'More Information', id: 6 },
           ]}
         />
         <FormGroup>

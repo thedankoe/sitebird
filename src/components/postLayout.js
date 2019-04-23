@@ -8,6 +8,7 @@ import { device } from './styles/MediaQueries'
 import { ParagraphStyle } from './styles/TextStyles'
 import BlogSection from './blogSection'
 import Buy from './buy'
+import OptimizationCTA from './optimizationCTA'
 
 const PostWrapper = styled.div`
   width: ${props => props.theme.maxWidth};
@@ -88,7 +89,6 @@ const PostContainer = styled.div`
     margin: ${props => props.theme.textSpace} auto;
     padding: 2rem 1.5rem;
     list-style: none;
-    background: ${props => props.theme.lightestGrey};
     border-radius: 4px;
 
     @media ${device.tablet} {
@@ -102,7 +102,7 @@ const PostContainer = styled.div`
 
   li {
     padding-left: 1.5rem;
-    color: ${props => props.theme.secondary};
+    color: ${props => props.theme.grey};
     font-size: 2rem;
     font-weight: 500;
     line-height: 1.8;
@@ -169,7 +169,8 @@ export default class PostLayout extends Component {
               }}
             />
           </PostWrapper>
-          <Buy home />
+          <OptimizationCTA />
+          <Buy />
           <BlogSection />
         </Layout>
       </>
