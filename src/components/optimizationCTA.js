@@ -1,11 +1,24 @@
 import React from 'react'
 import styled from 'styled-components'
 import { HeadingStyle, SubHeadingStyle } from './styles/TextStyles'
+import { device } from './styles/MediaQueries'
 
 const OptimizationCTAWrapper = styled.div`
   width: ${props => props.theme.maxWidth};
   margin: 0 auto ${props => props.theme.sectionSpace} auto;
   text-align: center;
+
+  @media ${device.desktop} {
+    width: 80%;
+  }
+
+  @media ${device.laptop} {
+    width: 95%;
+  }
+
+  @media ${device.tabletS} {
+    text-align: left;
+  }
 
   a {
     display: block;
@@ -25,6 +38,12 @@ const OptimizationCTAWrapper = styled.div`
       background: ${props => props.theme.tertiaryLight};
       box-shadow: ${props => props.theme.bsHover};
       transform: translateY(0.3rem);
+    }
+
+    @media ${device.tabletS} {
+      margin-left: 0;
+      margin-right: 0;
+      text-align: center;
     }
   }
 `

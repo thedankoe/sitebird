@@ -32,9 +32,8 @@ const PersonContainer = styled.div`
 
 const PostImg = styled(Img)`
   width: 10rem;
-  height: 10rem;
   margin-right: 2rem;
-  border-radius: 50%;
+  border-radius: 50rem;
   box-shadow: ${props => props.theme.bs};
 `
 
