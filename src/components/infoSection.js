@@ -112,8 +112,8 @@ const InfoSection = () => (
         <CopywritingIcon />
         <SubHeadingStyleLight>Blog Posts</SubHeadingStyleLight>
         <ParagraphStyleLight>
-          Targeted blog posts that are designed to persuade and get the reader
-          to buy.
+          Blog posts with the perfect word count that are targeted at your
+          audience.
         </ParagraphStyleLight>
       </InfoBlock>
     </InfoContainer>

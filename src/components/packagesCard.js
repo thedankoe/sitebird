@@ -24,10 +24,10 @@ const PackagesCard = () => (
     <Card>
       <HeadingStyle>Blog Posts</HeadingStyle>
       <SubHeadingStyle>
-        Conversion centered and SEO optimized articles that will increase
-        engagement and organic web traffic.
+        Conversion centered and SEO optimized articles that increase organic web
+        traffic.
       </SubHeadingStyle>
-      <PreviousPrice>$107</PreviousPrice>
+      <PreviousPrice>$117</PreviousPrice>
       <CardParagraph>$97</CardParagraph>
       <ParagraphStyle>1 article - 5 day delivery</ParagraphStyle>
       <CardLink to="/content-checkout">Order Now</CardLink>
@@ -43,17 +43,16 @@ const PackagesCard = () => (
           <span>
             <CheckMark />
           </span>
-          <span>
-            2 focused keywords, researched by us to maximize search engine
-            ranking.
-          </span>
+          Extensive topic research for us to write an article that engages its
+          reader.
         </li>
         <li>
           <span>
             <CheckMark />
           </span>
-          Extensive topic research for us to write an article that engages its
-          reader.
+          <span>
+            2 focused keywords per topic to maximize search engine ranking.
+          </span>
         </li>
         <li>
           <span>
@@ -68,7 +67,7 @@ const PackagesCard = () => (
       <SubHeadingStyle>
         Professionally designed graphics and copywriting for social media posts.
       </SubHeadingStyle>
-      <PreviousPrice>$107</PreviousPrice>
+      <PreviousPrice>$117</PreviousPrice>
       <CardParagraph>$97</CardParagraph>
       <ParagraphStyle>5 posts - 5 day delivery</ParagraphStyle>
       <CardLink to="/content-checkout">Order Now</CardLink>

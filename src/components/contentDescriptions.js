@@ -53,7 +53,7 @@ const ContentDescription = () => (
               <span>
                 <CheckMark />
               </span>
-              Thoroughly research topics and keywords to ensure engagement and
+              Thoroughly researched topics and keywords to ensure engagement and
               organic ranking.
             </li>
             <li>
@@ -84,8 +84,8 @@ const ContentDescription = () => (
               <span>
                 <CheckMark />
               </span>
-              75-100 professionally written to convert. Perfect for offers,
-              special events, and bragging about your awesome products.
+              75-100 words professionally written to convert. Perfect for
+              offers, special events, and bragging about your awesome products.
             </li>
             <li>
               <span>

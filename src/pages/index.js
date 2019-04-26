@@ -12,8 +12,8 @@ import MoneyBack from '../components/moneyBack'
 const IndexPage = ({ location }) => (
   <Layout location={location}>
     <SEO
-      title="Content Marketing for Entrepreneurs and Small Businesses"
-      description="Affordable and conversion centered content articles, social media posts, and websites for entrepreneurs and small businesses."
+      title="Blog Writing and Social Media Post Creation"
+      description="Optimized SEO blog writing with the perfect word count. Social media posts that engage and convert."
     />
     <CaseStudy />
     <ProblemSolution />

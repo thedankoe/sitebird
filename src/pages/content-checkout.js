@@ -44,11 +44,13 @@ const ContentCheckout = ({ location }) => (
               <RatingIcon />
               <RatingIcon />
             </RatingContainer>
-            <VerifiedPurchase>Verified Purchase</VerifiedPurchase>
+            <VerifiedPurchase>
+              Verified Purchase - Blog Writing
+            </VerifiedPurchase>
             <TestimonialParagraph>
               "They made sure our website was optimized before we purchased blog
               posts, the writing quality is amazing!"
-              <span>Brittany - Mattress Guru</span>
+              <span>Brittany</span>
             </TestimonialParagraph>
           </TestimonialContainer>
           <TestimonialContainer>
@@ -59,11 +61,13 @@ const ContentCheckout = ({ location }) => (
               <RatingIcon />
               <RatingIcon />
             </RatingContainer>
-            <VerifiedPurchase>Verified Purchase</VerifiedPurchase>
+            <VerifiedPurchase>
+              Verified Purchase - Blog and Social Posts
+            </VerifiedPurchase>
             <TestimonialParagraph>
               "Great articles and posts, will be buying again. Our organic
               traffic has been steadily going up!"
-              <span>Skip &amp; Angee - Caveman Printing and Apparel</span>
+              <span>Skip &amp; Angee</span>
             </TestimonialParagraph>
           </TestimonialContainer>
         </TestimonialCheckout>

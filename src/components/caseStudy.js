@@ -81,7 +81,7 @@ const CaseStudy = () => (
     query={CASE_STUDY_QUERY}
     render={data => (
       <CaseWrapper>
-        <HeadingStyle>Content Marketing Case Study</HeadingStyle>
+        <HeadingStyle>Content Marketing Overview</HeadingStyle>
         <CaseContainer>
           <CaseImg fluid={data.file.childImageSharp.fluid} />
           <ParagraphContainer>

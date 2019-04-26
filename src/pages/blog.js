@@ -19,12 +19,12 @@ const BlogPageHeading = styled(HeadingStyle)`
 const BlogPage = ({ location }) => (
   <Layout
     location={location}
-    headerText="Growth Tips for Small Businesses and Entrepreneurs"
-    headerSub="Learn how to grow your online presence as a small business owner or entrepreneur"
+    headerText="Growth Tips for Your Blog and Social Media"
+    headerSub="Learn how to grow your online presence through content creation"
   >
     <SEO
-      title="Growth Tips for Small Businesses and Entrepreneurs"
-      description="Learn how to grow your online presence as an entrepreneur or small business. Learn SEO, online marketing, and how to implement them."
+      title="Growth Tips for Your Blog and Social Media"
+      description="Learn how to grow your online presence through content creation. Learn SEO, online marketing, and how to implement them."
       keyword={['growth tips for small business', 'content marketing']}
     />
     <BlogPageHeading>

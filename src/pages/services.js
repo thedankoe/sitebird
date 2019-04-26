@@ -15,7 +15,7 @@ import Layout from '../components/layout'
 import Buy from '../components/buy'
 import { RightIcon } from '../components/styles/IconStyles'
 import SEO from '../components/seo'
-import { WrapperBlue } from '../components/problemSolution'
+import { WrapperBlue, ParagraphSecondary } from '../components/problemSolution'
 import {
   InfoWrapper,
   InfoContainer,
@@ -75,12 +75,15 @@ const CopyIcon = styled(GoPencil)`
 const OurWebsitesPage = ({ location }) => (
   <Layout
     location={location}
-    headerText="Content marketing services"
-    headerSub="Attract quality leads with zero ad spend"
+    headerText="Blog Writing and Social Posts"
+    headerSub="Save time and enjoy the important things"
   >
-    <SEO title="Content Marketing Services | Blog and Social Media Posts" />
+    <SEO
+      title="Blog and Social Media Posts | Content Writing &amp; Creation"
+      description="Tired of not being able to consitently write or create content for your blog and social media accounts? We will do it for you!"
+    />
     <PackageWrapper>
-      <HeadingStyle>Quality leads without bankruptcy</HeadingStyle>
+      <HeadingStyle>Optimized Blog Writing and Social Posts</HeadingStyle>
       <SubHeadingStyle>
         We've studied the market, agencies are practically robbing their clients
         with mediocre results. We do not offer an outrageous monthly retainer
@@ -89,21 +92,28 @@ const OurWebsitesPage = ({ location }) => (
       </SubHeadingStyle>
       <PackageContainer>
         <div>
-          <SubHeadingStyle>Optimized Blog Posts</SubHeadingStyle>
+          <SubHeadingStyle>Professional Blog Writing</SubHeadingStyle>
           <ParagraphStyle>
-            Long enough to rank well in search engines but not so long that it
-            loses the readers interest. Our articles captivate the user with
-            detailed imagery while focusing on SEO keywords and having a strong
-            call to action.
+            The perfect word count and nothing less. We write 1000 words minimum
+            per article. This makes them long enough to rank in search engines
+            while not losing the readers interest. We offer nothing less.
           </ParagraphStyle>
+          <ParagraphSecondary>
+            In our experience, and according to studies, our word count
+            increases the amount of shares across all platforms.
+          </ParagraphSecondary>
         </div>
         <div>
           <SubHeadingStyle>Stunning Social Media Posts</SubHeadingStyle>
           <ParagraphStyle>
             Think of it as having a graphic designer make the images and a
-            persuasive writer craft the content. If you have not put much effort
-            into quality posts, your engagement will skyrocket.
+            persuasive writer craft the copywriting. If you have not put much
+            effort into quality posts, your engagement will skyrocket.
           </ParagraphStyle>
+          <ParagraphSecondary>
+            Posting consistent, quality, content increases engagement and keeps
+            customers coming back to purchase your product or service.
+          </ParagraphSecondary>
         </div>
       </PackageContainer>
     </PackageWrapper>

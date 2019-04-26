@@ -131,9 +131,9 @@ const Header = ({ location, headerText, headerSub }) => {
         {location.pathname === '/' ? (
           <HeaderText>
             <HeaderHeadingHome>
-              Optimized content marketing that gives visitors a reason to buy
+              Optimized content that gives viewers a reason to buy
               <HeaderSubHeading>
-                Blog and social media posts from <strong>$97</strong>
+                Blog writing and social media posts from <strong>$97</strong>
               </HeaderSubHeading>
             </HeaderHeadingHome>
             <HeaderLink to="/#packages">

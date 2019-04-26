@@ -111,7 +111,7 @@ const Process = () => (
         </div>
         <ProcessListItem>
           Place Your Order
-          <span>Choose package, select quantity, and complete payment.</span>
+          <span>Choose item, select quantity, and complete payment.</span>
         </ProcessListItem>
       </ProcessListContainer>
       <ProcessListContainer>

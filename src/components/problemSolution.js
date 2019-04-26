@@ -9,6 +9,7 @@ import {
   ParagraphStyleLight,
   ProblemLink,
   HeadingStyleLight,
+  SubHeadingStyleLight,
 } from './styles/TextStyles'
 import { RightIcon, CrossIcon } from './styles/IconStyles'
 import LeadSection from './leadSection'
@@ -122,16 +123,6 @@ export const ParagraphSecondary = styled(ParagraphStyle)`
   }
 `
 
-const ParagraphBlue = styled(ParagraphStyle)`
-  color: #fff;
-  margin-bottom: ${props => props.theme.textSpace};
-  text-align: center;
-
-  @media ${device.tabletS} {
-    text-align: left;
-  }
-`
-
 const ProblemList = styled.ul`
   width: 70%;
   margin: 0 auto ${props => props.theme.textSpace} auto;
@@ -201,11 +192,12 @@ const ProblemSolution = () => (
             <HeadingStyleLight>
               No targeted content, no customers
             </HeadingStyleLight>
-            <ParagraphBlue>
+            <SubHeadingStyleLight style={{ marginBottom: '2rem' }}>
               A web presence without targeted content is like a business without
               customers. Simply throwing some content together will only go so
-              far. Here's the results of not optimizing your online presence:
-            </ParagraphBlue>
+              far. Not optimizing your blog writing and social media posts leads
+              to:
+            </SubHeadingStyleLight>
             <ProblemList>
               <ProblemListItem>
                 <div>
@@ -219,25 +211,21 @@ const ProblemSolution = () => (
                 <div>
                   <CrossIcon />
                 </div>
-                <span>Losing money trying to make current customers happy</span>
+                <span>
+                  Zero or very little NEW leads, prospects, and customers
+                </span>
               </ProblemListItem>
               <ProblemListItem>
                 <div>
                   <CrossIcon />
                 </div>
-                <span>Closing your business as fast as you started it</span>
+                <span>Inability to grow past a certain point online</span>
               </ProblemListItem>
               <ProblemListItem>
                 <div>
                   <CrossIcon />
                 </div>
-                <span>Inability to grow past a certain point</span>
-              </ProblemListItem>
-              <ProblemListItem>
-                <div>
-                  <CrossIcon />
-                </div>
-                <span>Zero or very little NEW customers</span>
+                <span>Losing money from other online efforts</span>
               </ProblemListItem>
             </ProblemList>
             <ParagraphStyleLight>

@@ -45,7 +45,7 @@ const Checkout = ({ amount, description }) => {
         })
           .then(res => {
             resetButton()
-            setPaymentMessage('Payment Successful!')
+            setPaymentMessage('Redirecting to Form')
             window.location.href = 'https://leadbird.io/checkout-success'
             return res
           })

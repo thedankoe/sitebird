@@ -9,6 +9,7 @@ import { ParagraphStyle } from './styles/TextStyles'
 import BlogSection from './blogSection'
 import Buy from './buy'
 import OptimizationCTA from './optimizationCTA'
+import ShareBlog from './shareBlog'
 
 const PostWrapper = styled.div`
   width: ${props => props.theme.maxWidth};
@@ -130,7 +131,7 @@ const PostContainer = styled.div`
 
 export default class PostLayout extends Component {
   render() {
-    const { markdownRemark, file } = this.props.data
+    const { markdownRemark, file, site } = this.props.data
     const { location } = this.props
     return (
       <>
@@ -168,6 +169,15 @@ export default class PostLayout extends Component {
               }}
             />
           </PostWrapper>
+          <ShareBlog
+            socialConfig={{
+              config: {
+                url: `${site.siteMetadata.siteUrl}/posts${
+                  markdownRemark.frontmatter.slug
+                }`,
+              },
+            }}
+          />
           <OptimizationCTA />
           <Buy />
           <BlogSection />
@@ -189,6 +199,11 @@ export const query = graphql`
         authorDesc
         date(formatString: "MMMM DD, YYYY")
         slug
+      }
+    }
+    site {
+      siteMetadata {
+        siteUrl
       }
     }
     file(relativePath: { eq: "local-seo-web-expert.jpg" }) {
