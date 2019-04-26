@@ -111,7 +111,7 @@ const OurWebsitesPage = ({ location }) => (
             effort into quality posts, your engagement will skyrocket.
           </ParagraphStyle>
           <ParagraphSecondary>
-            Posting consistent, quality, content increases engagement and keeps
+            Posting consistent, quality content increases engagement and keeps
             customers coming back to purchase your product or service.
           </ParagraphSecondary>
         </div>
