@@ -93,7 +93,7 @@ const CardsImg = styled.img`
   margin-top: 2rem;
 `
 
-const blogQuantity = [
+const thirtyQuantity = [
   { value: 0, price: 0, discount: 0, delivery: 0 },
   { value: 1, price: 6700, discount: 0, delivery: 5 },
   { value: 2, price: 13400, discount: 0, delivery: 7 },
@@ -107,7 +107,19 @@ const blogQuantity = [
   { value: 10, price: 60300, discount: 67, delivery: 15 },
 ]
 
-const socialQuantity = [
+const sixtyQuantity = [
+  { value: 0, price: 0, discount: 0, delivery: 0 },
+  { value: 5, price: 2700, discount: 0, delivery: 5 },
+  { value: 10, price: 5400, discount: 0, delivery: 7 },
+  { value: 15, price: 8100, discount: 0, delivery: 10 },
+  { value: 20, price: 10800, discount: 0, delivery: 10 },
+  { value: 25, price: 13500, discount: 0, delivery: 12 },
+  { value: 30, price: 14500, discount: 17, delivery: 14 },
+  { value: 35, price: 17000, discount: 19, delivery: 14 },
+  { value: 34, price: 19400, discount: 22, delivery: 14 },
+]
+
+const ninetyQuantity = [
   { value: 0, price: 0, discount: 0, delivery: 0 },
   { value: 5, price: 2700, discount: 0, delivery: 5 },
   { value: 10, price: 5400, discount: 0, delivery: 7 },
@@ -123,10 +135,12 @@ let finalDescription = ''
 let finalDelivery = ''
 
 const CheckoutCard = () => {
-  const [showBlog, setShowBlog] = useState(false)
-  const [showSocial, setShowSocial] = useState(false)
-  const [selectedBlog, setSelectedBlog] = useState(blogQuantity[0])
-  const [selectedSocial, setSelectedSocial] = useState(socialQuantity[0])
+  const [showThirty, setShowThirty] = useState(false)
+  const [showSixty, setShowSixty] = useState(false)
+  const [showNinety, setShowNinety] = useState(false)
+  const [selectedThirty, setSelectedThirty] = useState(thirtyQuantity[0])
+  const [selectedSixty, setSelectedSixty] = useState(sixtyQuantity[0])
+  const [selectedNinety, setSelectedNinety] = useState(ninetyQuantity[0])
   const [discount, setDiscount] = useState(0)
   const [deliveryTime, setDeliveryTime] = useState(0)
   const [amount, setAmount] = useState(0)
@@ -135,26 +149,26 @@ const CheckoutCard = () => {
   )
 
   useEffect(() => {
-    const calculatedAmount = () => selectedBlog.price + selectedSocial.price
+    const calculatedAmount = () => selectedThirty.price + selectedSixty.price
     const calculatedDiscount = () =>
-      selectedBlog.discount + selectedSocial.discount
+      selectedThirty.discount + selectedSixty.discount
     const joinDescription = () => {
-      if (selectedBlog.value === 0) {
-        finalDescription = `${selectedSocial.value} social media posts`
-      } else if (selectedSocial.value === 0) {
-        finalDescription = `${selectedBlog.value} blog posts`
+      if (selectedThirty.value === 0) {
+        finalDescription = `${selectedSixty.value} social media posts`
+      } else if (selectedSixty.value === 0) {
+        finalDescription = `${selectedThirty.value} blog posts`
       } else {
-        finalDescription = `${selectedBlog.value} blog posts and ${
-          selectedSocial.value
+        finalDescription = `${selectedThirty.value} blog posts and ${
+          selectedSixty.value
         } social media posts`
       }
       return finalDescription
     }
     const calcDelivery = () => {
-      if (selectedBlog.delivery >= selectedSocial.delivery) {
-        finalDelivery = selectedBlog.delivery
+      if (selectedThirty.delivery >= selectedSixty.delivery) {
+        finalDelivery = selectedThirty.delivery
       } else {
-        finalDelivery = selectedSocial.delivery
+        finalDelivery = selectedSixty.delivery
       }
       return finalDelivery
     }
@@ -164,22 +178,31 @@ const CheckoutCard = () => {
     setDeliveryTime(calcDelivery())
   })
 
-  const dropDownBlog = () => {
-    setShowBlog(!showBlog)
+  const dropDownThirty = () => {
+    setShowThirty(!showThirty)
   }
 
-  const dropDownSocial = () => {
-    setShowSocial(!showSocial)
+  const dropDownSixty = () => {
+    setShowSixty(!showSixty)
   }
 
-  const selectBlog = item => {
-    setSelectedBlog(item)
-    setShowBlog(false)
+  const dropDownNinety = () => {
+    setShowNinety(!showNinety)
   }
 
-  const selectSocial = item => {
-    setSelectedSocial(item)
-    setShowSocial(false)
+  const selectThirty = item => {
+    setSelectedThirty(item)
+    setShowThirty(false)
+  }
+
+  const selectSixty = item => {
+    setSelectedSixty(item)
+    setShowSixty(false)
+  }
+
+  const selectNinety = item => {
+    setSelectedNinety(item)
+    setShowNinety(false)
   }
 
   const formatMoney = cost => cost / 100
@@ -187,7 +210,7 @@ const CheckoutCard = () => {
   return (
     <CheckoutCardWrapper>
       <SubHeadingStyle>
-        Get a 10% discount if you order 5+ blog posts or 30+ social posts!
+        Get a 10% discount if you order 3 or more of the same length video!
       </SubHeadingStyle>
       <QuantityTable>
         <QuantityTableHeading>Qty</QuantityTableHeading>
@@ -196,16 +219,16 @@ const CheckoutCard = () => {
       </QuantityTable>
       <QuantityTable>
         <SelectWrapper>
-          <SelectContainer style={{ zIndex: 3 }} onClick={dropDownBlog}>
-            <SelectItemSelected>{selectedBlog.value}</SelectItemSelected>
-            <SelectArrow>{showBlog ? <UpIcon /> : <DownIcon />}</SelectArrow>
-            <SelectItems style={{ display: showBlog ? 'block' : 'none' }}>
-              {blogQuantity.map(item => (
+          <SelectContainer style={{ zIndex: 3 }} onClick={dropDownThirty}>
+            <SelectItemSelected>{selectedThirty.value}</SelectItemSelected>
+            <SelectArrow>{showThirty ? <UpIcon /> : <DownIcon />}</SelectArrow>
+            <SelectItems style={{ display: showThirty ? 'block' : 'none' }}>
+              {thirtyQuantity.map(item => (
                 <div
                   role="button"
                   tabIndex="0"
                   key={item.value}
-                  onClick={() => selectBlog(item)}
+                  onClick={() => selectThirty(item)}
                 >
                   {item.value}
                 </div>
@@ -213,21 +236,21 @@ const CheckoutCard = () => {
             </SelectItems>
           </SelectContainer>
         </SelectWrapper>
-        <ParagraphStyle>Blog Posts</ParagraphStyle>
-        <ParagraphStyle>$67 for 1</ParagraphStyle>
+        <ParagraphStyle>30 Second Video</ParagraphStyle>
+        <ParagraphStyle>$497</ParagraphStyle>
       </QuantityTable>
       <QuantityTable>
         <SelectWrapper>
-          <SelectContainer onClick={dropDownSocial}>
-            <SelectItemSelected>{selectedSocial.value}</SelectItemSelected>
-            <SelectArrow>{showSocial ? <UpIcon /> : <DownIcon />}</SelectArrow>
-            <SelectItems style={{ display: showSocial ? 'block' : 'none' }}>
-              {socialQuantity.map(item => (
+          <SelectContainer onClick={dropDownSixty}>
+            <SelectItemSelected>{selectedSixty.value}</SelectItemSelected>
+            <SelectArrow>{showSixty ? <UpIcon /> : <DownIcon />}</SelectArrow>
+            <SelectItems style={{ display: showSixty ? 'block' : 'none' }}>
+              {sixtyQuantity.map(item => (
                 <div
                   role="button"
                   tabIndex="0"
                   key={item.value}
-                  onClick={() => selectSocial(item)}
+                  onClick={() => selectSixty(item)}
                 >
                   {item.value}
                 </div>
@@ -235,10 +258,32 @@ const CheckoutCard = () => {
             </SelectItems>
           </SelectContainer>
         </SelectWrapper>
-        <ParagraphStyle>Social Posts</ParagraphStyle>
-        <ParagraphStyle>$27 for 5</ParagraphStyle>
+        <ParagraphStyle>60 Second Video</ParagraphStyle>
+        <ParagraphStyle>$897</ParagraphStyle>
       </QuantityTable>
-      {selectedBlog.value > 0 || selectedSocial.value > 0 ? (
+      <QuantityTable>
+        <SelectWrapper>
+          <SelectContainer onClick={dropDownNinety}>
+            <SelectItemSelected>{selectedSixty.value}</SelectItemSelected>
+            <SelectArrow>{showNinety ? <UpIcon /> : <DownIcon />}</SelectArrow>
+            <SelectItems style={{ display: showNinety ? 'block' : 'none' }}>
+              {sixtyQuantity.map(item => (
+                <div
+                  role="button"
+                  tabIndex="0"
+                  key={item.value}
+                  onClick={() => selectNinety(item)}
+                >
+                  {item.value}
+                </div>
+              ))}
+            </SelectItems>
+          </SelectContainer>
+        </SelectWrapper>
+        <ParagraphStyle>90 Second Video</ParagraphStyle>
+        <ParagraphStyle>$1297</ParagraphStyle>
+      </QuantityTable>
+      {selectedThirty.value > 0 || selectedSixty.value > 0 ? (
         <>
           <QuantityTable border>
             <QuantityTableHeading>Qty</QuantityTableHeading>
@@ -246,15 +291,22 @@ const CheckoutCard = () => {
             <QuantityTableHeading>Price</QuantityTableHeading>
           </QuantityTable>
           <QuantityTable border>
-            <ParagraphStyle>{selectedBlog.value}</ParagraphStyle>
-            <ParagraphStyle>Blog Posts</ParagraphStyle>
-            <ParagraphStyle>${formatMoney(selectedBlog.price)}</ParagraphStyle>
+            <ParagraphStyle>{selectedThirty.value}</ParagraphStyle>
+            <ParagraphStyle>30 Second Video</ParagraphStyle>
+            <ParagraphStyle>
+              ${formatMoney(selectedThirty.price)}
+            </ParagraphStyle>
           </QuantityTable>
           <QuantityTable border>
-            <ParagraphStyle>{selectedSocial.value}</ParagraphStyle>
-            <ParagraphStyle>Social Posts</ParagraphStyle>
+            <ParagraphStyle>{selectedSixty.value}</ParagraphStyle>
+            <ParagraphStyle>60 Second Video</ParagraphStyle>
+            <ParagraphStyle>${formatMoney(selectedSixty.price)}</ParagraphStyle>
+          </QuantityTable>
+          <QuantityTable border>
+            <ParagraphStyle>{selectedNinety.value}</ParagraphStyle>
+            <ParagraphStyle>90 Second Video</ParagraphStyle>
             <ParagraphStyle>
-              ${formatMoney(selectedSocial.price)}
+              ${formatMoney(selectedNinety.price)}
             </ParagraphStyle>
           </QuantityTable>
           <QuantityTotalDiv>

@@ -31,7 +31,7 @@ const Checkout = ({ amount, description }) => {
       amount,
       description,
       token: token => {
-        fetch(`https://www.leadbird.io/.netlify/functions/checkout`, {
+        fetch(`https://www.videobird.io/.netlify/functions/checkout`, {
           method: 'POST',
           mode: 'no-cors',
           body: JSON.stringify({
@@ -46,7 +46,7 @@ const Checkout = ({ amount, description }) => {
           .then(res => {
             resetButton()
             setPaymentMessage('Redirecting to Form')
-            window.location.href = 'https://leadbird.io/checkout-success'
+            window.location.href = 'https://videobird.io/checkout-success'
             return res
           })
           .catch(error => {

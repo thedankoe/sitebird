@@ -12,8 +12,8 @@ import MoneyBack from '../components/moneyBack'
 const IndexPage = ({ location }) => (
   <Layout location={location}>
     <SEO
-      title="Blog Writing and Social Media Post Creation"
-      description="Optimized SEO blog writing with the perfect word count. Social media posts that engage and convert."
+      title="Professional Animated Explainer Videos from $497"
+      description="Videos convert more and increase engagement. Our animated explainer videos are professional and high quality including script writing, voiceover, background music, and animation."
     />
     <CaseStudy />
     <ProblemSolution />

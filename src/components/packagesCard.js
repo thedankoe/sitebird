@@ -22,7 +22,7 @@ const PackagesCard = () => (
       <PreviousPrice>$797</PreviousPrice>
       <CardParagraph>$497</CardParagraph>
       <ParagraphStyle>2-3 week delivery</ParagraphStyle>
-      <CardLink blue to="/content-checkout">
+      <CardLink blue to="/checkout">
         Order Now
       </CardLink>
       <CardList>
@@ -61,7 +61,7 @@ const PackagesCard = () => (
       <PreviousPrice>$1497</PreviousPrice>
       <CardParagraph>$897</CardParagraph>
       <ParagraphStyle>2-3 week delivery</ParagraphStyle>
-      <CardLink to="/content-checkout">Order Now</CardLink>
+      <CardLink to="/checkout">Order Now</CardLink>
       <ParagraphStyle style={{ marginTop: '3rem' }}>BEST SELLER</ParagraphStyle>
       <CardList>
         <li>
@@ -96,7 +96,7 @@ const PackagesCard = () => (
       <PreviousPrice>$2197</PreviousPrice>
       <CardParagraph>$1297</CardParagraph>
       <ParagraphStyle>2-3 week delivery</ParagraphStyle>
-      <CardLink blue to="/content-checkout">
+      <CardLink blue to="/checkout">
         Order Now
       </CardLink>
       <CardList>
