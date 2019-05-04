@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { device } from './styles/MediaQueries'
-import { ProblemLink, HeadingStyleLight } from './styles/TextStyles'
-import { RightIcon } from './styles/IconStyles'
+import { HeadingStyleLight, SubHeadingStyleLight } from './styles/TextStyles'
 import PrismTexture from '../images/prism-texture.png'
 import PackagesCard from './packagesCard'
 
@@ -19,7 +18,7 @@ export const BuyWrapper = styled.div`
 `
 
 export const BuyContainer = styled.div`
-  width: ${props => props.theme.maxWidth};
+  width: 95%;
   margin: 0 auto;
 
   @media ${device.desktop} {
@@ -42,6 +41,10 @@ const Buy = () => (
   <BuyWrapper id="packages">
     <BuyContainer>
       <HeadingStyleLight>Get started</HeadingStyleLight>
+      <SubHeadingStyleLight>
+        Best results are achieved if you already have a decent social following
+        and web traffic. If this is not the case, contact us for guidance.
+      </SubHeadingStyleLight>
       <PackagesCard />
     </BuyContainer>
   </BuyWrapper>

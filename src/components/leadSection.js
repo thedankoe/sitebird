@@ -40,7 +40,7 @@ const LeadSectionContainer = styled.div`
 
 const LeadSectionGrid = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: ${props => props.theme.textSpace};
 
   @media ${device.laptop} {
@@ -52,22 +52,30 @@ const LeadSection = () => (
   <LeadSectionWrapper>
     <LeadBgIcon />
     <LeadSectionContainer>
-      <HeadingStyle>Outsource your content</HeadingStyle>
+      <HeadingStyle>A few of the videos we have done</HeadingStyle>
       <LeadSectionGrid>
         <div>
-          <SubHeadingStyle>Ensure Content Quality</SubHeadingStyle>
           <ParagraphStyle>
-            Outsourcing your content does not mean there is a loss in quality.
-            If the topic is thoroughly researched, someone who is proficient in
-            content creation will produce high quality work.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Consequatur quia aut libero sunt non quam ipsa a amet corporis minus
+            error voluptates, molestias quaerat, eius, quibusdam facere
+            similique aspernatur id.
           </ParagraphStyle>
         </div>
         <div>
-          <SubHeadingStyle>Save Precious Time</SubHeadingStyle>
           <ParagraphStyle>
-            Spending hours upon hours each week creating content is not
-            feesible. For business owners, putting time into something other
-            than running their business is daunting and demotivating.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Consequatur quia aut libero sunt non quam ipsa a amet corporis minus
+            error voluptates, molestias quaerat, eius, quibusdam facere
+            similique aspernatur id.
+          </ParagraphStyle>
+        </div>
+        <div>
+          <ParagraphStyle>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Consequatur quia aut libero sunt non quam ipsa a amet corporis minus
+            error voluptates, molestias quaerat, eius, quibusdam facere
+            similique aspernatur id.
           </ParagraphStyle>
         </div>
       </LeadSectionGrid>

@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { GoCreditCard, GoQuestion, GoPin } from 'react-icons/go'
+import { GoCreditCard, GoQuestion } from 'react-icons/go'
+import { TiDocumentText, TiMediaPlayOutline } from 'react-icons/ti'
 import { device } from './styles/MediaQueries'
 import { HeadingStyle, ParagraphStyle, ProblemLink } from './styles/TextStyles'
 import { PencilIcon, RightIcon } from './styles/IconStyles'
@@ -72,7 +73,7 @@ const ProcessListItem = styled.li`
   }
 `
 
-const ProcessListIcon = styled(PencilIcon)`
+const ProcessVidIcon = styled(TiMediaPlayOutline)`
   font-size: 3rem;
   margin-right: 3rem;
   fill: #fff;
@@ -90,7 +91,7 @@ const ProcessQuestionIcon = styled(GoQuestion)`
   fill: #fff;
 `
 
-const ProcessTopicIcon = styled(GoPin)`
+const ProcessScriptIcon = styled(TiDocumentText)`
   font-size: 3rem;
   margin-right: 3rem;
   fill: #fff;
@@ -129,35 +130,31 @@ const Process = () => (
       </ProcessListContainer>
       <ProcessListContainer>
         <div>
-          <ProcessTopicIcon />
+          <ProcessScriptIcon />
         </div>
         <ProcessListItem>
-          Choose Topics
+          Review Script
           <span>
-            In the brief, you may choose specific topics or list other sources
-            that you use as inspiration. We give you the option to have us do
-            this as well.
+            Once you fill out the brief, we start writing your script. We write
+            a draft, send it to you for feedback, and make changes until you are
+            happy
           </span>
         </ProcessListItem>
       </ProcessListContainer>
       <ProcessListContainer>
         <div>
-          <ProcessListIcon />
+          <ProcessVidIcon />
         </div>
         <ProcessListItem>
-          Review Content
+          Review Video
           <span>
-            Once we receive your brief, we create the content you ordered.
-            Within the delivery time you will receive your order and can make
-            revisions until you are happy.
+            Once we receive the recording of the script, our animator will
+            create your video. We send it over for feedback and repeat until you
+            are satisfied.
           </span>
         </ProcessListItem>
       </ProcessListContainer>
     </ProcessList>
-    <ProblemLink to="/services">
-      Detail on our services
-      <RightIcon />
-    </ProblemLink>
   </ProcessWrapper>
 )
 

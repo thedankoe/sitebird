@@ -22,7 +22,7 @@ export const CardContainer = styled.div`
 `
 
 export const Card = styled.div`
-  width: 50%;
+  width: 100%;
   background: #fff;
   padding: 3rem 1rem;
   border-radius: 3px;
@@ -52,8 +52,12 @@ export const Card = styled.div`
 
 export const CardParagraph = styled.p`
   color: ${props => props.theme.primary};
-  font-size: 2.8rem;
+  font-size: 3.2rem;
   font-weight: 500;
+
+  span {
+    color: ${props => props.theme.tertiary};
+  }
 `
 
 export const CardList = styled.ul`
@@ -83,6 +87,13 @@ export const CardList = styled.ul`
 
 export const CardLink = styled(HeaderLinkStyle)`
   margin: 0 auto;
+  background: ${props =>
+    props.blue ? props.theme.secondary : props.theme.tertiary};
+
+  :hover {
+    background: ${props =>
+      props.blue ? props.theme.secondaryLight : props.theme.tertiaryLight};
+  }
 `
 
 const ServicesCard = () => (

@@ -2,16 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
+import { GoCheck } from 'react-icons/go'
 import { device } from './styles/MediaQueries'
 import {
   HeadingStyle,
   ParagraphStyle,
-  ParagraphStyleLight,
-  ProblemLink,
   HeadingStyleLight,
   SubHeadingStyleLight,
 } from './styles/TextStyles'
-import { RightIcon, CrossIcon } from './styles/IconStyles'
 import LeadSection from './leadSection'
 import InfoSection from './infoSection'
 import PrismTexture from '../images/prism-texture.png'
@@ -157,10 +155,16 @@ const ProblemListItem = styled.li`
   }
   div {
     width: 3rem;
+    margin-right: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+`
+
+const CheckIcon = styled(GoCheck)`
+  font-size: 3rem;
+  fill: ${props => props.theme.success};
 `
 
 const ProblemSolution = () => (
@@ -169,19 +173,19 @@ const ProblemSolution = () => (
     render={data => (
       <>
         <ProblemWrapper>
-          <HeadingStyle>Quality content takes time and skill</HeadingStyle>
+          <HeadingStyle>99% of people leave your website</HeadingStyle>
           <ProblemContainer>
             <div>
               <ParagraphStyle>
-                Creating content is a huge problem for business owners. They
-                know they need to consistently write blog posts, craft social
-                media images, write engaging content for those social media
-                posts, and so on.
+                Why? <strong>You didn't hook them.</strong> Attention spans are
+                rapidly decreasing because users expect more. There's two
+                options, complain about it or prevent your business from
+                suffering.
               </ParagraphStyle>
               <ParagraphSecondary>
-                Creating engaging content is the backbone of a businesses online
-                presence. Having a business to run makes content creation a
-                drag.
+                Blame is often put on the user. It's not their fault that they
+                weren't enticed by your product or offer. It's up to you to
+                entice them.
               </ParagraphSecondary>
             </div>
             <ProblemImg fluid={data.file.childImageSharp.fluid} />
@@ -190,58 +194,57 @@ const ProblemSolution = () => (
         <WrapperBlue>
           <ProbContainerBlue>
             <HeadingStyleLight>
-              No targeted content, no customers
+              Ensure that visitors don't leave
             </HeadingStyleLight>
             <SubHeadingStyleLight style={{ marginBottom: '2rem' }}>
-              A web presence without targeted content is like a business without
-              customers. Simply throwing some content together will only go so
-              far. Not optimizing your blog writing and social media posts leads
-              to:
+              You wouldn't buy something from someone you don't trust. A
+              beautiful video can do more than just build trust, it communicates
+              better, it's more engaging, more memorable, and easy to share.
             </SubHeadingStyleLight>
             <ProblemList>
               <ProblemListItem>
                 <div>
-                  <CrossIcon />
+                  <CheckIcon />
                 </div>
-                <span>
-                  Wasting money on services that aren't bringing in customers
-                </span>
+                <span>Increase your conversion rate</span>
               </ProblemListItem>
               <ProblemListItem>
                 <div>
-                  <CrossIcon />
+                  <CheckIcon />
                 </div>
-                <span>
-                  Zero or very little NEW leads, prospects, and customers
-                </span>
+                <span>Seamlessly get your message across</span>
               </ProblemListItem>
               <ProblemListItem>
                 <div>
-                  <CrossIcon />
+                  <CheckIcon />
                 </div>
-                <span>Inability to grow past a certain point online</span>
+                <span>Increase your perceived value</span>
               </ProblemListItem>
               <ProblemListItem>
                 <div>
-                  <CrossIcon />
+                  <CheckIcon />
                 </div>
-                <span>Losing money from other online efforts</span>
+                <span>Rank better in Google</span>
+              </ProblemListItem>
+              <ProblemListItem>
+                <div>
+                  <CheckIcon />
+                </div>
+                <span>Increase demand to work with you</span>
+              </ProblemListItem>
+              <ProblemListItem>
+                <div>
+                  <CheckIcon />
+                </div>
+                <span>Skyrocket revenue</span>
               </ProblemListItem>
             </ProblemList>
-            <ParagraphStyleLight>
-              Worst case scenario: you don't scale, you lose a lot of money, and
-              you restart.
-            </ParagraphStyleLight>
           </ProbContainerBlue>
         </WrapperBlue>
         <LeadSection />
         <WrapperBlue>
-          <HeadingStyleLight>How we can help</HeadingStyleLight>
+          <HeadingStyleLight>What to expect</HeadingStyleLight>
           <InfoSection />
-          <ProblemLink to="/services">
-            Detail on our services
-            <RightIcon />
-          </ProblemLink>
         </WrapperBlue>
       </>
     )}

@@ -95,26 +95,28 @@ const CardsImg = styled.img`
 
 const blogQuantity = [
   { value: 0, price: 0, discount: 0, delivery: 0 },
-  { value: 1, price: 9700, discount: 0, delivery: 5 },
-  { value: 2, price: 19400, discount: 0, delivery: 7 },
-  { value: 3, price: 29100, discount: 0, delivery: 8 },
-  { value: 4, price: 34800, discount: 40, delivery: 9 },
-  { value: 5, price: 43500, discount: 50, delivery: 10 },
-  { value: 6, price: 52200, discount: 60, delivery: 11 },
-  { value: 7, price: 60900, discount: 70, delivery: 12 },
-  { value: 8, price: 69600, discount: 80, delivery: 13 },
-  { value: 9, price: 78300, discount: 90, delivery: 14 },
-  { value: 10, price: 87000, discount: 100, delivery: 15 },
+  { value: 1, price: 6700, discount: 0, delivery: 5 },
+  { value: 2, price: 13400, discount: 0, delivery: 7 },
+  { value: 3, price: 20100, discount: 0, delivery: 8 },
+  { value: 4, price: 26800, discount: 0, delivery: 9 },
+  { value: 5, price: 30100, discount: 34, delivery: 10 },
+  { value: 6, price: 36100, discount: 41, delivery: 11 },
+  { value: 7, price: 42200, discount: 47, delivery: 12 },
+  { value: 8, price: 48200, discount: 54, delivery: 13 },
+  { value: 9, price: 54200, discount: 61, delivery: 14 },
+  { value: 10, price: 60300, discount: 67, delivery: 15 },
 ]
 
 const socialQuantity = [
   { value: 0, price: 0, discount: 0, delivery: 0 },
-  { value: 1, price: 2700, discount: 0, delivery: 2 },
-  { value: 5, price: 9700, discount: 0, delivery: 5 },
-  { value: 10, price: 19400, discount: 0, delivery: 7 },
-  { value: 20, price: 38800, discount: 0, delivery: 10 },
-  { value: 30, price: 52400, discount: 58, delivery: 12 },
-  { value: 40, price: 69900, discount: 77, delivery: 14 },
+  { value: 5, price: 2700, discount: 0, delivery: 5 },
+  { value: 10, price: 5400, discount: 0, delivery: 7 },
+  { value: 15, price: 8100, discount: 0, delivery: 10 },
+  { value: 20, price: 10800, discount: 0, delivery: 10 },
+  { value: 25, price: 13500, discount: 0, delivery: 12 },
+  { value: 30, price: 14500, discount: 17, delivery: 14 },
+  { value: 35, price: 17000, discount: 19, delivery: 14 },
+  { value: 34, price: 19400, discount: 22, delivery: 14 },
 ]
 
 let finalDescription = ''
@@ -185,7 +187,7 @@ const CheckoutCard = () => {
   return (
     <CheckoutCardWrapper>
       <SubHeadingStyle>
-        Get a 10% discount if you order 4+ blog posts or 30+ social posts!
+        Get a 10% discount if you order 5+ blog posts or 30+ social posts!
       </SubHeadingStyle>
       <QuantityTable>
         <QuantityTableHeading>Qty</QuantityTableHeading>
@@ -212,7 +214,7 @@ const CheckoutCard = () => {
           </SelectContainer>
         </SelectWrapper>
         <ParagraphStyle>Blog Posts</ParagraphStyle>
-        <ParagraphStyle>$97 for 1</ParagraphStyle>
+        <ParagraphStyle>$67 for 1</ParagraphStyle>
       </QuantityTable>
       <QuantityTable>
         <SelectWrapper>
@@ -234,7 +236,7 @@ const CheckoutCard = () => {
           </SelectContainer>
         </SelectWrapper>
         <ParagraphStyle>Social Posts</ParagraphStyle>
-        <ParagraphStyle>$97 for 5</ParagraphStyle>
+        <ParagraphStyle>$27 for 5</ParagraphStyle>
       </QuantityTable>
       {selectedBlog.value > 0 || selectedSocial.value > 0 ? (
         <>

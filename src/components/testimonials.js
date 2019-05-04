@@ -86,6 +86,66 @@ const TestimonialSection = () => (
         <span>Skip &amp; Angee</span>
       </TestimonialParagraph>
     </TestimonialContainer>
+    <TestimonialContainer>
+      <RatingContainer>
+        <RatingIcon />
+        <RatingIcon />
+        <RatingIcon />
+        <RatingIcon />
+        <RatingIcon />
+      </RatingContainer>
+      <VerifiedPurchase>Verified Purchase</VerifiedPurchase>
+      <TestimonialParagraph>
+        "Excellent as always! Exactly what we asked for. Order with confidence!"
+        <span>Renee</span>
+      </TestimonialParagraph>
+    </TestimonialContainer>
+    <TestimonialContainer>
+      <RatingContainer>
+        <RatingIcon />
+        <RatingIcon />
+        <RatingIcon />
+        <RatingIcon />
+        <RatingIcon />
+      </RatingContainer>
+      <VerifiedPurchase>Verified Purchase</VerifiedPurchase>
+      <TestimonialParagraph>
+        "LeadBird offers an excellent value for search engine optimized blog
+        articles to populate your website with articles. Always a pleasure
+        working with them!"
+        <span>Sarah</span>
+      </TestimonialParagraph>
+    </TestimonialContainer>
+    <TestimonialContainer>
+      <RatingContainer>
+        <RatingIcon />
+        <RatingIcon />
+        <RatingIcon />
+        <RatingIcon />
+        <RatingIcon />
+      </RatingContainer>
+      <VerifiedPurchase>Verified Purchase</VerifiedPurchase>
+      <TestimonialParagraph>
+        "Very professional and talented design work! Can't wait to work with
+        them again."
+        <span>Basioni</span>
+      </TestimonialParagraph>
+    </TestimonialContainer>
+    <TestimonialContainer>
+      <RatingContainer>
+        <RatingIcon />
+        <RatingIcon />
+        <RatingIcon />
+        <RatingIcon />
+        <RatingIcon />
+      </RatingContainer>
+      <VerifiedPurchase>Verified Purchase</VerifiedPurchase>
+      <TestimonialParagraph>
+        "Great final product! Amazing and professional experience! Will be back
+        for more!"
+        <span>Sali</span>
+      </TestimonialParagraph>
+    </TestimonialContainer>
   </TestimonialWrapper>
 )
 

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Link } from 'gatsby'
 import { ParagraphStyle } from './styles/TextStyles'
 import { device } from './styles/MediaQueries'
-import FooterLogo from '../images/leadbird-logo-navigation.png'
+import FooterLogo from '../images/videobird-logo.png'
 
 const FooterWrapper = styled.footer`
   width: 100%;
@@ -90,7 +90,7 @@ const Footer = () => (
           </FooterNavItem>
         </FooterNavList>
       </nav>
-      <ParagraphStyle>&copy; 2019 LeadBird</ParagraphStyle>
+      <ParagraphStyle>&copy; 2019 VideoBird</ParagraphStyle>
     </FooterContainer>
   </FooterWrapper>
 )

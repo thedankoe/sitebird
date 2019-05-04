@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `LeadBird`,
-    description: `Affordable lead generation for entrepreneurs and small businesses through website optimization, social media management, and content marketing.`,
+    title: `VideoBird`,
+    description: `Animated explainer videos for sales, brand awareness, and engagement starting at $497.`,
     author: `Dan Koe`,
-    siteUrl: 'https://www.leadbird.io',
+    siteUrl: 'https://www.videobird.io',
   },
   plugins: [
     {
@@ -29,7 +29,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-138257765-1',
+        trackingId: 'UA-139580333-1',
         head: false,
         respectDNT: true,
       },
@@ -53,7 +53,7 @@ module.exports = {
         name: 'leadbird.io',
         short_name: 'LeadBird',
         start_url: '/',
-        icon: 'src/images/sitebird-favicon.png',
+        icon: 'src/images/leadbird-favicon.png',
       },
     },
     {
@@ -87,7 +87,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-facebook-pixel`,
       options: {
-        pixelId: '598752373975532',
+        pixelId: '354020558653540',
       },
     },
     'gatsby-plugin-react-helmet',

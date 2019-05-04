@@ -20,6 +20,7 @@ const CASE_STUDY_QUERY = graphql`
 export const CaseWrapper = styled.div`
   width: ${props => props.theme.maxWidth};
   margin: ${props => props.theme.sectionSpace} auto;
+  text-align: center;
 
   @media ${device.desktop} {
     width: 80%;
@@ -28,10 +29,14 @@ export const CaseWrapper = styled.div`
   @media ${device.laptop} {
     width: 95%;
   }
+
+  @media ${device.tabletS} {
+    text-align: left;
+  }
 `
 
 export const CaseContainer = styled.div`
-  margin-bottom: ${props => props.theme.textSpace};
+  margin: ${props => props.theme.textSpace} 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: ${props => props.theme.textSpace};
@@ -58,7 +63,12 @@ const CaseList = styled.ul`
   font-weight: 500;
 
   li {
+    :not(:last-child) {
+      margin-bottom: ${props => props.theme.textSpace};
+    }
+
     span {
+      display: block;
       font-weight: 700;
       color: ${props => props.theme.secondary};
     }
@@ -81,48 +91,39 @@ const CaseStudy = () => (
     query={CASE_STUDY_QUERY}
     render={data => (
       <CaseWrapper>
-        <HeadingStyle>Content Marketing Overview</HeadingStyle>
+        <HeadingStyle>1400% ROI</HeadingStyle>
+        <SubHeadingStyle>
+          A sequence of 3 videos over time built up to 1400% ROI on ad spend.
+        </SubHeadingStyle>
         <CaseContainer>
           <CaseImg fluid={data.file.childImageSharp.fluid} />
           <ParagraphContainer>
-            <SubHeadingStyle>
-              Business owners understand how necessary it is to produce content,
-              but many found themselves with these problems:
-            </SubHeadingStyle>
             <CaseList style={{ marginBottom: '2rem' }}>
               <li>
-                <span>65%</span> find it challenging to produce engaging content
+                <span>Video 1 - Content</span> We started off with 60 seconds of
+                content (no promotion) to provide value. This converts some
+                viewers, but leaves many wanting more.{' '}
+                <strong>This video had 800% ROI.</strong>
               </li>
               <li>
-                <span>62%</span> don't know how to measure the ROI of their
-                campaigns
+                <span>Video 2 - Promotion</span> Our audience is craving more. A
+                promotional video will be well received now about how we can
+                help them. Only show this video to those who watched the last.{' '}
+                <strong>This video had 1200% ROI.</strong>
               </li>
               <li>
-                <span>60%</span> say that they can't produce content
-                consistently
-              </li>
-            </CaseList>
-            <SubHeadingStyle>
-              Here's some stats from Twitter themselves on content marketing.
-            </SubHeadingStyle>
-            <CaseList>
-              <li>
-                <span>66%</span> of people have found a new business on Twitter
-              </li>
-              <li>
-                <span>69%</span> of people bought something because of a tweet
-              </li>
-              <li>
-                <span>94%</span> plan to make a purchase from a business they
-                follow.
+                <span>Video 3 - Testimonials / Proof</span> This video aimed to
+                increase credibility and decrease perceived risk. We do this by
+                showing enthusiastic testimonials in a slideshow video.{' '}
+                <strong>This video had 1400% ROI.</strong>
               </li>
             </CaseList>
           </ParagraphContainer>
         </CaseContainer>
         <CaseParagraph>
-          These statistics more or less account for all social platforms and
-          blogs. The main point is that{' '}
-          <span>you need to consistently post great content</span>
+          With quality and captivating video, you can achieve these results as
+          well. Videos are dominating content marketing with the highest{' '}
+          <span>conversion rates, engagements, and views.</span>
         </CaseParagraph>
       </CaseWrapper>
     )}

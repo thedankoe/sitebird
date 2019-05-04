@@ -1,17 +1,25 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
-import { TiDeviceLaptop, TiPencil } from 'react-icons/ti'
-import { GoGear } from 'react-icons/go'
+import {
+  TiMicrophoneOutline,
+  TiPencil,
+  TiNotesOutline,
+  TiMediaPlayOutline,
+} from 'react-icons/ti'
 import { device } from './styles/MediaQueries'
 import { SubHeadingStyleLight, ParagraphStyleLight } from './styles/TextStyles'
 
-const spinAnimation = keyframes`
-  from {
-    transform: rotate(0deg);
+const playAnimation = keyframes`
+  0% {
+    transform: translateX(-0.5rem);
   }
 
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: translateX(0.5rem);
+  }
+  
+  100% {
+    transform: translateX(-0.5rem);
   }
 `
 
@@ -43,6 +51,28 @@ const growAnimation = keyframes`
   }
 `
 
+const danceAnimation = keyframes`
+  0% {
+    transform: translate(-1rem, 0);
+  }
+
+  15% {
+    transform: translate(0, -1rem);
+  }
+  
+  50% {
+    transform: translate(1rem, 0);
+  }
+  
+  85% {
+    transform: translate(0, -1rem);
+  }
+  
+  100% {
+    transform: translate(-1rem, 0);
+  }
+`
+
 export const InfoWrapper = styled.div`
   width: ${props => props.theme.maxWidth};
   margin: 0 auto ${props => props.theme.textSpace} auto;
@@ -59,7 +89,7 @@ export const InfoWrapper = styled.div`
 export const InfoContainer = styled.div`
   margin-bottom: ${props => props.theme.textSpace};
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: ${props => props.theme.textSpace};
 
   @media ${device.tabletL} {
@@ -71,7 +101,7 @@ export const InfoBlock = styled.div`
   text-align: center;
 `
 
-const LayoutIcon = styled(TiDeviceLaptop)`
+const MicIcon = styled(TiMicrophoneOutline)`
   fill: #fff;
   font-size: 7rem;
   animation: ${growAnimation} 2s infinite;
@@ -83,37 +113,51 @@ const CopywritingIcon = styled(TiPencil)`
   animation: ${swayAnimation} 2s infinite;
 `
 
-const OptimizationIcon = styled(GoGear)`
+const PlayIcon = styled(TiMediaPlayOutline)`
   fill: #fff;
   font-size: 7rem;
-  animation: ${spinAnimation} 3s infinite;
+  animation: ${playAnimation} 1s infinite;
+`
+
+const MusicIcon = styled(TiNotesOutline)`
+  fill: #fff;
+  font-size: 7rem;
+  animation: ${danceAnimation} 2s infinite;
 `
 
 const InfoSection = () => (
   <InfoWrapper>
     <InfoContainer>
       <InfoBlock>
-        <OptimizationIcon />
-        <SubHeadingStyleLight>Optimized Content</SubHeadingStyleLight>
+        <PlayIcon />
+        <SubHeadingStyleLight>Beautiful Animation</SubHeadingStyleLight>
         <ParagraphStyleLight>
           We thoroughly research topics and keywords to ensure maximum
           engagement.
         </ParagraphStyleLight>
       </InfoBlock>
       <InfoBlock>
-        <LayoutIcon />
-        <SubHeadingStyleLight>Social Media</SubHeadingStyleLight>
+        <MicIcon />
+        <SubHeadingStyleLight>Fluent Voiceover</SubHeadingStyleLight>
         <ParagraphStyleLight>
-          Social media posts with professionally designed images and
-          copywriting.
+          We use professional, native speaking, american english voice. No
+          pre-recordings.
         </ParagraphStyleLight>
       </InfoBlock>
       <InfoBlock>
         <CopywritingIcon />
-        <SubHeadingStyleLight>Blog Posts</SubHeadingStyleLight>
+        <SubHeadingStyleLight>Simple Scripts</SubHeadingStyleLight>
         <ParagraphStyleLight>
-          Blog posts with the perfect word count that are targeted at your
-          audience.
+          Simple and readable writing converts more. Complexity drives viewers
+          away.
+        </ParagraphStyleLight>
+      </InfoBlock>
+      <InfoBlock>
+        <MusicIcon />
+        <SubHeadingStyleLight>Background Music</SubHeadingStyleLight>
+        <ParagraphStyleLight>
+          We set the mood and scene of the animation with matching background
+          music.
         </ParagraphStyleLight>
       </InfoBlock>
     </InfoContainer>
