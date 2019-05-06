@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import styled, { keyframes } from 'styled-components'
 import { Link } from 'gatsby'
 import './styles/nav.css'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { ToggleIcon } from './styles/IconStyles'
 import Toggle from './toggle'
 import NavLogo from '../images/videobird-logo.png'
@@ -26,7 +27,7 @@ const NavContainer = styled.nav`
   margin: 0 3rem 0 auto;
 `
 
-const Logo = styled(Link)`
+const Logo = styled.div`
   position: absolute;
   left: 2rem;
   top: 1.5rem;
@@ -157,6 +158,7 @@ class Nav extends Component {
 
   render() {
     const { scroll, top, collapse } = this.state
+    const { location } = this.props
     return (
       <NavWrapper
         className={scroll > top ? 'nav-scroll nav-wrapper' : 'nav-wrapper'}
@@ -164,14 +166,41 @@ class Nav extends Component {
         {collapse >= 900 ? (
           <NavContainer>
             <NavList>
-              <Logo to="/">
-                <LogoImg src={NavLogo} alt="SiteBird logo" />
-              </Logo>
+              {location.pathname !== '/' ? (
+                <>
+                  <Logo>
+                    <Link to="/">
+                      <LogoImg src={NavLogo} alt="VideoBird logo" />
+                    </Link>
+                  </Logo>
+                  <NavItem>
+                    <Link to="/#portfolio">Portfolio</Link>
+                  </NavItem>
+                  <NavItem>
+                    <Link to="/#process" offset="100">
+                      Process
+                    </Link>
+                  </NavItem>
+                </>
+              ) : (
+                <>
+                  <Logo>
+                    <AnchorLink href="#home">
+                      <LogoImg src={NavLogo} alt="VideoBird logo" />
+                    </AnchorLink>
+                  </Logo>
+                  <NavItem>
+                    <AnchorLink href="#portfolio">Portfolio</AnchorLink>
+                  </NavItem>
+                  <NavItem>
+                    <AnchorLink href="#process" offset="100">
+                      Process
+                    </AnchorLink>
+                  </NavItem>
+                </>
+              )}
               <NavItem>
                 <Link to="/faq">FAQ</Link>
-              </NavItem>
-              <NavItem>
-                <Link to="/blog">Blog</Link>
               </NavItem>
               <NavItem>
                 <Link to="/contact">Contact</Link>
@@ -180,8 +209,10 @@ class Nav extends Component {
           </NavContainer>
         ) : (
           <NavToggleContainer>
-            <Logo to="/">
-              <LogoImg src={NavLogo} alt="SiteBird logo" />
+            <Logo>
+              <AnchorLink href="#home">
+                <LogoImg src={NavLogo} alt="VideoBird logo" />
+              </AnchorLink>
             </Logo>
             <Toggle>
               {({ on, toggle }) => (
@@ -192,10 +223,15 @@ class Nav extends Component {
                   {on && (
                     <NavToggleList on={on} toggle={toggle}>
                       <NavToggleItem>
-                        <Link to="/faq">FAQ</Link>
+                        <AnchorLink href="#portfolio">Portfolio</AnchorLink>
                       </NavToggleItem>
                       <NavToggleItem>
-                        <Link to="/blog">Blog</Link>
+                        <AnchorLink href="#process" offset="100">
+                          Process
+                        </AnchorLink>
+                      </NavToggleItem>
+                      <NavToggleItem>
+                        <Link to="/faq">FAQ</Link>
                       </NavToggleItem>
                       <NavToggleItem>
                         <Link to="/contact">Contact</Link>

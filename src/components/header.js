@@ -2,10 +2,13 @@ import React from 'react'
 import styled, { keyframes } from 'styled-components'
 import Nav from './nav'
 import { HeaderLinkStyle } from './styles/TextStyles'
-import { DownIcon } from './styles/IconStyles'
+import { DownIcon, PlayIcon } from './styles/IconStyles'
 import HeaderImg from '../images/seo-marketing-hero.jpg'
 import { device } from './styles/MediaQueries'
 import IntroVideo from './introVideo'
+import Toggle from './toggle'
+import Modal from './modal'
+import IntroThumbnail from '../images/intro-video-thumbnail.jpg'
 
 const fadeIn = keyframes`
   from { opacity: 0; transform: translateX(-3rem);}
@@ -97,6 +100,39 @@ const HeaderLink = styled(HeaderLinkStyle)`
   }
 `
 
+const HeaderThumbnail = styled.button`
+  width: 30%;
+  height: 30rem;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(${IntroThumbnail});
+  background-size: cover;
+  background-position: center;
+  border: none;
+  border-radius: 6px;
+  box-shadow: ${props => props.theme.bs};
+  cursor: pointer;
+
+  @media ${device.desktop} {
+    width: 50%;
+  }
+
+  @media ${device.tablet} {
+    width: 70%;
+  }
+
+  @media ${device.tabletS} {
+    width: 80%;
+  }
+
+  @media ${device.mobileL} {
+    width: 95%;
+  }
+`
+
 const HeaderHeading = styled.h1`
   font-size: 4.8rem;
   font-weight: 600;
@@ -104,13 +140,6 @@ const HeaderHeading = styled.h1`
   text-transform: capitalize;
   color: #fff;
   text-shadow: ${props => props.theme.ts};
-  :after {
-    content: '';
-    height: 1px;
-    width: 150px;
-    margin: 1.5rem 0 0 auto;
-    background: #fff;
-    display: block;
 
     @media ${device.tablet} {
       margin: 1.5rem auto 0 auto;
@@ -158,8 +187,8 @@ const HeaderSubHeading = styled.span`
 `
 
 const Header = ({ location, headerText, headerSub }) => (
-  <HeaderWrapper>
-    <Nav />
+  <HeaderWrapper id="home">
+    <Nav location={location} />
     <HeaderContainer>
       {location.pathname === '/' ? (
         <>
@@ -176,7 +205,18 @@ const Header = ({ location, headerText, headerSub }) => (
               <DownIcon />
             </HeaderLink>
           </HeaderText>
-          <IntroVideo />
+          <Toggle>
+            {({ on, toggle }) => (
+              <>
+                <HeaderThumbnail type="button" onClick={toggle}>
+                  <PlayIcon />
+                </HeaderThumbnail>
+                <Modal on={on} toggle={toggle}>
+                  <IntroVideo />
+                </Modal>
+              </>
+            )}
+          </Toggle>
         </>
       ) : (
         <HeaderText>

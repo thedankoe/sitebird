@@ -3,39 +3,23 @@ import styled from 'styled-components'
 import { device } from './styles/MediaQueries'
 
 const VidContainer = styled.div`
-  width: 30%;
-
-  @media ${device.desktop} {
-    width: 50%;
-  }
-
-  @media ${device.laptopL} {
-    width: 70%;
-  }
-
-  @media ${device.laptop} {
-    width: 90%;
-  }
-
-  @media ${device.tablet} {
-    width: 100%;
-  }
+  width: 100%;
 `
 
 const VidIframe = styled.iframe`
   width: 100%;
-  height: 255px;
+  height: 550px;
 
-  @media ${device.desktop} {
+  @media ${device.laptopL} {
     height: 400px;
   }
 
   @media ${device.tabletS} {
-    height: 300px;
+    height: 255px;
   }
 
   @media ${device.mobileL} {
-    height: 255px;
+    height: 225px;
   }
 `
 

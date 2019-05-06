@@ -30,29 +30,31 @@ const PackagesCard = () => (
           <span>
             <CheckMark />
           </span>
-          One 1000+ word conversion centered and SEO optimized content article
-          (blog post).
+          Dedicated project manager
         </li>
         <li>
           <span>
             <CheckMark />
           </span>
-          Extensive topic research for us to write an article that engages its
-          reader.
+          Script writer
         </li>
         <li>
           <span>
             <CheckMark />
           </span>
-          <span>
-            1 focused keyword per topic to maximize search engine ranking.
-          </span>
+          <span>Male or female voiceover</span>
         </li>
         <li>
           <span>
             <CheckMark />
           </span>
-          Bulk orders at discounted rate.
+          Professional animator
+        </li>
+        <li>
+          <span>
+            <CheckMark />
+          </span>
+          Background music
         </li>
       </CardList>
     </Card>
@@ -65,29 +67,34 @@ const PackagesCard = () => (
       <ParagraphStyle style={{ marginTop: '3rem' }}>BEST SELLER</ParagraphStyle>
       <CardList>
         <li>
-          <div>
+          <span>
             <CheckMark />
-          </div>
-          5 professionally designed social media graphics, optimized for
-          platform of your choice.
+          </span>
+          Dedicated project manager
         </li>
         <li>
-          <div>
+          <span>
             <CheckMark />
-          </div>
-          Designed to maintain the integrity of your business.
+          </span>
+          Script writer
         </li>
         <li>
-          <div>
+          <span>
             <CheckMark />
-          </div>
-          Like hiring a graphic designer, at a fraction of the cost.
+          </span>
+          <span>Male or female voiceover</span>
         </li>
         <li>
-          <div>
+          <span>
             <CheckMark />
-          </div>
-          Bulk orders at a discounted rate.
+          </span>
+          Professional animator
+        </li>
+        <li>
+          <span>
+            <CheckMark />
+          </span>
+          Background music
         </li>
       </CardList>
     </Card>
@@ -101,29 +108,34 @@ const PackagesCard = () => (
       </CardLink>
       <CardList>
         <li>
-          <div>
+          <span>
             <CheckMark />
-          </div>
-          5 professionally designed social media graphics, optimized for
-          platform of your choice.
+          </span>
+          Dedicated project manager
         </li>
         <li>
-          <div>
+          <span>
             <CheckMark />
-          </div>
-          Designed to maintain the integrity of your business.
+          </span>
+          Script writer
         </li>
         <li>
-          <div>
+          <span>
             <CheckMark />
-          </div>
-          Like hiring a graphic designer, at a fraction of the cost.
+          </span>
+          <span>Male or female voiceover</span>
         </li>
         <li>
-          <div>
+          <span>
             <CheckMark />
-          </div>
-          Bulk orders at a discounted rate.
+          </span>
+          Professional animator
+        </li>
+        <li>
+          <span>
+            <CheckMark />
+          </span>
+          Background music
         </li>
       </CardList>
     </Card>

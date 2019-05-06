@@ -94,10 +94,11 @@ const CheckoutSuccessBulkOrder = ({ location }) => (
         <ParagraphStyle>
           You can save the forms URL for later if time does not permit. If we
           notice that you did not fill out a form within 48 hours, we will
-          contact you.
+          contact you. You will receive your order confirmation email AFTER the
+          form is submitted.
         </ParagraphStyle>
         <a
-          href="https://dankoe.typeform.com/to/Zsk0lj"
+          href="https://dankoe.typeform.com/to/e6Nerj"
           rel="noopener noreferrer"
           target="_blank"
         >

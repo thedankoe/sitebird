@@ -42,8 +42,8 @@ const Buy = () => (
     <BuyContainer>
       <HeadingStyleLight>Get started</HeadingStyleLight>
       <SubHeadingStyleLight>
-        Best results are achieved if you already have a decent social following
-        and web traffic. If this is not the case, contact us for guidance.
+        Buy 3 or more videos and get 10% off your order! That is hundreds of
+        dollars in savings!
       </SubHeadingStyleLight>
       <PackagesCard />
     </BuyContainer>

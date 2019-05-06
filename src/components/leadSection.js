@@ -1,12 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import { FaRegChartBar } from 'react-icons/fa'
-import {
-  HeadingStyle,
-  SubHeadingStyle,
-  ParagraphStyle,
-} from './styles/TextStyles'
+import { HeadingStyle } from './styles/TextStyles'
 import { device } from './styles/MediaQueries'
+import Toggle from './toggle'
+import Modal from './modal'
 
 const LeadSectionWrapper = styled.div`
   position: relative;
@@ -19,6 +17,7 @@ const LeadBgIcon = styled(FaRegChartBar)`
   left: 50%;
   fill: rgba(0, 0, 0, 0.05);
   font-size: 50rem;
+  z-index: 1;
   transform: translate(-50%, -50%);
 `
 
@@ -39,6 +38,8 @@ const LeadSectionContainer = styled.div`
 `
 
 const LeadSectionGrid = styled.div`
+  position: relative;
+  z-index: 2;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: ${props => props.theme.textSpace};
@@ -49,35 +50,47 @@ const LeadSectionGrid = styled.div`
 `
 
 const LeadSection = () => (
-  <LeadSectionWrapper>
+  <LeadSectionWrapper id="portfolio">
     <LeadBgIcon />
     <LeadSectionContainer>
       <HeadingStyle>A few of the videos we have done</HeadingStyle>
       <LeadSectionGrid>
-        <div>
-          <ParagraphStyle>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Consequatur quia aut libero sunt non quam ipsa a amet corporis minus
-            error voluptates, molestias quaerat, eius, quibusdam facere
-            similique aspernatur id.
-          </ParagraphStyle>
-        </div>
-        <div>
-          <ParagraphStyle>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Consequatur quia aut libero sunt non quam ipsa a amet corporis minus
-            error voluptates, molestias quaerat, eius, quibusdam facere
-            similique aspernatur id.
-          </ParagraphStyle>
-        </div>
-        <div>
-          <ParagraphStyle>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Consequatur quia aut libero sunt non quam ipsa a amet corporis minus
-            error voluptates, molestias quaerat, eius, quibusdam facere
-            similique aspernatur id.
-          </ParagraphStyle>
-        </div>
+        <Toggle>
+          {({ on, toggle }) => (
+            <>
+              <button type="button" onClick={toggle}>
+                Video
+              </button>
+              <Modal on={on} toggle={toggle}>
+                <p>insert yt vid</p>
+              </Modal>
+            </>
+          )}
+        </Toggle>
+        <Toggle>
+          {({ on, toggle }) => (
+            <>
+              <button type="button" onClick={toggle}>
+                Video
+              </button>
+              <Modal on={on} toggle={toggle}>
+                <p>insert yt vid</p>
+              </Modal>
+            </>
+          )}
+        </Toggle>
+        <Toggle>
+          {({ on, toggle }) => (
+            <>
+              <button type="button" onClick={toggle}>
+                Video
+              </button>
+              <Modal on={on} toggle={toggle}>
+                <p>insert yt vid</p>
+              </Modal>
+            </>
+          )}
+        </Toggle>
       </LeadSectionGrid>
     </LeadSectionContainer>
   </LeadSectionWrapper>

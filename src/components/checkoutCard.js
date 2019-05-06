@@ -95,44 +95,36 @@ const CardsImg = styled.img`
 
 const thirtyQuantity = [
   { value: 0, price: 0, discount: 0, delivery: 0 },
-  { value: 1, price: 6700, discount: 0, delivery: 5 },
-  { value: 2, price: 13400, discount: 0, delivery: 7 },
-  { value: 3, price: 20100, discount: 0, delivery: 8 },
-  { value: 4, price: 26800, discount: 0, delivery: 9 },
-  { value: 5, price: 30100, discount: 34, delivery: 10 },
-  { value: 6, price: 36100, discount: 41, delivery: 11 },
-  { value: 7, price: 42200, discount: 47, delivery: 12 },
-  { value: 8, price: 48200, discount: 54, delivery: 13 },
-  { value: 9, price: 54200, discount: 61, delivery: 14 },
-  { value: 10, price: 60300, discount: 67, delivery: 15 },
+  { value: 1, price: 49700, discount: 0, delivery: 14 },
+  { value: 2, price: 99400, discount: 0, delivery: 18 },
+  { value: 3, price: 134190, discount: 14910, delivery: 22 },
+  { value: 4, price: 178920, discount: 19880, delivery: 26 },
+  { value: 5, price: 223650, discount: 24850, delivery: 30 },
+  { value: 6, price: 268380, discount: 29820, delivery: 34 },
 ]
 
 const sixtyQuantity = [
   { value: 0, price: 0, discount: 0, delivery: 0 },
-  { value: 5, price: 2700, discount: 0, delivery: 5 },
-  { value: 10, price: 5400, discount: 0, delivery: 7 },
-  { value: 15, price: 8100, discount: 0, delivery: 10 },
-  { value: 20, price: 10800, discount: 0, delivery: 10 },
-  { value: 25, price: 13500, discount: 0, delivery: 12 },
-  { value: 30, price: 14500, discount: 17, delivery: 14 },
-  { value: 35, price: 17000, discount: 19, delivery: 14 },
-  { value: 34, price: 19400, discount: 22, delivery: 14 },
+  { value: 1, price: 89700, discount: 0, delivery: 14 },
+  { value: 2, price: 179400, discount: 0, delivery: 18 },
+  { value: 3, price: 242190, discount: 26910, delivery: 22 },
+  { value: 4, price: 322920, discount: 35880, delivery: 26 },
+  { value: 5, price: 403650, discount: 44850, delivery: 30 },
+  { value: 6, price: 484380, discount: 53820, delivery: 34 },
 ]
 
 const ninetyQuantity = [
   { value: 0, price: 0, discount: 0, delivery: 0 },
-  { value: 5, price: 2700, discount: 0, delivery: 5 },
-  { value: 10, price: 5400, discount: 0, delivery: 7 },
-  { value: 15, price: 8100, discount: 0, delivery: 10 },
-  { value: 20, price: 10800, discount: 0, delivery: 10 },
-  { value: 25, price: 13500, discount: 0, delivery: 12 },
-  { value: 30, price: 14500, discount: 17, delivery: 14 },
-  { value: 35, price: 17000, discount: 19, delivery: 14 },
-  { value: 34, price: 19400, discount: 22, delivery: 14 },
+  { value: 1, price: 129700, discount: 0, delivery: 14 },
+  { value: 2, price: 259400, discount: 0, delivery: 18 },
+  { value: 3, price: 350190, discount: 38910, delivery: 22 },
+  { value: 4, price: 466920, discount: 51880, delivery: 26 },
+  { value: 5, price: 583650, discount: 64850, delivery: 30 },
+  { value: 6, price: 700380, discount: 77820, delivery: 34 },
 ]
 
 let finalDescription = ''
-let finalDelivery = ''
+const finalDelivery = ''
 
 const CheckoutCard = () => {
   const [showThirty, setShowThirty] = useState(false)
@@ -149,29 +141,30 @@ const CheckoutCard = () => {
   )
 
   useEffect(() => {
-    const calculatedAmount = () => selectedThirty.price + selectedSixty.price
+    const calculatedAmount = () =>
+      selectedThirty.price + selectedSixty.price + selectedNinety.price
     const calculatedDiscount = () =>
-      selectedThirty.discount + selectedSixty.discount
+      selectedThirty.discount + selectedSixty.discount + selectedNinety.discount
     const joinDescription = () => {
-      if (selectedThirty.value === 0) {
-        finalDescription = `${selectedSixty.value} social media posts`
-      } else if (selectedSixty.value === 0) {
-        finalDescription = `${selectedThirty.value} blog posts`
+      if (selectedThirty.value === 0 && selectedSixty.value === 0) {
+        finalDescription = `${selectedNinety.value} 90 Second Video(s)`
+      } else if (selectedSixty.value === 0 && selectedNinety.value === 0) {
+        finalDescription = `${selectedThirty.value} 30 Second Video(s)`
+      } else if (selectedThirty.value === 0 && selectedNinety.value === 0) {
+        finalDescription = `${selectedSixty.value} 60 Second Video(s)`
       } else {
-        finalDescription = `${selectedThirty.value} blog posts and ${
-          selectedSixty.value
-        } social media posts`
+        finalDescription = `${selectedThirty.value +
+          selectedSixty.value +
+          selectedNinety.value} Multiple 30-90 Second Videos`
       }
       return finalDescription
     }
-    const calcDelivery = () => {
-      if (selectedThirty.delivery >= selectedSixty.delivery) {
-        finalDelivery = selectedThirty.delivery
-      } else {
-        finalDelivery = selectedSixty.delivery
-      }
-      return finalDelivery
-    }
+    const calcDelivery = () =>
+      Math.max(
+        selectedThirty.delivery,
+        selectedSixty.delivery,
+        selectedNinety.delivery
+      )
     setAmount(calculatedAmount())
     setDiscount(calculatedDiscount())
     setDescription(joinDescription())
@@ -210,7 +203,8 @@ const CheckoutCard = () => {
   return (
     <CheckoutCardWrapper>
       <SubHeadingStyle>
-        Get a 10% discount if you order 3 or more of the same length video!
+        Get a 10% discount if you order 3 or more videos! That's hundreds in
+        savings!
       </SubHeadingStyle>
       <QuantityTable>
         <QuantityTableHeading>Qty</QuantityTableHeading>
@@ -219,7 +213,7 @@ const CheckoutCard = () => {
       </QuantityTable>
       <QuantityTable>
         <SelectWrapper>
-          <SelectContainer style={{ zIndex: 3 }} onClick={dropDownThirty}>
+          <SelectContainer style={{ zIndex: '3' }} onClick={dropDownThirty}>
             <SelectItemSelected>{selectedThirty.value}</SelectItemSelected>
             <SelectArrow>{showThirty ? <UpIcon /> : <DownIcon />}</SelectArrow>
             <SelectItems style={{ display: showThirty ? 'block' : 'none' }}>
@@ -241,7 +235,7 @@ const CheckoutCard = () => {
       </QuantityTable>
       <QuantityTable>
         <SelectWrapper>
-          <SelectContainer onClick={dropDownSixty}>
+          <SelectContainer style={{ zIndex: '2' }} onClick={dropDownSixty}>
             <SelectItemSelected>{selectedSixty.value}</SelectItemSelected>
             <SelectArrow>{showSixty ? <UpIcon /> : <DownIcon />}</SelectArrow>
             <SelectItems style={{ display: showSixty ? 'block' : 'none' }}>
@@ -264,10 +258,10 @@ const CheckoutCard = () => {
       <QuantityTable>
         <SelectWrapper>
           <SelectContainer onClick={dropDownNinety}>
-            <SelectItemSelected>{selectedSixty.value}</SelectItemSelected>
+            <SelectItemSelected>{selectedNinety.value}</SelectItemSelected>
             <SelectArrow>{showNinety ? <UpIcon /> : <DownIcon />}</SelectArrow>
             <SelectItems style={{ display: showNinety ? 'block' : 'none' }}>
-              {sixtyQuantity.map(item => (
+              {ninetyQuantity.map(item => (
                 <div
                   role="button"
                   tabIndex="0"
@@ -283,7 +277,9 @@ const CheckoutCard = () => {
         <ParagraphStyle>90 Second Video</ParagraphStyle>
         <ParagraphStyle>$1297</ParagraphStyle>
       </QuantityTable>
-      {selectedThirty.value > 0 || selectedSixty.value > 0 ? (
+      {selectedThirty.value > 0 ||
+      selectedSixty.value > 0 ||
+      selectedNinety.value > 0 ? (
         <>
           <QuantityTable border>
             <QuantityTableHeading>Qty</QuantityTableHeading>
@@ -295,24 +291,53 @@ const CheckoutCard = () => {
             <ParagraphStyle>30 Second Video</ParagraphStyle>
             <ParagraphStyle>
               ${formatMoney(selectedThirty.price)}
+              {selectedThirty.value >= 3 ||
+              selectedSixty.value >= 3 ||
+              selectedNinety.value >= 3
+                ? '0'
+                : ''}
             </ParagraphStyle>
           </QuantityTable>
           <QuantityTable border>
             <ParagraphStyle>{selectedSixty.value}</ParagraphStyle>
             <ParagraphStyle>60 Second Video</ParagraphStyle>
-            <ParagraphStyle>${formatMoney(selectedSixty.price)}</ParagraphStyle>
+            <ParagraphStyle>
+              ${formatMoney(selectedSixty.price)}
+              {selectedThirty.value >= 3 ||
+              selectedSixty.value >= 3 ||
+              selectedNinety.value >= 3
+                ? '0'
+                : ''}
+            </ParagraphStyle>
           </QuantityTable>
           <QuantityTable border>
             <ParagraphStyle>{selectedNinety.value}</ParagraphStyle>
             <ParagraphStyle>90 Second Video</ParagraphStyle>
             <ParagraphStyle>
               ${formatMoney(selectedNinety.price)}
+              {selectedThirty.value >= 3 ||
+              selectedSixty.value >= 3 ||
+              selectedNinety.value >= 3
+                ? '0'
+                : ''}
             </ParagraphStyle>
           </QuantityTable>
           <QuantityTotalDiv>
-            <QuantityTableHeading>DISCOUNT: ${discount}</QuantityTableHeading>
+            <QuantityTableHeading>
+              DISCOUNT: ${formatMoney(discount)}
+              {selectedThirty.value >= 3 ||
+              selectedSixty.value >= 3 ||
+              selectedNinety.value >= 3
+                ? '0'
+                : ''}
+            </QuantityTableHeading>
             <QuantityTableHeading>
               TOTAL: ${formatMoney(amount)}
+              {selectedThirty.value >= 3 ||
+              selectedSixty.value >= 3 ||
+              selectedNinety.value >= 3
+                ? '0'
+                : ''}
             </QuantityTableHeading>
           </QuantityTotalDiv>
           <QuantityTableHeading style={{ textAlign: 'right' }}>

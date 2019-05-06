@@ -61,12 +61,12 @@ export const CardParagraph = styled.p`
 `
 
 export const CardList = styled.ul`
-  width: 80%;
+  width: 60%;
   margin: ${props => props.theme.textSpace} auto 0 auto;
   border-radius: 3px;
   list-style: none;
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 600;
   svg {
     margin-right: 2rem;
     font-size: 3rem;
@@ -81,7 +81,7 @@ export const CardList = styled.ul`
   }
 
   @media ${device.tabletS} {
-    width: 95%;
+    width: 75%;
   }
 `
 

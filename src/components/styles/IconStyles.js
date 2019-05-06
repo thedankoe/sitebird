@@ -14,7 +14,7 @@ import {
   TiTimes,
   TiInputChecked,
 } from 'react-icons/ti'
-import { MdReorder, MdEmail } from 'react-icons/md'
+import { MdReorder, MdEmail, MdPlayCircleOutline } from 'react-icons/md'
 
 const iconStyles = css`
   fill: ${props => props.theme.secondaryLight};
@@ -94,6 +94,11 @@ const FBIcon = styled(TiSocialFacebookCircular)`
   margin-left: 0.5rem;
 `
 
+const PlayIcon = styled(MdPlayCircleOutline)`
+  font-size: 7rem;
+  fill: ${props => props.theme.lightGrey};
+`
+
 export {
   ChartIcon,
   SpeedIcon,
@@ -110,4 +115,5 @@ export {
   EmailIcon,
   FBIcon,
   CrossIcon,
+  PlayIcon,
 }

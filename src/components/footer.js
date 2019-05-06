@@ -46,7 +46,7 @@ const FooterLogoStyle = styled.img`
 
 const FooterNavList = styled.ul`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: ${props => props.theme.textSpace};
   list-style: none;
 
@@ -76,9 +76,6 @@ const Footer = () => (
       </FooterLink>
       <nav>
         <FooterNavList>
-          <FooterNavItem>
-            <Link to="/services">Services</Link>
-          </FooterNavItem>
           <FooterNavItem>
             <Link to="/faq">FAQ</Link>
           </FooterNavItem>

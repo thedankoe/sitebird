@@ -98,12 +98,12 @@ const ProcessScriptIcon = styled(TiDocumentText)`
 `
 
 const Process = () => (
-  <ProcessWrapper>
+  <ProcessWrapper id="process">
     <HeadingStyle>Our process</HeadingStyle>
     <ParagraphStyle>
-      We offer packages that have shown great results, or offer consultations.
-      Here is the process when a blog or social media post package has been
-      purchased.
+      We offer packages for the most common purchases. If you have specific
+      requirements that are not met by our packages, contact us for an approach
+      tailored to you.
     </ParagraphStyle>
     <ProcessList>
       <ProcessListContainer>
