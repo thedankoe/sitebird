@@ -1,15 +1,16 @@
 import { Component } from 'react'
 import ReactDOM from 'react-dom'
 
-const portalRoot = window.addEventListener(
-  'load',
-  document.getElementById('portal')
-)
+// Use a ternary operator to make sure that the document object is defined
+const portalRoot =
+  typeof document !== `undefined` ? document.getElementById('portal') : null
 
 export default class Portal extends Component {
   constructor() {
     super()
-    this.el = window.addEventListener('load', document.createElement('div'))
+    // Use a ternary operator to make sure that the document object is defined
+    this.el =
+      typeof document !== `undefined` ? document.createElement('div') : null
   }
 
   componentDidMount = () => {
@@ -22,6 +23,11 @@ export default class Portal extends Component {
 
   render() {
     const { children } = this.props
-    return ReactDOM.createPortal(children, this.el)
+
+    // Check that this.el is not null before using ReactDOM.createPortal
+    if (this.el) {
+      return ReactDOM.createPortal(children, this.el)
+    }
+    return null
   }
 }

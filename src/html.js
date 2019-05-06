@@ -23,7 +23,6 @@ export default function HTML(props) {
           id="___gatsby"
           dangerouslySetInnerHTML={{ __html: props.body }}
         />
-        <div id="portal" />
         {props.postBodyComponents}
       </body>
     </html>

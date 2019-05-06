@@ -83,6 +83,13 @@ module.exports = {
         pixelId: '354020558653540',
       },
     },
+    {
+      resolve: `gatsby-plugin-portal`,
+      options: {
+        key: 'portal',
+        id: 'portal',
+      },
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-sharp',
     'gatsby-remark-copy-linked-files',
