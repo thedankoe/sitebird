@@ -1,19 +1,19 @@
 import { Component } from 'react'
 import ReactDOM from 'react-dom'
 
+const portalRoot = window.document.getElementById('portal')
+
 export default class Portal extends Component {
   constructor() {
     super()
-    this.el = document.createElement('div')
+    this.el = window.document.createElement('div')
   }
 
   componentDidMount = () => {
-    const portalRoot = document.getElementById('portal')
     portalRoot.appendChild(this.el)
   }
 
   componentWillUnmount = () => {
-    const portalRoot = document.getElementById('portal')
     portalRoot.removeChild(this.el)
   }
 
