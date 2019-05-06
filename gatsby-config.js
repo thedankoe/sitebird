@@ -64,13 +64,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `posts`,
-        path: `${__dirname}/src/posts`,
-      },
-    },
-    {
       resolve: `gatsby-remark-images`,
       options: {
         maxWidth: 590,
