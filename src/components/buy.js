@@ -38,7 +38,7 @@ export const BuyContainer = styled.div`
 `
 
 const Buy = () => (
-  <BuyWrapper id="packages">
+  <BuyWrapper id="pricing">
     <BuyContainer>
       <HeadingStyleLight>Get started</HeadingStyleLight>
       <SubHeadingStyleLight>

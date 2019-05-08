@@ -9,6 +9,7 @@ import IntroVideo from './introVideo'
 import Toggle from './toggle'
 import Modal from './modal'
 import IntroThumbnail from '../images/intro-video-thumbnail.jpg'
+import NavHome from './navHome'
 
 const fadeIn = keyframes`
   from { opacity: 0; transform: translateX(-3rem);}
@@ -46,8 +47,6 @@ const HeaderText = styled.div`
   z-index: 2;
 
   @media ${device.desktop} {
-    margin-bottom: ${props => props.theme.sectionSpace};
-
     a {
       margin: 0 auto;
     }
@@ -105,8 +104,8 @@ const HeaderThumbnail = styled.button`
   height: 30rem;
   background-image: linear-gradient(
       to right bottom,
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
     ),
     url(${IntroThumbnail});
   background-size: cover;
@@ -117,6 +116,7 @@ const HeaderThumbnail = styled.button`
   cursor: pointer;
 
   @media ${device.desktop} {
+    margin-top: ${props => props.theme.sectionSpace};
     width: 50%;
   }
 
@@ -173,6 +173,7 @@ const HeaderSubHeading = styled.span`
   display: block;
 
   @media ${device.desktop} {
+    margin: 0 auto;
     text-align: center;
   }
 
@@ -188,7 +189,7 @@ const HeaderSubHeading = styled.span`
 
 const Header = ({ location, headerText, headerSub }) => (
   <HeaderWrapper id="home">
-    <Nav location={location} />
+    {location.pathname === '/' ? <NavHome /> : <Nav />}
     <HeaderContainer>
       {location.pathname === '/' ? (
         <>
@@ -200,7 +201,7 @@ const Header = ({ location, headerText, headerSub }) => (
                 back. High quality script, voiceover, animation, and sound.
               </HeaderSubHeading>
             </HeaderHeadingHome>
-            <HeaderLink to="/#packages">
+            <HeaderLink to="/#pricing">
               Order Now
               <DownIcon />
             </HeaderLink>

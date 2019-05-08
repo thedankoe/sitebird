@@ -38,81 +38,80 @@ const ContentDescription = () => (
   <>
     <DescriptionWrapper>
       <CaseContainer>
-        <BlogPostDescription />
         <div>
-          <SubHeadingStyle>Blog Posts</SubHeadingStyle>
+          <SubHeadingStyle style={{ textAlign: 'center' }}>
+            Whats Included
+          </SubHeadingStyle>
           <DescriptionList>
             <li>
               <span>
                 <CheckMark />
               </span>
-              1000 words minimum per article, the perfect amount to include
-              keywords and links for SEO.
+              30-90 second video. Choose a length that will fit all of the
+              information in about your topic.
             </li>
             <li>
               <span>
                 <CheckMark />
               </span>
-              Thoroughly researched topics and keywords to ensure engagement and
-              organic ranking.
+              Experienced script writing that effectively gets your videos point
+              across.
             </li>
             <li>
               <span>
                 <CheckMark />
               </span>
-              Conversion centered writing that persuades the user to make a
-              purchase or click through a CTA.
+              Professionally recorded male or female voiceover. We work with
+              only experienced voiceover creators.
             </li>
             <li>
               <span>
                 <CheckMark />
               </span>
-              SEO optimized to ensure steady organic growth for keywords that
-              you can ACTUALLY rank for.
+              Professionally animated video that flows with the voiceover and
+              other elements.
             </li>
           </DescriptionList>
         </div>
-      </CaseContainer>
-    </DescriptionWrapper>
-    <DescriptionWrapper>
-      <CaseContainer>
-        <SocialPostDescription />
         <div>
-          <SubHeadingStyle>Social Posts</SubHeadingStyle>
+          <SubHeadingStyle style={{ textAlign: 'center' }}>
+            Uses For Videos
+          </SubHeadingStyle>
           <DescriptionList>
             <li>
               <span>
                 <CheckMark />
               </span>
-              75-100 words professionally written to convert. Perfect for
-              offers, special events, and bragging about your awesome products.
+              On your website or landing pages. Make sales, get opt ins, or get
+              your point across.
             </li>
             <li>
               <span>
                 <CheckMark />
               </span>
-              Competitor and 'hot topic' research to ensure views and engagement
+              Advertising. Videos outperform image and text ads. Use on
+              Facebook, YouTube, Instagram, etc.
             </li>
             <li>
               <span>
                 <CheckMark />
               </span>
-              Beautifully designed graphics. These convert exponentially more
-              than normal images.
+              Meetings. Perfect for introduction in sales meetings. A video is
+              pitch perfect everytime compared to human error.
             </li>
             <li>
               <span>
                 <CheckMark />
               </span>
-              Designed to be posted on any or all platforms for maximum
-              conversion and efficiency.
+              Conferences. Get in front of more people and give something
+              visitors can have fun with.
             </li>
           </DescriptionList>
         </div>
       </CaseContainer>
       <DescriptionParagraph>
-        After checkout you will be redirected to a form where you can choose
-        topics and tell us more about your business.
+        After checkout you will be redirected to a form where you can give us
+        information on how to make this the best video for you.
       </DescriptionParagraph>
     </DescriptionWrapper>
   </>

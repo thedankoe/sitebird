@@ -5,6 +5,9 @@ import { HeadingStyle } from './styles/TextStyles'
 import { device } from './styles/MediaQueries'
 import Toggle from './toggle'
 import Modal from './modal'
+import CavemanThumbnail from '../images/caveman-portfolio-thumbnail.jpg'
+import { PlayIcon } from './styles/IconStyles'
+import { VidContainer, VidIframe } from './introVideo'
 
 const LeadSectionWrapper = styled.div`
   position: relative;
@@ -41,12 +44,28 @@ const LeadSectionGrid = styled.div`
   position: relative;
   z-index: 2;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: ${props => props.theme.textSpace};
 
   @media ${device.laptop} {
     grid-template-columns: 1fr;
   }
+`
+
+const PortfolioThumbnail = styled.button`
+  height: 30rem;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(${CavemanThumbnail});
+  background-size: cover;
+  background-position: center;
+  border: none;
+  border-radius: 6px;
+  box-shadow: ${props => props.theme.bs};
+  cursor: pointer;
 `
 
 const LeadSection = () => (
@@ -58,16 +77,23 @@ const LeadSection = () => (
         <Toggle>
           {({ on, toggle }) => (
             <>
-              <button type="button" onClick={toggle}>
-                Video
-              </button>
+              <PortfolioThumbnail type="button" onClick={toggle}>
+                <PlayIcon />
+              </PortfolioThumbnail>
               <Modal on={on} toggle={toggle}>
-                <p>insert yt vid</p>
+                <VidContainer>
+                  <VidIframe
+                    src="https://www.youtube.com/embed/2jszFCpu1pA?rel=0"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </VidContainer>
               </Modal>
             </>
           )}
         </Toggle>
-        <Toggle>
+        {/* <Toggle>
           {({ on, toggle }) => (
             <>
               <button type="button" onClick={toggle}>
@@ -90,7 +116,7 @@ const LeadSection = () => (
               </Modal>
             </>
           )}
-        </Toggle>
+        </Toggle> */}
       </LeadSectionGrid>
     </LeadSectionContainer>
   </LeadSectionWrapper>

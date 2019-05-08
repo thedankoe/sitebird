@@ -7,6 +7,7 @@ import Buy from '../components/buy'
 import TestimonialSection from '../components/testimonials'
 import SEO from '../components/seo'
 import MoneyBack from '../components/moneyBack'
+import FAQ from '../components/faq'
 
 const IndexPage = ({ location }) => (
   <Layout location={location}>
@@ -17,9 +18,10 @@ const IndexPage = ({ location }) => (
     <CaseStudy />
     <ProblemSolution />
     <Process />
-    <TestimonialSection />
     <MoneyBack />
     <Buy />
+    <TestimonialSection />
+    <FAQ />
   </Layout>
 )
 

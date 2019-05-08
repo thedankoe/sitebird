@@ -6,7 +6,7 @@ import { device } from './styles/MediaQueries'
 
 const TestimonialWrapper = styled.div`
   width: ${props => props.theme.maxWidth};
-  margin: 0 auto ${props => props.theme.sectionSpace} auto;
+  margin: ${props => props.theme.sectionSpace} auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: ${props => props.theme.textSpace};
@@ -55,7 +55,7 @@ export const VerifiedPurchase = styled(ParagraphStyle)`
 `
 
 const TestimonialSection = () => (
-  <TestimonialWrapper>
+  <TestimonialWrapper id="reviews">
     <TestimonialContainer>
       <RatingContainer>
         <RatingIcon />

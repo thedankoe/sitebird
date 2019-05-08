@@ -137,7 +137,7 @@ const NavToggleItem = styled.li`
   }
 `
 
-class Nav extends Component {
+class NavHome extends Component {
   state = {
     collapse: '',
   }
@@ -166,24 +166,30 @@ class Nav extends Component {
           <NavContainer>
             <NavList>
               <Logo>
-                <Link to="/">
+                <AnchorLink href="#home">
                   <LogoImg src={NavLogo} alt="VideoBird logo" />
-                </Link>
+                </AnchorLink>
               </Logo>
               <NavItem>
-                <Link to="/#portfolio">Portfolio</Link>
+                <AnchorLink href="#portfolio">Portfolio</AnchorLink>
               </NavItem>
               <NavItem>
-                <Link to="/#process">Process</Link>
+                <AnchorLink href="#process" offset="100">
+                  Process
+                </AnchorLink>
               </NavItem>
               <NavItem>
-                <Link to="/#reviews">Reviews</Link>
+                <AnchorLink href="#reviews" offset="100">
+                  Reviews
+                </AnchorLink>
               </NavItem>
               <NavItem>
-                <Link to="/#pricing">Pricing</Link>
+                <AnchorLink href="#pricing" offset="100">
+                  Pricing
+                </AnchorLink>
               </NavItem>
               <NavItem>
-                <Link to="/#faq">FAQ</Link>
+                <AnchorLink href="#faq">FAQ</AnchorLink>
               </NavItem>
               <NavItem>
                 <Link to="/contact">Contact</Link>
@@ -193,9 +199,9 @@ class Nav extends Component {
         ) : (
           <NavToggleContainer>
             <Logo>
-              <Link to="/">
+              <AnchorLink href="#home">
                 <LogoImg src={NavLogo} alt="VideoBird logo" />
-              </Link>
+              </AnchorLink>
             </Logo>
             <Toggle>
               {({ on, toggle }) => (
@@ -206,19 +212,27 @@ class Nav extends Component {
                   {on && (
                     <NavToggleList on={on} toggle={toggle}>
                       <NavToggleItem>
-                        <Link to="/#portfolio">Portfolio</Link>
+                        <AnchorLink href="#portfolio">Portfolio</AnchorLink>
                       </NavToggleItem>
                       <NavToggleItem>
-                        <Link to="/#process">Process</Link>
+                        <AnchorLink href="#process" offset="100">
+                          Process
+                        </AnchorLink>
                       </NavToggleItem>
                       <NavToggleItem>
-                        <Link to="/#reviews">Reviews</Link>
+                        <AnchorLink href="#reviews" offset="100">
+                          Reviews
+                        </AnchorLink>
                       </NavToggleItem>
                       <NavToggleItem>
-                        <Link to="/#pricing">Pricing</Link>
+                        <AnchorLink href="#pricing" offset="100">
+                          Pricing
+                        </AnchorLink>
                       </NavToggleItem>
                       <NavToggleItem>
-                        <Link to="/#faq">FAQ</Link>
+                        <AnchorLink href="#faq" offset="100">
+                          FAQ
+                        </AnchorLink>
                       </NavToggleItem>
                       <NavToggleItem>
                         <Link to="/contact">Contact</Link>
@@ -235,4 +249,4 @@ class Nav extends Component {
   }
 }
 
-export default Nav
+export default NavHome

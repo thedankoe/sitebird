@@ -96,35 +96,34 @@ const CardsImg = styled.img`
 const thirtyQuantity = [
   { value: 0, price: 0, discount: 0, delivery: 0 },
   { value: 1, price: 49700, discount: 0, delivery: 14 },
-  { value: 2, price: 99400, discount: 0, delivery: 18 },
-  { value: 3, price: 134190, discount: 14910, delivery: 22 },
-  { value: 4, price: 178920, discount: 19880, delivery: 26 },
-  { value: 5, price: 223650, discount: 24850, delivery: 30 },
-  { value: 6, price: 268380, discount: 29820, delivery: 34 },
+  { value: 2, price: 99400, discount: 0, delivery: 19 },
+  { value: 3, price: 134190, discount: 14910, delivery: 24 },
+  { value: 4, price: 178920, discount: 19880, delivery: 29 },
+  { value: 5, price: 223650, discount: 24850, delivery: 34 },
+  { value: 6, price: 268380, discount: 29820, delivery: 39 },
 ]
 
 const sixtyQuantity = [
   { value: 0, price: 0, discount: 0, delivery: 0 },
   { value: 1, price: 89700, discount: 0, delivery: 14 },
-  { value: 2, price: 179400, discount: 0, delivery: 18 },
-  { value: 3, price: 242190, discount: 26910, delivery: 22 },
-  { value: 4, price: 322920, discount: 35880, delivery: 26 },
-  { value: 5, price: 403650, discount: 44850, delivery: 30 },
-  { value: 6, price: 484380, discount: 53820, delivery: 34 },
+  { value: 2, price: 179400, discount: 0, delivery: 19 },
+  { value: 3, price: 242190, discount: 26910, delivery: 24 },
+  { value: 4, price: 322920, discount: 35880, delivery: 29 },
+  { value: 5, price: 403650, discount: 44850, delivery: 34 },
+  { value: 6, price: 484380, discount: 53820, delivery: 39 },
 ]
 
 const ninetyQuantity = [
   { value: 0, price: 0, discount: 0, delivery: 0 },
   { value: 1, price: 129700, discount: 0, delivery: 14 },
-  { value: 2, price: 259400, discount: 0, delivery: 18 },
-  { value: 3, price: 350190, discount: 38910, delivery: 22 },
-  { value: 4, price: 466920, discount: 51880, delivery: 26 },
-  { value: 5, price: 583650, discount: 64850, delivery: 30 },
-  { value: 6, price: 700380, discount: 77820, delivery: 34 },
+  { value: 2, price: 259400, discount: 0, delivery: 19 },
+  { value: 3, price: 350190, discount: 38910, delivery: 24 },
+  { value: 4, price: 466920, discount: 51880, delivery: 29 },
+  { value: 5, price: 583650, discount: 64850, delivery: 34 },
+  { value: 6, price: 700380, discount: 77820, delivery: 39 },
 ]
 
 let finalDescription = ''
-const finalDelivery = ''
 
 const CheckoutCard = () => {
   const [showThirty, setShowThirty] = useState(false)
@@ -203,8 +202,8 @@ const CheckoutCard = () => {
   return (
     <CheckoutCardWrapper>
       <SubHeadingStyle>
-        Get a 10% discount if you order 3 or more videos! That's hundreds in
-        savings!
+        Get a 10% discount if you order 3 or more videos (same length)! That's
+        hundreds in savings!
       </SubHeadingStyle>
       <QuantityTable>
         <QuantityTableHeading>Qty</QuantityTableHeading>
@@ -291,11 +290,7 @@ const CheckoutCard = () => {
             <ParagraphStyle>30 Second Video</ParagraphStyle>
             <ParagraphStyle>
               ${formatMoney(selectedThirty.price)}
-              {selectedThirty.value >= 3 ||
-              selectedSixty.value >= 3 ||
-              selectedNinety.value >= 3
-                ? '0'
-                : ''}
+              {selectedThirty.value >= 3 ? '0' : ''}
             </ParagraphStyle>
           </QuantityTable>
           <QuantityTable border>
@@ -303,11 +298,7 @@ const CheckoutCard = () => {
             <ParagraphStyle>60 Second Video</ParagraphStyle>
             <ParagraphStyle>
               ${formatMoney(selectedSixty.price)}
-              {selectedThirty.value >= 3 ||
-              selectedSixty.value >= 3 ||
-              selectedNinety.value >= 3
-                ? '0'
-                : ''}
+              {selectedSixty.value >= 3 ? '0' : ''}
             </ParagraphStyle>
           </QuantityTable>
           <QuantityTable border>
@@ -315,11 +306,7 @@ const CheckoutCard = () => {
             <ParagraphStyle>90 Second Video</ParagraphStyle>
             <ParagraphStyle>
               ${formatMoney(selectedNinety.price)}
-              {selectedThirty.value >= 3 ||
-              selectedSixty.value >= 3 ||
-              selectedNinety.value >= 3
-                ? '0'
-                : ''}
+              {selectedNinety.value >= 3 ? '0' : ''}
             </ParagraphStyle>
           </QuantityTable>
           <QuantityTotalDiv>

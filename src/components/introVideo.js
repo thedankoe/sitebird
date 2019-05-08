@@ -2,11 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 import { device } from './styles/MediaQueries'
 
-const VidContainer = styled.div`
+export const VidContainer = styled.div`
   width: 100%;
 `
 
-const VidIframe = styled.iframe`
+export const VidIframe = styled.iframe`
   width: 100%;
   height: 550px;
 
@@ -26,7 +26,7 @@ const VidIframe = styled.iframe`
 const IntroVideo = () => (
   <VidContainer>
     <VidIframe
-      src="https://www.youtube.com/embed/4S4GMgona9Q?rel=0"
+      src="https://www.youtube.com/embed/45luKFmjT90?rel=0"
       frameBorder="0"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
       allowFullScreen

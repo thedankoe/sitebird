@@ -30,7 +30,6 @@ const ContentCheckout = ({ location }) => (
   >
     <SEO title="Place Your Order" />
     <PackageWrapper>
-      <HeadingStyle>Whats Included</HeadingStyle>
       <ContentDescription />
       <HeadingStyle>Place your order</HeadingStyle>
       <PackageContainer>
@@ -45,12 +44,12 @@ const ContentCheckout = ({ location }) => (
               <RatingIcon />
             </RatingContainer>
             <VerifiedPurchase>
-              Verified Purchase - Blog Writing
+              Verified Purchase - 30 Second Video
             </VerifiedPurchase>
             <TestimonialParagraph>
-              "They made sure our website was optimized before we purchased blog
-              posts, the writing quality is amazing!"
-              <span>Brittany</span>
+              "We wanted a clear and simple video to describe our services which
+              you succeeded with. We'll be back again!!"
+              <span>Brittany Koenigslieb</span>
             </TestimonialParagraph>
           </TestimonialContainer>
           <TestimonialContainer>
@@ -62,12 +61,12 @@ const ContentCheckout = ({ location }) => (
               <RatingIcon />
             </RatingContainer>
             <VerifiedPurchase>
-              Verified Purchase - Blog and Social Posts
+              Verified Purchase - 60 Second Video
             </VerifiedPurchase>
             <TestimonialParagraph>
-              "Great articles and posts, will be buying again. Our organic
-              traffic has been steadily going up!"
-              <span>Skip &amp; Angee</span>
+              "Great quality! Describes our business better than we thought it
+              would. Will happily recommend to our network."
+              <span>Skip &amp; Angee Jones</span>
             </TestimonialParagraph>
           </TestimonialContainer>
         </TestimonialCheckout>
