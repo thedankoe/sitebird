@@ -66,9 +66,9 @@ const TestimonialSection = () => (
       </RatingContainer>
       <VerifiedPurchase>Verified Purchase</VerifiedPurchase>
       <TestimonialParagraph>
-        "They made sure our website was optimized before we purchased blog
-        posts, the writing quality is amazing!"
-        <span>Brittany</span>
+        "Great to work with. We had a few revisions and they performed quickly.
+        The quality of video was fantastic. I will be back for our next video."
+        <span>Mike Personett</span>
       </TestimonialParagraph>
     </TestimonialContainer>
     <TestimonialContainer>
@@ -81,9 +81,9 @@ const TestimonialSection = () => (
       </RatingContainer>
       <VerifiedPurchase>Verified Purchase</VerifiedPurchase>
       <TestimonialParagraph>
-        "Great articles and posts, will be buying again. Our website traffic has
-        been steadily going up!"
-        <span>Skip &amp; Angee</span>
+        "Great quality! Describes our business better than we thought it would.
+        Will happily recommend to our network."
+        <span>Skip &amp; Angee Jones</span>
       </TestimonialParagraph>
     </TestimonialContainer>
     <TestimonialContainer>
@@ -110,40 +110,9 @@ const TestimonialSection = () => (
       </RatingContainer>
       <VerifiedPurchase>Verified Purchase</VerifiedPurchase>
       <TestimonialParagraph>
-        "LeadBird offers an excellent value for search engine optimized blog
-        articles to populate your website with articles. Always a pleasure
-        working with them!"
-        <span>Sarah</span>
-      </TestimonialParagraph>
-    </TestimonialContainer>
-    <TestimonialContainer>
-      <RatingContainer>
-        <RatingIcon />
-        <RatingIcon />
-        <RatingIcon />
-        <RatingIcon />
-        <RatingIcon />
-      </RatingContainer>
-      <VerifiedPurchase>Verified Purchase</VerifiedPurchase>
-      <TestimonialParagraph>
-        "Very professional and talented design work! Can't wait to work with
-        them again."
-        <span>Basioni</span>
-      </TestimonialParagraph>
-    </TestimonialContainer>
-    <TestimonialContainer>
-      <RatingContainer>
-        <RatingIcon />
-        <RatingIcon />
-        <RatingIcon />
-        <RatingIcon />
-        <RatingIcon />
-      </RatingContainer>
-      <VerifiedPurchase>Verified Purchase</VerifiedPurchase>
-      <TestimonialParagraph>
-        "Great final product! Amazing and professional experience! Will be back
-        for more!"
-        <span>Sali</span>
+        "We wanted a clear and simple video to describe our services which you
+        succeeded with. We'll be back again!!"
+        <span>Brittany Koenigslieb</span>
       </TestimonialParagraph>
     </TestimonialContainer>
   </TestimonialWrapper>

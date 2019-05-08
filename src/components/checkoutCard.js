@@ -328,7 +328,7 @@ const CheckoutCard = () => {
             </QuantityTableHeading>
           </QuantityTotalDiv>
           <QuantityTableHeading style={{ textAlign: 'right' }}>
-            DELIVERY: {deliveryTime} days
+            ESTIMATED DELIVERY: {deliveryTime} days
           </QuantityTableHeading>
         </>
       ) : (
