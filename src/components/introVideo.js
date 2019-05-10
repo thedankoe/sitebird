@@ -26,7 +26,7 @@ export const VidIframe = styled.iframe`
 const IntroVideo = () => (
   <VidContainer>
     <VidIframe
-      src="https://www.youtube.com/embed/45luKFmjT90?rel=0"
+      src="https://www.youtube.com/embed/_jlORd36LGI?rel=0"
       frameBorder="0"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
       allowFullScreen
