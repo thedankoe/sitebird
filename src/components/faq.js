@@ -106,7 +106,13 @@ const FAQ = () => (
         </ParagraphStyle>
         <FAQParagraph>
           With that said, legally you have the right to use it anywhere you
-          please. Nothing to worry about there.
+          please.
+        </FAQParagraph>
+        <FAQParagraph>
+          We secure commercial rights to use the voice over in all of our
+          videos. If you plan to use it on paid marketing channels (ads,
+          commercials, etc.) let us know in the brief and we will secure this
+          for you.
         </FAQParagraph>
       </div>
     </FAQContainer>
