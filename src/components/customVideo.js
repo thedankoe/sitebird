@@ -2,17 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import CustomImage from '../images/custom-animated-video.gif'
 import { SubHeadingStyle, ParagraphStyle } from './styles/TextStyles'
-
-const CustomWrapper = styled.div`
-  width: ${props => props.theme.maxWidth};
-  margin: ${props => props.theme.sectionSpace} auto;
-`
-
-const CustomContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: ${props => props.theme.textSpace};
-`
+import { PackageWrapper, PackageContainer } from '../pages/services'
 
 const CustomImg = styled.img`
   width: 100%;
@@ -39,8 +29,8 @@ const CustomLink = styled.a`
 `
 
 const CustomVideo = () => (
-  <CustomWrapper>
-    <CustomContainer>
+  <PackageWrapper>
+    <PackageContainer>
       <CustomImg src={CustomImage} alt="Custom Video Gif" />
       <div>
         <SubHeadingStyle>
@@ -58,8 +48,8 @@ const CustomVideo = () => (
           Get A Quote
         </CustomLink>
       </div>
-    </CustomContainer>
-  </CustomWrapper>
+    </PackageContainer>
+  </PackageWrapper>
 )
 
 export default CustomVideo

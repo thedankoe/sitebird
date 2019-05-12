@@ -104,7 +104,7 @@ const thirtyQuantity = [
 ]
 
 const sixtyQuantity = [
-  { value: 0, price: 0, discount: 0, delivery: 0 },
+  { value: 0, price: 100, discount: 0, delivery: 0 },
   { value: 1, price: 89700, discount: 0, delivery: 14 },
   { value: 2, price: 179400, discount: 0, delivery: 19 },
   { value: 3, price: 242190, discount: 26910, delivery: 24 },
