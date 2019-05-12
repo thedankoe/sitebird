@@ -7,6 +7,7 @@ import Toggle from './toggle'
 import Modal from './modal'
 import CavemanThumbnail from '../images/caveman-portfolio-thumbnail.jpg'
 import MatressGuruThumbnail from '../images/mattress-guru-thumbnail.jpg'
+import PerfectMoversThumbnail from '../images/perfect-movers-thumbnail.jpg'
 import { PlayIcon } from './styles/IconStyles'
 import { VidContainer, VidIframe } from './introVideo'
 
@@ -26,7 +27,7 @@ const LeadBgIcon = styled(FaRegChartBar)`
 `
 
 const LeadSectionContainer = styled.div`
-  width: ${props => props.theme.maxWidth};
+  width: 75%;
   margin: 0 auto;
   padding: ${props => props.theme.sectionSpace} 0;
 
@@ -45,7 +46,7 @@ const LeadSectionGrid = styled.div`
   position: relative;
   z-index: 2;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: ${props => props.theme.textSpace};
 
   @media ${device.laptop} {
@@ -102,6 +103,29 @@ const LeadSection = () => (
           {({ on, toggle }) => (
             <>
               <PortfolioThumbnail
+                thumbnail={PerfectMoversThumbnail}
+                type="button"
+                onClick={toggle}
+              >
+                <PlayIcon />
+              </PortfolioThumbnail>
+              <Modal on={on} toggle={toggle}>
+                <VidContainer>
+                  <VidIframe
+                    src="https://www.youtube.com/embed/_J_h4_Bp7sU?rel=0"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </VidContainer>
+              </Modal>
+            </>
+          )}
+        </Toggle>
+        <Toggle>
+          {({ on, toggle }) => (
+            <>
+              <PortfolioThumbnail
                 thumbnail={CavemanThumbnail}
                 type="button"
                 onClick={toggle}
@@ -121,18 +145,6 @@ const LeadSection = () => (
             </>
           )}
         </Toggle>
-        {/* <Toggle>
-          {({ on, toggle }) => (
-            <>
-              <button type="button" onClick={toggle}>
-                Video
-              </button>
-              <Modal on={on} toggle={toggle}>
-                <p>insert yt vid</p>
-              </Modal>
-            </>
-          )}
-        </Toggle> */}
       </LeadSectionGrid>
     </LeadSectionContainer>
   </LeadSectionWrapper>

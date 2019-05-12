@@ -8,6 +8,7 @@ import TestimonialSection from '../components/testimonials'
 import SEO from '../components/seo'
 import MoneyBack from '../components/moneyBack'
 import FAQ from '../components/faq'
+import CustomVideo from '../components/customVideo'
 
 const IndexPage = ({ location }) => (
   <Layout location={location}>
@@ -20,6 +21,7 @@ const IndexPage = ({ location }) => (
     <Process />
     <MoneyBack />
     <Buy />
+    <CustomVideo />
     <TestimonialSection />
     <FAQ />
   </Layout>
