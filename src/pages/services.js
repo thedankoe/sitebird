@@ -21,7 +21,6 @@ import {
   InfoContainer,
   InfoBlock,
 } from '../components/infoSection'
-import SocialMediaProof from '../components/lazy-images/social-media-proof'
 
 export const PackageWrapper = styled.div`
   width: ${props => props.theme.maxWidth};
@@ -156,7 +155,6 @@ const OurWebsitesPage = ({ location }) => (
         the user to act by sharing your post or making a purchase.
       </SubHeadingStyle>
       <PackageContainer>
-        <SocialMediaProof />
         <div>
           <PackageText>
             <SubHeadingStyle>Two posts, huge increases</SubHeadingStyle>
