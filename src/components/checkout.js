@@ -12,6 +12,11 @@ const Checkout = ({ amount, description }) => {
     setButtonText('Place Order!')
   }
 
+  function resetButtonPurchase() {
+    setDisabled(false)
+    setButtonText('Redirecting to Form')
+  }
+
   useEffect(() => {
     const handler = window.StripeCheckout.configure({
       key: 'pk_live_3yKRJ1Fc2DkGl04bIfbQnnXC',
@@ -44,8 +49,8 @@ const Checkout = ({ amount, description }) => {
           }),
         })
           .then(res => {
-            resetButton()
-            setPaymentMessage('Redirecting to Form')
+            resetButtonPurchase()
+            setPaymentMessage('Payment Successful')
             window.location.href = 'https://videobird.io/checkout-success'
             return res
           })
