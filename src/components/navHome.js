@@ -192,7 +192,7 @@ class NavHome extends Component {
                 <AnchorLink href="#faq">FAQ</AnchorLink>
               </NavItem>
               <NavItem>
-                <Link to="/contact">Contact</Link>
+                <AnchorLink href="#pricing">Order</AnchorLink>
               </NavItem>
             </NavList>
           </NavContainer>
@@ -235,7 +235,9 @@ class NavHome extends Component {
                         </AnchorLink>
                       </NavToggleItem>
                       <NavToggleItem>
-                        <Link to="/contact">Contact</Link>
+                        <AnchorLink href="#pricing" offset="100">
+                          Pricing
+                        </AnchorLink>
                       </NavToggleItem>
                     </NavToggleList>
                   )}

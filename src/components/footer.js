@@ -92,7 +92,7 @@ const Footer = () => (
             <Link to="/#faq">FAQ</Link>
           </FooterNavItem>
           <FooterNavItem>
-            <Link to="/contact">Contact</Link>
+            <Link to="/#pricing">Order</Link>
           </FooterNavItem>
         </FooterNavList>
       </nav>

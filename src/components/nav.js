@@ -186,7 +186,7 @@ class Nav extends Component {
                 <Link to="/#faq">FAQ</Link>
               </NavItem>
               <NavItem>
-                <Link to="/contact">Contact</Link>
+                <Link to="/#order">Order</Link>
               </NavItem>
             </NavList>
           </NavContainer>
@@ -221,7 +221,7 @@ class Nav extends Component {
                         <Link to="/#faq">FAQ</Link>
                       </NavToggleItem>
                       <NavToggleItem>
-                        <Link to="/contact">Contact</Link>
+                        <Link to="/#order">Order</Link>
                       </NavToggleItem>
                     </NavToggleList>
                   )}
