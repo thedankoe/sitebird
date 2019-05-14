@@ -1,15 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'gatsby';
+import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import CheckoutCard from '../components/checkoutCard'
 import { PackageWrapper, PackageContainer } from './services'
-import {
-  HeadingStyle,
-  SubHeadingStyle,
-  ParagraphStyle,
-} from '../components/styles/TextStyles'
+import { HeadingStyle } from '../components/styles/TextStyles'
 import {
   TestimonialContainer,
   RatingIcon,
@@ -18,9 +14,7 @@ import {
   VerifiedPurchase,
 } from '../components/testimonials'
 import ContentDescription from '../components/contentDescriptions'
-import { CardList } from '../components/servicesCard'
-import { CheckMark } from '../components/styles/IconStyles'
-import { device } from '../components/styles/MediaQueries'
+import { RightIcon } from '../components/styles/IconStyles'
 
 const TestimonialCheckout = styled.div`
   margin-top: ${props => props.theme.textSpace};
@@ -33,20 +27,18 @@ const TestimonialCheckout = styled.div`
 `
 
 const FirstCheckout = styled(Link)`
-  padding: 1.5rem;
-  background: ${props => props.theme.tertiary};
-  color: #fff;
+  color: ${props => props.theme.tertiary};
   font-size: 2.2rem;
   font-weight: 500;
-  border-radius: 6px;
-  box-shadow: ${props => props.theme.bs};
-  align-self: flex-start;
   transition: all ease 0.3s;
 
+  svg {
+    font-size: 2.5rem;
+    transform: translateY(0.5rem);
+  }
+
   :hover {
-    background: ${props => props.theme.tertiaryLight};
-    box-shadow: ${props => props.theme.bsHover};
-    transform: translateY(0.3rem);
+    color: ${props => props.theme.tertiaryLight};
   }
 `
 
@@ -61,7 +53,7 @@ const ContentCheckout = ({ location }) => (
       <ContentDescription />
       <HeadingStyle>Place your order</HeadingStyle>
       <FirstCheckout to="/first-time-customer">
-        First time customers, checkout here to claim your offer!
+        First time customers, checkout here to claim your offer! <RightIcon />
       </FirstCheckout>
       <PackageContainer>
         <CheckoutCard />
