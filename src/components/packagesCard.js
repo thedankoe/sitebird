@@ -27,33 +27,23 @@ const PackagesCard = () => (
       </CardLink>
       <CardList>
         <li>
-          <span>
-            <CheckMark />
-          </span>
+          <CheckMark />
           Dedicated project manager
         </li>
         <li>
-          <span>
-            <CheckMark />
-          </span>
+          <CheckMark />
           Script writer
         </li>
         <li>
-          <span>
-            <CheckMark />
-          </span>
-          <span>Male or female voiceover</span>
+          <CheckMark />
+          Male or female voiceover
         </li>
         <li>
-          <span>
-            <CheckMark />
-          </span>
+          <CheckMark />
           Professional animator
         </li>
         <li>
-          <span>
-            <CheckMark />
-          </span>
+          <CheckMark />
           Background music
         </li>
       </CardList>
@@ -67,33 +57,23 @@ const PackagesCard = () => (
       <ParagraphStyle style={{ marginTop: '3rem' }}>BEST SELLER</ParagraphStyle>
       <CardList>
         <li>
-          <span>
-            <CheckMark />
-          </span>
+          <CheckMark />
           Dedicated project manager
         </li>
         <li>
-          <span>
-            <CheckMark />
-          </span>
+          <CheckMark />
           Script writer
         </li>
         <li>
-          <span>
-            <CheckMark />
-          </span>
-          <span>Male or female voiceover</span>
+          <CheckMark />
+          Male or female voiceover
         </li>
         <li>
-          <span>
-            <CheckMark />
-          </span>
+          <CheckMark />
           Professional animator
         </li>
         <li>
-          <span>
-            <CheckMark />
-          </span>
+          <CheckMark />
           Background music
         </li>
       </CardList>
@@ -108,33 +88,23 @@ const PackagesCard = () => (
       </CardLink>
       <CardList>
         <li>
-          <span>
-            <CheckMark />
-          </span>
+          <CheckMark />
           Dedicated project manager
         </li>
         <li>
-          <span>
-            <CheckMark />
-          </span>
+          <CheckMark />
           Script writer
         </li>
         <li>
-          <span>
-            <CheckMark />
-          </span>
-          <span>Male or female voiceover</span>
+          <CheckMark />
+          Male or female voiceover
         </li>
         <li>
-          <span>
-            <CheckMark />
-          </span>
+          <CheckMark />
           Professional animator
         </li>
         <li>
-          <span>
-            <CheckMark />
-          </span>
+          <CheckMark />
           Background music
         </li>
       </CardList>

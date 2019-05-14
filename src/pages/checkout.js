@@ -1,10 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'gatsby';
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import CheckoutCard from '../components/checkoutCard'
 import { PackageWrapper, PackageContainer } from './services'
-import { HeadingStyle } from '../components/styles/TextStyles'
+import {
+  HeadingStyle,
+  SubHeadingStyle,
+  ParagraphStyle,
+} from '../components/styles/TextStyles'
 import {
   TestimonialContainer,
   RatingIcon,
@@ -13,12 +18,35 @@ import {
   VerifiedPurchase,
 } from '../components/testimonials'
 import ContentDescription from '../components/contentDescriptions'
+import { CardList } from '../components/servicesCard'
+import { CheckMark } from '../components/styles/IconStyles'
+import { device } from '../components/styles/MediaQueries'
 
 const TestimonialCheckout = styled.div`
+  margin-top: ${props => props.theme.textSpace};
+  text-align: left;
   div {
     :not(:last-child) {
       margin-bottom: 2rem;
     }
+  }
+`
+
+const FirstCheckout = styled(Link)`
+  padding: 1.5rem;
+  background: ${props => props.theme.tertiary};
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 500;
+  border-radius: 6px;
+  box-shadow: ${props => props.theme.bs};
+  align-self: flex-start;
+  transition: all ease 0.3s;
+
+  :hover {
+    background: ${props => props.theme.tertiaryLight};
+    box-shadow: ${props => props.theme.bsHover};
+    transform: translateY(0.3rem);
   }
 `
 
@@ -32,6 +60,9 @@ const ContentCheckout = ({ location }) => (
     <PackageWrapper>
       <ContentDescription />
       <HeadingStyle>Place your order</HeadingStyle>
+      <FirstCheckout to="/first-time-customer">
+        First time customers, checkout here to claim your offer!
+      </FirstCheckout>
       <PackageContainer>
         <CheckoutCard />
         <TestimonialCheckout>

@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'gatsby';
 import { device } from './styles/MediaQueries'
 import { HeadingStyleLight, SubHeadingStyleLight } from './styles/TextStyles'
 import PrismTexture from '../images/prism-texture.png'
@@ -42,8 +43,8 @@ const Buy = () => (
     <BuyContainer>
       <HeadingStyleLight>Get started</HeadingStyleLight>
       <SubHeadingStyleLight>
-        Buy 3 or more videos and get 10% off your order! That is hundreds of
-        dollars in savings!
+        First time customers save $100-$300 off of video packages. Select your
+        package and claim your offer at checkout.
       </SubHeadingStyleLight>
       <PackagesCard />
     </BuyContainer>
