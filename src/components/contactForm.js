@@ -104,18 +104,14 @@ const ContactForm = () => {
         }}
         name="contact"
         method="POST"
-        action="https://mailthis.to/leadbird-email"
+        action="https://mailthis.to/info@videobird.io"
         className="form"
       >
-        <input
-          type="hidden"
-          name="_subject"
-          value="LeadBird Contact Form Submission"
-        />
+        <input type="hidden" name="_subject" value="VideoBird Contact" />
         <input
           type="hidden"
           name="_after"
-          value="https://www.leadbird.io/contact-success"
+          value="https://www.videobird.io/contact-success"
         />
         <input type="hidden" name="_honeypot" value="" />
         <input type="hidden" name="_confirmation" value="Success!" />

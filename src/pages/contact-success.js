@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
-import { HeadingStyle } from '../components/styles/TextStyles'
+import { HeadingStyle, SubHeadingStyle } from '../components/styles/TextStyles'
 import { ClientFormWrapper, ClientFormContainer } from './checkout-success'
 import { RightIcon } from '../components/styles/IconStyles'
 import SEO from '../components/seo'
@@ -16,13 +16,11 @@ const ContactSuccess = ({ location }) => (
     <ClientFormWrapper>
       <ClientFormContainer>
         <HeadingStyle>In the mean time...</HeadingStyle>
-        <Link to="/blog">
-          Check out our growth tips <RightIcon />
-        </Link>
-        <Link to="/services">
-          More information on our services <RightIcon />
-        </Link>
-        <Link to="/faq">
+        <SubHeadingStyle>
+          Feel free to find us on social media! Just search for VideoBird
+          Animated Explainer Videos!
+        </SubHeadingStyle>
+        <Link to="/#faq">
           Frequently asked questions <RightIcon />
         </Link>
       </ClientFormContainer>
