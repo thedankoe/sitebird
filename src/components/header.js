@@ -1,11 +1,7 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
 import Nav from './nav'
-import {
-  HeaderLinkStyle,
-  SubHeadingStyleLight,
-  ParagraphStyle,
-} from './styles/TextStyles'
+import { HeaderLinkStyle } from './styles/TextStyles'
 import { DownIcon, PlayIcon } from './styles/IconStyles'
 import HeaderImg from '../images/seo-marketing-hero.jpg'
 import { device } from './styles/MediaQueries'
@@ -65,56 +61,6 @@ const HeaderHeadingHome = styled.h1`
   text-transform: capitalize;
   color: #fff;
   text-shadow: ${props => props.theme.ts};
-
-  @media ${device.desktop} {
-    text-align: center;
-  }
-
-  @media ${device.tablet} {
-    font-size: 3.5rem;
-  }
-
-  @media ${device.tabletS} {
-    font-size: 3.2rem;
-  }
-`
-
-const FirstTimeOffer = styled.h3`
-  width: 100%;
-  font-size: 3rem;
-  font-weight: 600;
-  text-align: left;
-  color: #fff;
-  text-shadow: ${props => props.theme.ts};
-  :before {
-    content: '';
-    height: 2px;
-    width: 50%;
-    margin: 3rem 0;
-    background: #fff;
-    display: block;
-
-    @media ${device.desktop} {
-      width: 50%;
-      margin: 3rem auto;
-    }
-  }
-
-  span {
-    display: block;
-    font-weight: 400;
-    @media ${device.desktop} {
-      text-align: center;
-    }
-
-    @media ${device.tablet} {
-      font-size: 2.5rem;
-    }
-
-    @media ${device.tabletS} {
-      font-size: 2.2rem;
-    }
-  }
 
   @media ${device.desktop} {
     text-align: center;
@@ -237,19 +183,8 @@ const Header = ({ location, headerText, headerSub }) => (
                 back. High quality script, voiceover, animation, and sound.
               </HeaderSubHeading>
             </HeaderHeadingHome>
-            <FirstTimeOffer>
-              First Time Customer Offer
-              <span>
-                <strong>$100</strong> off 30 second video, <strong>$200</strong>{' '}
-                off 60 second video, <strong>$300</strong> off 90 second video.
-              </span>
-              <span>
-                Continue to checkout as normal, there will be a link to claim
-                your offer.
-              </span>
-            </FirstTimeOffer>
             <HeaderLink to="/#pricing">
-              Claim Offer
+              Order Now
               <DownIcon />
             </HeaderLink>
           </HeaderText>
